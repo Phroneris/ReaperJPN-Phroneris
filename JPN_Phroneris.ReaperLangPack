@@ -1,6 +1,6 @@
 #NAME:日本語（森）
 ; ちえ様の日本語化パッチにいろいろしたものです。
-; https://github.com/Phroneris/ReaperJPN-Phroneris ver5.70.001
+; https://github.com/Phroneris/ReaperJPN-Phroneris ver 5.70.001
 ; ・「;」で始まる行は未翻訳部です。翻訳後は「;」を消してください。
 ; ・「;^」で始まる行は未翻訳部かつオプションです。翻訳後は「;^」を消してください。  
 ;   最初の [common] 部で既に出てきているので、改めて別の訳を当てたい場合のみ編集します。
@@ -5316,7 +5316,7 @@ AC4B7D06A00FB424=選択ポイントを削除 (&P)
 ;8A354CEBCC0207C4=5EnvelopeItemCtx2
 7AE99F6B1F0C836B=新規ポイントを作成 (&W)
 E9D34B3745E6649D=選択時間内のポイントを全て選択 (&T)
-5880980F27869CBB=ポイントを削除sssssss (&D)
+5880980F27869CBB=ポイントを削除 (&D)
 0ABF4CDD8331C92E=ポイントの上下を反転 (&N)
 ;^C038339424CBD482=Select envelope (env name)
 ;^E3DAA9F7F82CB67B=Envelope defaults
