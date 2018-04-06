@@ -1,13 +1,13 @@
 #NAME:日本語（森）
-; ちえ様の日本語化パッチにいろいろしたものです。
-; https://github.com/Phroneris/ReaperJPN-Phroneris/tree/master ver 5.70.002
+; https://github.com/Phroneris/ReaperJPN-Phroneris/tree/master ver 5.70.003?
 ; ・「;」で始まる行は未翻訳部です。翻訳後は「;」を消してください。
 ; ・「;^」で始まる行は未翻訳部かつオプションです。最初の [common] 部で既に出てきているので、
 ;   改めて別の訳を当てたい場合のみ編集します。翻訳後は「;^」を消してください。
 ; ・「5CA1E00000000000=幅 [高さ]」で該当ウィンドウサイズを変更できます。以下の例なら幅1.2倍です。
 ;     [DLG_218] ; IDD_LOCKSETTINGS
 ;     5CA1E00000000000=1.2
-; ※独自記法→「;/」で始まる行は意図的な無効化。行中の「(タブ);」以下はコメント。アクションの「 @@ 」以下は原文併記。
+; ※独自記法: 行中の「(タブ);」以下は備考コメント、「(タブ);;」以下は問題点コメント。
+;             「;/」で始まる行は意図的な無効化行。アクション行中の「 @@ 」以下は原文併記。
 
 [common]
 042F4DCA75E1BE47=16 bit
@@ -244,7 +244,7 @@ B599690138EA264A=マーカー
 386EB65EE2979317=読み込み (&L)
 6B921CBA018B2EE0=追加のリソースは読み込まれていません
 FA779BCA02DBA08E=エンベロープポイントを減らす
-4F32BF040299F0AA=コントロールメッセージ入力を有効化
+4F32BF040299F0AA=コントロールメッセージ入力を有効化 (&M)
 6174C6969402A488=プロジェクトを新規タブに開く (&B)
 AF427D96E302B145=カスタマイズしたメニュー:
 38EAAB594661F05F=デフォルトのメニュー:
@@ -291,7 +291,7 @@ ADFC12BF930BBFC9=テイクプロパティ
 BD7850245F5A79EE=インポート
 AD510FC22D6EECAC=アレンジビューでの選択に追従して MIDI アイテムをアクティブにする (&A)
 19E78BE8A7F79DE0=メディアアイテムの選択を表示対象とリンク (&V)
-;/05E07D2942EFF739=Only MIDI items on the same track as the active item are editable (&O)	; わかんね
+;/05E07D2942EFF739=Only MIDI items on the same track as the active item are editable (&O)	;; わかんね
 6B715267FFEB9F05=選択を編集対象とリンク (&E)
 B36DBB640BD652AA=音符:
 200265593F330955=スケール検索 (&S)
@@ -376,15 +376,15 @@ B9A64123FC8187D3=トラックやテイクのエフェクトを適用して新規
 3E1E032211F699E5=アイテム編集時にオートクロスフェード (&F)
 9CF0A9142899CF43=アイテム自在配置モード時にアイテムを自動で再配置 (&F)
 C09170FD3E752A38=再生時に自動でスクロール (&A)
-;/E03A6CC2DC3D5F04=Automation items attach to the underlying envelope on both sides (&O)	; わかんね
-;/FF9F4014B48BCB5F=Automation items attach to the underlying envelope on the right side (&R)	; わかんね
-;/E8983D7ABDCA9C38=Automation items do not attach to the underlying envelope (&N)	; わかんね
+;/E03A6CC2DC3D5F04=Automation items attach to the underlying envelope on both sides (&O)	;; わかんね
+;/FF9F4014B48BCB5F=Automation items attach to the underlying envelope on the right side (&R)	;; わかんね
+;/E8983D7ABDCA9C38=Automation items do not attach to the underlying envelope (&N)	;; わかんね
 BA7A79B4D3479176=拍 (開始位置のみ) (&O)
 A5D5B4E847F44008=拍 (開始位置、長さ、再生速度) (&L)
 919D1A7A385C125C=ベジエ曲線 (&B)
 B4247305029ECD51=オートメーションアイテム外の元エンベロープをバイパス (&B)
 FA775AC5C0D28AA4=トランジェントガイドを算出 (&T)
-;/2931EC09DAF12573=Calculate transient guides for visible areas (&V)	; わかんね
+;/2931EC09DAF12573=Calculate transient guides for visible areas (&V)	;; わかんね
 676E901B91B41FD8=プロジェクト再生時に MIDI ノートオンを追跡 (&J)
 40B42F5B4E7F894C=エンベロープをクリア (&C)
 5440034E9A5FAF6B=トランジェントガイドをクリア (&C)
@@ -759,7 +759,7 @@ A66F5FD1FF70F568=ドックをメインウィンドウに表示 (&D)
 B814E3BFB72A607B=プリセットを削除 (&L)
 37E1C985732EDDC1=プリセットを保存 (&S)...
 0A406B52D72D3189=トラックのミュートを切り替え
-;/166EA90B165E1A9C=Automation notifications (&N)	; わかんね
+;/166EA90B165E1A9C=Automation notifications (&N)	;; わかんね
 6C837121717D4EA3=可能なら操作履歴の読み込みを避ける (&L)
 7C52DE0969C08A82=バグ傾向のあるプラグイン向け互換モード (&B)
 674FB3DE1B272051=チャンネル 1
@@ -815,7 +815,7 @@ B348AEAE3BC8702E=このトラックのみミュート (&X)
 09CFC77E55F475C5=切り取り (&X)
 A354AA07A4DF9BBD=グループ制御を有効 (&G)
 09A01E8714A0B688=コメント (&C)
-FE0BBBB916484A16=新規プロジェクトベイウィンドウ
+FE0BBBB916484A16=新規プロジェクトベイウィンドウ (&W)
 9F31623C59553158=パス
 1A6E49AB086243F9=MIDI 1
 1A6E46AB08623EE0=MIDI 2
@@ -858,7 +858,7 @@ FA08A03DC81EC720=プラグイン名
 B8A56B8F77C88B77=スウィング
 DD0CE22D75D36ED1=トラック名
 978AC938BDD65877=トラック番号
-8A3F14717826D8D1=パンの幅 (&H)
+8A3F14717826D8D1=パン幅
 ;514129849A113DA0=(unknown)
 20AFB48FFE418F4F=選択 (&S)
 6037A596D672320D=ショートカット
@@ -932,8 +932,8 @@ EF2E4D6B32E12F9F=表示: 上にスクロール @@ View: Scroll view up
 93244D3BB94E6F33=プリセットなし
 17B3AE10A9CC3695=プラグインの状態データサイズ:
 274E7C84B3E58DB8=ファクトリーデフォルトにリセット
-D8C1A6186B98A8C4=入力
-B7290B7EB82C4051=出力
+D8C1A6186B98A8C4=in
+B7290B7EB82C4051=out
 F420AC1723391ECE=マスタートラック
 ;629548803B048F00= - 
 ;7110EEEF2B77963B=Duration
@@ -1136,7 +1136,7 @@ A025E53729E41E20=下声部のノートを全選択 (&O)
 EF9B6744B3A3252C=プロジェクトのマーカーを表示 (&M)
 8AECF7AB9A62250A=プロジェクトのリージョンを表示 (&R)
 9B29B2AE84FDC449=プロジェクトのテンポ変化を表示 (&J)
-9ED6EEF5EE379522=曲の選択
+9ED6EEF5EE379522=ソングセレクト
 C98EE5432BA46B65=移調表示を調号に反映 (&K)
 C244DB21860623E6=全ての非表示を解除 (&U)
 02E6C28F6CC5D246=ベロシティ:
@@ -1488,9 +1488,9 @@ D9B78CC3D8EB7ABC=API ヘルプ (&H)
 91B11477A77007C4=defer() コード実行 (&D)
 2F579B23960A832D=ステップ (&S)
 6657ECBAB76A74D5=atexit() (&E)
-DCEF2B4D03DE723C=Name
-772CECA01AD73CB4=Value
-;/^87DB547E0C57B4B8=Run	; 上のNameとValueは文字化け対策
+;^DCEF2B4D03DE723C=Name
+;^772CECA01AD73CB4=Value
+;^87DB547E0C57B4B8=Run
 ;^5B664677E1A91155=Start
 ;^D9B12705AD844C62=List1
 
@@ -1535,7 +1535,7 @@ C1C55DE3A55E5DA1=Hz    弱拍:
 ;^9779134B67DD9400=Frequency of primary beat:
 ;^D858BC186B3FE51D=Hz
 ;^A2D4EB52B7EE75E1=Beat click length:
-;/^B1CCE94B8ECDEB4A=ms, shape:	; ちなみに形状のドロップダウンリストが化ける
+;^B1CCE94B8ECDEB4A=ms, shape:
 ;^D840E3186B2B9581=OK
 ;^F09E4B5C35AA14B9=Cancel
 ;^D7323C887B0A2951=Apply
@@ -1631,9 +1631,9 @@ BC44E5DF05AB42DE=選択した録音を改名 (&N)
 ;^D9B12705AD844C62=List1
 ;^E99EBA7FF6970DBB=...
 
-[DLG_132] ; IDD_FXADD
+[DLG_132] ; IDD_FXADD	; OKは&Oでオプションを開けるようにするもの（OKする手段は他にもあるので）
 80D9B10D4633D016=新規エフェクトを追加
-;/^5AEDD7C14E3CAEC2=Clear filter	; 下のOKは&Oでオプションを開けるようにするもの（OKする手段は他にもあるので）
+;^5AEDD7C14E3CAEC2=Clear filter
 D840E3186B2B9581=OK
 ;^F09E4B5C35AA14B9=Cancel
 ;^F19F199E8BEFFBD6=Tree1
@@ -1861,13 +1861,13 @@ D95776186C182E28=→
 A4F5378A569069D6=有効にする MIDI 入力 (トラック入力や、MIDI ラーン・MIDI バインド に利用できます):
 2067FD051A93CC68=有効にする MIDI 出力 (トラック出力に利用できます):
 D5D0203E4FFCD927=MIDI ハードウェア設定
-;/751EA016639ED40A=オールノートオフ	; 訳したのにオフにしてあるのは、レイアウト崩れて見づらくなるやつ
+;/751EA016639ED40A=オールノートオフ	;; レイアウト崩れて見づらくなるやつを一部オフ
 ;/E16CBE842A37B395=ピッチ/サスティン
 ;/B7CB4986C15E8D4B=リセット対象:
 AF3AC146DC0BBCFA=MIDI デバイスの出力を1スレッドに制限
 ;/9EC74E86B379FB1B=リセット:
 ;/82AB49B39099AD8F=停止/停止シーク時
-;/^D9B12705AD844C62=List1	; 下のはアクションの原文併記との兼ね合い、その下のPlayは「再生時」としたい
+;/^D9B12705AD844C62=List1	; 下のはアクションの原文併記との兼ね合い	;; その下のPlayは「再生時」としたい
 F8E6A0B81A77C5E9=全ての MIDI デバイスをリセット
 3D9CBC3C216900AD=Play
 
@@ -2045,7 +2045,7 @@ AF239E1DB5AA0E08=トランジェント検出
 8EB832E42FDC2501=アイテム端部もトランジェントと見なす
 2EB90B46315D20B6=リップル編集時のロックしたアイテムの挙動:
 E11DAEF2BBEB112C=デュアルトリム (隣接メディアアイテムの端を同時編集) は両方のアイテムを選択している時のみ有効化
-;/32B5CB1F9A8B8705=Crossfades stay together during fade edits when trim content behind media items is enabled	; わかんね
+32B5CB1F9A8B8705=「編集時に後ろに隠れたアイテムをトリム」有効時、フェード編集でクロスフェードを分離しない
 AA5A7A99565E6043=アイテムを最終トラックより下へドラッグして引き返した時にできる空トラックを自動削除
 93565C719250C592=アクティブなテイクのソース内開始位置をドラッグで変更する際、全てのテイクを同時に変更
 6F6DCD0B40734C2E=アイテム無選択時、分割/トリム/削除アクションを編集カーソル位置の全アイテムに適用
@@ -2352,9 +2352,9 @@ BED87C6BBD50429C=VST 互換性
 EF9F2D3E3EEF2505=停止時/リセット時、ノートオフやピッチリセットを送らない
 F27EE9EB697AD546=オフラインレンダリングをプラグインに認識させない
 EB5AD63A75E962D6=プラグインの設定立ち上げ中は音声をバイパス (マルチスレッド処理に弱い一部の VST に有効です)
-9AFB50287E6BE13A=UAD-1 同期モード (CPU の過剰使用を抑制します) - 先読みエフェクトは切ってください
+9AFB50287E6BE13A=UAD-1 同期モード (CPU の過剰使用を抑制します) - エフェクト先読みは切ってください
 D7D5E6EF54BF3AAB=VST プラグインの完全なアンロードを許可 (メモリが抑えられますが、互換性を損ないます)
-;/40D2555271B4D0B9=Parameter automation notifications:	; わかんね
+;/40D2555271B4D0B9=Parameter automation notifications:	;; わかんね
 ;^1EB556E18D613E28=Add...
 
 [DLG_212] ; IDD_PREFS_PROJECT
@@ -2427,7 +2427,7 @@ CA9C1310AB187A28=ペン/タブレット向けモードを使用――ノブ類�
 7D6A1B1C34FD2DF7=トラックのフェーダやボタンのクリックでトラック選択も行う
 C44BB15953492B98=シングルクリックでトラック名を編集 (オフの場合はダブルクリック)
 E8F0E5E4C7A0A2C2=トラックビューでのマウスのクリックや編集でトラック選択も行う
-;/64FE2B8ECAA52740=Mouse click below the last track clears media item selection	; わかんね
+;/64FE2B8ECAA52740=Mouse click below the last track clears media item selection	;; わかんね
 786D3AC0B4425067=アイテム上にある時間選択の端部も操作できるようにする
 3B09283710A74EBA=時間軸の下端をドラッグしても高さを変更できるようにする (オフの場合はツールバー下部)
 9F1222D13FC35BE2=\"Control+左クリック\" で右クリックをエミュレート (Control キーが他操作に使えなくなります)
@@ -2470,7 +2470,7 @@ ADAB85F9EE55B656=水平スクロールを反転
 ;^CA95C3C55E05662B=Reverse
 ;^D8B3B3186B8C817F=ms
 
-[DLG_221] ; IDD_PREFS_KBDFIND	; 「キャンセル (&C)」だとAlt+Cが検索できねえ
+[DLG_221] ; IDD_PREFS_KBDFIND	; 「キャンセル (&C)」だとAlt+Cが検索できないのでアクセスキー回避
 F433E22A84FF458F=キーまたは MIDI コントローラを検索
 F09E4B5C35AA14B9=キャンセル
 
@@ -2660,10 +2660,10 @@ FBA75D9853D48260=再生時にプリロール (&K)
 ;^B1CCE94B8ECDEB4A=ms, shape:
 ;^B420EF3AC9B07180=Pre-roll
 
-[DLG_239] ; IDD_VKEY
+[DLG_239] ; IDD_VKEY	; 仮想～はアクセスキー除去
 C66260A5E9840B6E=中心音 (右クリックで設定):
 D43F8897F4277454=オクターブやチャンネルをキー入力で変更
-;^3D9702905AC5B44C=Virtual MIDI keyboard
+3D9702905AC5B44C=仮想 MIDI 鍵盤
 ;^0B61CC7E6E2E017D=MIDI channel:
 
 [DLG_240] ; IDD_BIGCLOCK
@@ -2936,16 +2936,16 @@ F39EB4BC3304012B=注意: 必ずしも全ての色や画像が表示されると�
 EE0709F54123ED0E=新規プロジェクトタブで開く (&T)
 ;^E705DACA1F54B88B=Open with FX offline (recovery mode)
 
-[DLG_274] ; IDD_ACTIONS
+[DLG_274] ; IDD_ACTIONS	; 絞込と読込はスペース節約、アクションはアクセスキー除去、閉じるは問い合わせによると[actiondialog]の方に移った
 8D383ACD6EFAFF8C=ショートカット (&S)...
 5B1607D15C3F39A8=選択アクションのショートカット
 4D42318DB608C2E0=ReaScript:
 4BF8DB60DE29BA6D=インポート/エクスポート (&P)...
 4E4772D7297224CD=メニューエディタ (&M)...
-;^744B2F6CFBA0A242=Actions
+744B2F6CFBA0A242=アクション
 ;^87DB547E0C57B4B8=Run
-;/^3F0C4A774B49AF33=Run/close	; 下のはアクセスキー重複回避やスペース節約のため
-BAC64C1B2E060EE5=閉じる (&X)
+;^3F0C4A774B49AF33=Run/close
+;/^BAC64C1B2E060EE5=Close
 D43B88702E996ED9=絞込(&F):
 ;^F10F4B1B4D6DC250=Clear
 3A39C76003695360=分類:
@@ -2997,7 +2997,7 @@ D56E84CC78F5A6D3=開ゲート
 3C9E457152A390EC=分割を減らす:
 ABC4A8F33CBAC511=要素の最小長さ:
 8A4F022AED293868=無音の最小長さ:
-;/C10260CAB400E860=Constrain slice length:	; わかんね
+;/C10260CAB400E860=Constrain slice length:	;; わかんね
 ;/88E8162102A028F5=Left to right
 ;/1BAE0A2B4119A549=Best to worst
 7A610788A4C23F18=ゲート
@@ -3100,13 +3100,13 @@ B599690138EA264A=マーカー (&M)
 ;^F09E4B5C35AA14B9=Cancel
 5CA1E00000000000=1.2
 
-[DLG_286] ; IDD_ITEMNOTES	; アイテムメモ
+[DLG_286] ; IDD_ITEMNOTES	; アイテムメモ。読み込みはスペース節約のため
 4FCBE096B4C5B9B5=アイテムメモ
 6C8E4558335588CC=除去 (&U)
 E5D0C4A642704E1F=アイテム背景に使用 (&B)
 F4C36821D01C71C1=アイテムに合わせて伸縮 (&S)
 386EB65EE2979317=読込 (&L)
-;/^D840E3186B2B9581=OK	; 上の読み込みは省スペースのため
+;^D840E3186B2B9581=OK
 ;^F09E4B5C35AA14B9=Cancel
 ;^6B921CBA018B2EE0=No additional resource loaded
 
@@ -3194,12 +3194,12 @@ A1DA648A31BBB60E=デフォルトのエフェクトラーン割り当て設定は
 
 [DLG_425] ; IDD_MIDIIN_CONFIG
 C0253B595D267AC2=MIDI 入力の詳細設定
-271F89F0F16A09EA=このデバイスからの入力を有効化
-;/097D2F9B6F6EBFEC=上級者向け MIDI イベント・タイムスタンプオプション	; letの訳に困ってる
-;/441316D58AD8BC8C=REAPER タイムスタンプイベントに合わせる (デフォルト)
+271F89F0F16A09EA=このデバイスからの入力を有効化 (&E)
+;/097D2F9B6F6EBFEC=MIDI イベント・タイムスタンプの上級者向けオプション	;; letの訳に困ってる。Let REAPER～を選べということなのか、
+;/441316D58AD8BC8C=REAPER のタイムスタンプイベントに合わせる (デフォルト)
 ;/925A502D9C92733D=高精度システムタイムスタンプ (QPC)
 ;/F8A4D705CF6C9C1E=低精度システムタイムスタンプ (TGT)
-;/D0B425DFCB932550=タイムスタンプ精度はこの MIDI 入力デバイスのドライバと一致している必要があります。ドライバの精度が不明な場合、REAPER タイムスタンプ MIDI イベントにIf the driver precision is unknown, let REAPER timestamp MIDI events.
+;/D0B425DFCB932550=タイムスタンプ精度はこの MIDI 入力デバイスのドライバと一致している必要があります。ドライバの精度が不明な場合、REAPER のタイムスタンプ MIDI イベントにIf the driver precision is unknown, let REAPER timestamp MIDI events.
 ;^84225D657EA873E2=Device name:
 ;^4F32BF040299F0AA=Enable input for control messages
 ;^D840E3186B2B9581=OK
@@ -3378,14 +3378,14 @@ CDD7AC65A6AE255A=テンポが埋め込まれたメディア
 ;^D840E3186B2B9581=OK
 ;^7DA8EA3426CA11D3=Description
 
-[DLG_456] ; IDD_PROJBAY
-;8971AAB24A6A9D51=Bay:
+[DLG_456] ; IDD_PROJBAY	; 音量はスペースの都合
+8971AAB24A6A9D51=ベイ:
 ;^397E19C8F7486840=Project Bay
 ;^D43B88702E996ED9=Filter:
 ;^F10F4B1B4D6DC250=Clear
 ;^C065E9FEE11B2862=(current project)
 ;^925B2CEB12D2D978=Save...
-;^B23C47F019452299=Volume:
+B23C47F019452299=音量:
 ;^6D0FDC8D1C9C5504=+0.0 dB
 ;^744B2F6CFBA0A242=Actions
 ;^5493EE7052DCF71B=Options
@@ -3491,8 +3491,8 @@ D9B12505AD8448FC=リスト3
 C64D048E7E806999=ラベルをアイテム上部に描画している場合、ラベル領域をトラックの空白部として扱う
 1E0ED16659199589=CC レーン上のイベントをシングルクリックで選択できるようにする
 EF47D7DCDE3A3FA9=手のひらスクロール時の水平ズームの挙動を逆転させる
-;/5ACE749F82E122A4=Edits affect all pooled automation items at the same time position	; わかんね
-;/E02DEE53682EC25E=Disable targeting bottom part of media item when take lane height is less than:	; わかんね
+;/5ACE749F82E122A4=Edits affect all pooled automation items at the same time position	;; わかんね
+;/E02DEE53682EC25E=Disable targeting bottom part of media item when take lane height is less than:	;; わかんね
 ;^10EC54E7BB0B3282=pixels
 
 [DLG_467] ; IDD_NUDGE
@@ -3845,7 +3845,7 @@ C65F09ACEF24DD8C=テンポ変更時、再生位置をプロジェクトの時間
 DBF401A9BD4D596C=移動前に、あと
 65B6AB250B9129D2=小節再生
 BD2850523C80580D=移動する前に、次のマーカーか、現リージョンの終端か、次リージョンの始端まで再生
-;/^C4683AE4B6D13F0E=Pre-roll:	; 見切れるけど直接「プリロール:」としても変わらず
+;/^C4683AE4B6D13F0E=Pre-roll:	;; 見切れてる。というか英語版の時点でギリギリ
 ;^D8B3B3186B8C817F=ms
 
 [DLG_518] ; IDD_PREFS_REC_LOOP
@@ -3861,7 +3861,7 @@ C5B9E0F7E2858D5B=ループ毎に区切られたファイルで生成
 
 [DLG_519] ; IDD_PREFS_AUTOMATION
 2774BF0E396FA6EA=オートメーション記録時の元値復帰早さ:
-;/6A77E58CC1DB4B89=Action transition time:	; わかんね
+;/6A77E58CC1DB4B89=Action transition time:	;; わかんね
 F3407898EA587963=Touch、Latch、Write モードの時にパラメータを編集したら自動的にエンベロープを追加
 A034ABCC948D1990=非表示のエンベロープ: 
 0C24BC2FF418AD7F=Read フィードバックを表示に反映
@@ -3900,7 +3900,7 @@ DB4864FF3845A968=プロジェクトの時間基準
 ;^F09E4B5C35AA14B9=Cancel
 ;^CC14188D4AC6BB5D=Project settings...
 
-[DLG_522] ; IDD_FADE_EDITOR
+[DLG_522] ; IDD_FADE_EDITOR	; 下のはアクセスキー除去
 1B0AB5E5F92D1576=プリセット (&P):
 8EE7B60239AC1752=[変更済み]
 42BC00DE6468EDE4=均等ゲイン/パワー (&Q):
@@ -3911,7 +3911,7 @@ B5E5B9D3F6D35EC1=中身:
 3E01EAEA1E369534=右側フェードイン
 8A64326DA4A40846=同一/対称
 13134E400E0D5210=単位 (&U):
-;/6D0C1449A649A0A5=同グループにも適用 (&G)	; 表示崩れのためオフ
+;/6D0C1449A649A0A5=同グループにも適用 (&G)	;; 表示崩れのためオフ
 BD905C6075B9BC76=オーディション (&A):
 7D931F4627B60907=ポストロール (&O):
 C5F1D4D927E83FE6=左側をミュート (&L)
@@ -3922,7 +3922,7 @@ B701095B99D9C8B1=リップル編集 (&I)
 011BD24D18CA513E=次 (&N)
 9354CE4B6A8F54A0=0 個のクロスフェードを編集しています
 ;^DDFC41E99D604844=Crossfade Editor
-;/^08329D07B4EB939C=+	; 下のはアクセスキー避け
+;^08329D07B4EB939C=+
 6D27CBDC5943D7B6=形状:
 ;^155268E8DDFB481C=Curve:
 ;^61B7599A40AF0062=End:
@@ -5630,7 +5630,7 @@ FD95107AE618F7DA=ナビゲーターウィンドウをドッキング (&D)
 ;^146E11E319517217=Dock FX browser in Docker
 ;^BAC64C1B2E060EE5=Close
 
-[MENU_320] ; IDR_CONTEXTS_20	; どこ？？
+[MENU_320] ; IDR_CONTEXTS_20	;; どこ？？
 ;6146582A0F24752B=20KbdPrefsCtx
 B59556C0AD066CFA=検索...
 ;^F70C14BE35114F9B=New...
@@ -5660,15 +5660,15 @@ B99E3955E3A3AAAD=&100%
 
 [MENU_322] ; IDR_CONTEXTS_22
 ;7E02CFB8966DECE8=22MidiPrefs
-F09282AB2265717E=入力の詳細設定...\t(ダブルクリック)
-6786B0C60EFD69C5=入力の詳細設定...
-1D543734374ACE0C=入力を有効化
-0E5C993D86877C8B=出力の詳細設定...\t(ダブルクリック)
-1E683F71A896913C=出力の詳細設定...
-A9344E96F9B31CB5=出力を有効化
-420833D46E8B25F9=出力にクロックを送信
-77B5751763B344FC=出力に SPP を送信しない
-477300E83FE78CB0=低レイテンシー出力モード (低精度)
+F09282AB2265717E=入力の詳細設定 (&I)...\t(ダブルクリック)
+6786B0C60EFD69C5=入力の詳細設定 (&I)...
+1D543734374ACE0C=入力を有効化 (&E)
+0E5C993D86877C8B=出力の詳細設定 (&O)...\t(ダブルクリック)
+1E683F71A896913C=出力の詳細設定 (&O)...
+A9344E96F9B31CB5=出力を有効化 (&E)
+420833D46E8B25F9=出力にクロックを送信 (&C)
+77B5751763B344FC=出力に SPP を送信しない (&N)
+477300E83FE78CB0=低レイテンシー出力モード (低精度) (&L)
 EB5E8375C34F1C4B=ジョイスティック入力
 CCAAFAE3CB594CFC=ジョイスティック定義を編集
 D9BD69B4051BEF73=ジョイスティックを削除
@@ -5955,7 +5955,7 @@ EB446AE89713DE5E=グループアイテムを選ぶとそのグループを選ぶ
 ;05FFC47CCDC762D6=Filter on
 ;09C7826FFD7FA297=Clear bay when changing projects
 ;3A2E7041ACAA88DC=Automatically retain media items when removed from project
-;848DD5C419E4EDA4=Dock Project Bay in Docker
+848DD5C419E4EDA4=プロジェクトベイをドッキング (&D)
 ;^DCEF2B4D03DE723C=Name
 ;^9F31623C59553158=Path
 ;^09A01E8714A0B688=Comment
@@ -5985,8 +5985,8 @@ F86DA01979DBF767=選択アクションのコマンド ID をコピー (&C)
 
 [MENU_347] ; IDR_CONTEXTS_47
 ;1F8AB71E475E4064=47_ItemPropsDlgCtx
-;3D3F09D279B09D88=Apply changes after 2 seconds of inactivity
-;955759B7BDB8B435=Dock Item Properties window in Docker
+3D3F09D279B09D88=変更を 2 秒後に自動適用 (&A)
+955759B7BDB8B435=アイテムプロパティウィンドウをドッキング (&D)
 ;^82EE5475CB6FCE9F=Close window
 
 [MENU_348] ; IDR_CONTEXTS_48
@@ -6240,119 +6240,119 @@ E347F43935F8D866=ライセンスと利用規約
 C6013D59706F3AEB=更新履歴
 756B500741E261D4=ライセンスキーをインポート...
 
-[accel_sec]
+[accel_sec]	; 下のはアクセスキー除去
 F112CE558C181981=メイン (録音時専用)
 0F129C59135A1F8E=メイン
 7DAA9DD94200C2E3=MIDI イベントリストエディタ
 6A5D37D2C8B9C8B0=MIDI インラインエディタ
-;/^271D7187C80C7F43=MIDI Editor	; 下のはアクセスキー回避
+;^271D7187C80C7F43=MIDI Editor
 2D64A463B95C3074=メディアエクスプローラ
 
-[access]
+[access]	; たぶんアクセシビリティ
 B22FA7BBB4DD7E48=パラメータの値を選択
 A0C164A6C7D027F7=パラメータの値のフェーダを選択
 079B788289228703=パラメータの値
 162FD84975BC4CE1=パラメータ名
 867BE45A06BB40B5=音量フェーダ
 638F46E6F7B79ADA=パンフェーダ
-D1316306EBB2E438=MIDI 音量/パン
+D1316306EBB2E438=MIDIの音量やパン
 D819B1DFEE12DD2C=エンベロープとオートメーション
-;C31A803549906103=Phase/polarity
+C31A803549906103=位相や極性
 079205866C162CD8=出力先の音声チャンネル
-64AB50E4099E33AC=ソースの MIDI チャンネル
-1C093EB282A5A3A5=出力先の MIDI チャンネル
+64AB50E4099E33AC=ソースのMIDIチャンネル
+1C093EB282A5A3A5=出力先のMIDIチャンネル
 5B4707EAEAE603E3=ソースの音声チャンネル
 1D03CA1E4D643DE3=センドのタイプ
-;8206D9A0D6D50680=Track Volume Fader
-;B8E26B0803116576=Track Pan Fader Left
-;EA6E10ED462A56CB=Track Pan Fader Right
-;96B68DBE97436D05=Track Pan Fader
-;CAAA4A7E38A1A222=Track Width Fader
-;0CF923E645379EDE=Minimum slice length in milliseconds
-;74CEFC0C49E0F767=Minimum silent time in milliseconds between slices
-;4EF3AC39BDF172AB=Gate threshold
-;E8B76ED341FC4617=Gate hysteresis
-;1C2DBC366D4F7335=Limit number of splits
-;7F1C5CF166138E7E=Parameter modulation baseline value
-;0E565CDD74732983=LFO strength
-;940B1542A30DFFC9=LFO phase
-;E02789C655DF8DC3=Audio control signal strength
-;ED5C5972E3E33EF5=LFO speed
-;23DE0EF034DBD46B=Audio control signal attack time
-;F48BA3608C2041F0=Audio control signal release time
-;4719335513E17AF4=Audio control signal minimum volume
-;0AE35C2D4B4A71EE=Audio control signal maximum volume
-;A15D38C6B92A489F=Parameter link strength
-;8ED8012A66491531=Parameter link offset
-;3394E0F3D24F1736=Bezier tension
+8206D9A0D6D50680=トラックの音量フェーダ
+B8E26B0803116576=トラックのパンフェーダ左
+EA6E10ED462A56CB=トラックのパンフェーダ右
+96B68DBE97436D05=トラックのパンフェーダ
+CAAA4A7E38A1A222=トラックのパン幅フェーダ
+0CF923E645379EDE=分割要素の最小長さをミリ秒数で
+74CEFC0C49E0F767=分割要素間の無音時間の最小長さをミリ秒数で
+4EF3AC39BDF172AB=ゲートのスレッショルド
+E8B76ED341FC4617=ゲートのヒステリシス
+1C2DBC366D4F7335=分割数を制限
+7F1C5CF166138E7E=パラメータモジュレーションの基準値
+0E565CDD74732983=LFOの影響度
+940B1542A30DFFC9=LFOの位相
+E02789C655DF8DC3=音声信号制御の影響度
+ED5C5972E3E33EF5=LFOの速さ
+23DE0EF034DBD46B=音声信号制御のアタックタイム
+F48BA3608C2041F0=音声信号制御のリリースタイム
+4719335513E17AF4=音声信号制御の最小音量値
+0AE35C2D4B4A71EE=音声信号制御の最大音量値
+A15D38C6B92A489F=パラメータリンクの影響度
+8ED8012A66491531=パラメータリンクのオフセット
+3394E0F3D24F1736=ベジエ張力
 ECF48DC3C654D972=エンベロープ名
 6FC963E746256797=エンベロープフェーダ
 3A9ADC9DA69E3D44=パラメータをラーン
-;69C62C24273AD0D0=Number of envelope points
-;7CB4F79A1C4F648A=Media Explorer Volume Fader
-;9FE75CFAAEEA191D=Hardware outputs
-;937125681D148DE0=Parent directory
+69C62C24273AD0D0=エンベロープポイントの数
+7CB4F79A1C4F648A=メディアエクスプローラの音量フェーダ
+9FE75CFAAEEA191D=ハードウェア出力
+937125681D148DE0=親ディレクトリ
 ;2E1803974E3A251A=Navigate backwards
-;29D0BC977088CE82=Take Volume Fader
-;3BB755C29803FDFF=Take Pan Fader
-;A0A8EBD185C40319=Swing amount
-;909B66F92EBD902B=Go to end
-;0FB9B9AECC2E743E=Go to start
-;425A837E28E11B38=Timing humanization
-;5F66DAD3BCEC4E87=Velocity humanization
-;5D8093B371E4A572=Timing bias
-;1F2866F01C43A259=Quantize strength
-;9BA645D11046F68B=Quantize swing strength
+29D0BC977088CE82=テイクの音量フェーダ
+3BB755C29803FDFF=テイクのパンフェーダ
+A0A8EBD185C40319=スウィング量
+909B66F92EBD902B=終わりに移動
+0FB9B9AECC2E743E=始まりに移動
+425A837E28E11B38=タイミングのヒューマナイズ
+5F66DAD3BCEC4E87=ベロシティのヒューマナイズ
+5D8093B371E4A572=タイミングのバイアス
+1F2866F01C43A259=クオンタイズの影響度
+9BA645D11046F68B=クオンタイズのスウィング影響度
 ;960C43C5B8715A61=Quantize low end of range
 ;3304B185AF8CF75F=Quantize high end of range
-;F20FDBD936862FB1=Minimum note length
-;C541800DA99F5FC1=Metronome Primary Beat Volume Fader
-;FA8C7088F3DF0F8D=Metronome Secondary Beat Volume Fader
+F20FDBD936862FB1=最小ノート長さ
+C541800DA99F5FC1=メトロノームの強拍の音量フェーダ
+FA8C7088F3DF0F8D=メトロノームの弱拍の音量フェーダ
 ;CE5584178795CA39=Quantize Strength
 ;584FFF3D1CCFDCB2=Low End of Range
 ;EAC17254C0E6570E=High End of Range
-;BDBB78010BEB1808=Transient sensitivity
-;944228561E280534=Transient threshold
-;C3449D100A418FE1=Primary beat volume
-;AE166C9E5312232D=Secondary beat volume
+BDBB78010BEB1808=トランジェントの感度
+944228561E280534=トランジェントのスレッショルド
+C3449D100A418FE1=強拍の音量
+AE166C9E5312232D=弱拍の音量
 ;C8B367B5542B2A26=Screensets
 B6E1FE53ECA156DA=エフェクトリスト
-;2A19AFC7E3012A13=Effect parameter list
-;439F0F145885FC7B=Sends and hardware outputs
-;0F1074F2FAA2DE03=on master track
+2A19AFC7E3012A13=エフェクトパラメータリスト
+439F0F145885FC7B=センドとハードウェア出力
+;/0F1074F2FAA2DE03=on master track	;; 語順…。でもアクセシビリティだから確認不能
 ;5F987D517BBE6A5D=on Track
-;56F7F00B066C698D=Width fader
-;FED483E64DE023CB=Effects
-;4CB4B88CCA7BB5C9=Effects bypass
-;569C5EC811B0E082=Track phase/polarity
-;2F7A3428D0D5D162=Folder compact
-;805FA5E4D9F5B1C4=Record monitor
-;7A478F10E2F26AA9=Record mode
+56F7F00B066C698D=パン幅フェーダ
+FED483E64DE023CB=エフェクト
+4CB4B88CCA7BB5C9=エフェクトのバイパス
+569C5EC811B0E082=トラックの位相や極性
+2F7A3428D0D5D162=フォルダの折り畳み
+;/805FA5E4D9F5B1C4=Record monitor	;; Record monitoringとの違いが不明
+7A478F10E2F26AA9=録音モード
 ;005EBAAE989E6886=Record input
-;9539AC11B16E4AFC=Track input effects
+9539AC11B16E4AFC=トラックの入力エフェクト
 ;167931C280274720=Master Mono
-;8478D30844F5A2CE=Effect parameters
-;D6CFE702FAAA73E3=Mixer menu
+8478D30844F5A2CE=エフェクトパラメータ
+D6CFE702FAAA73E3=ミキサーメニュー
 B61E6643CE61DA4C=エンベロープとオートメーション
 ;A9B8AF9963724A14=Record monitoring
-;466B63D9B05EE293=Input effects
-;48DF0C4710156F27=Reset track phase/polarity
-;D7D7813A12316614=Invert track phase/polarity
-;0FEAC492424571DA=Unmute track
-;2412196B9E8B23D1=Mute track
-;C1759E82862913E4=Unsolo track
-;E865450444B46E8A=Unmute master track
-;F0E8BA5473B39A27=Mute master track
-;A450342E6EFE51C8=Unsolo master track
-;A30CB28F6A402BE9=Solo master track
-;473D8296A5FDA495=Set master track to stereo
-;7193715148CFC082=Set master track to mono
-;75E0F85E2EE923A8=Record arm disable
-;E2C9C79F6B65C29B=Record arm enable
-;20696925A8416535=tap tempo button
-;1C9701F6A4AD516D=current BPM
-;35407B791C3D007F=current time signature
-;35E640A4A2ACE91B=Playrate fader
+466B63D9B05EE293=入力エフェクト
+48DF0C4710156F27=トラックの位相や極性をリセット
+D7D7813A12316614=トラックの位相や極性を反転
+0FEAC492424571DA=トラックのミュートを解除
+2412196B9E8B23D1=トラックをミュート
+C1759E82862913E4=トラックのソロを解除
+E865450444B46E8A=マスタートラックのミュートを解除
+F0E8BA5473B39A27=マスタートラックをミュート
+A450342E6EFE51C8=マスタートラックのソロを解除
+A30CB28F6A402BE9=マスタートラックをソロ
+473D8296A5FDA495=マスタートラックをステレオに設定
+7193715148CFC082=マスタートラックをモノラルに設定
+75E0F85E2EE923A8=録音待機を解除
+E2C9C79F6B65C29B=録音待機
+20696925A8416535=タップしてテンポ設定
+1C9701F6A4AD516D=現在のBPM
+35407B791C3D007F=現在の拍子
+35E640A4A2ACE91B=再生速度フェーダ
 ;^FA08A03DC81EC720=Plug-in name
 ;^8FC86C263760ACB9=Volume
 ;^96E5C67E1437194E=Pan
@@ -6383,7 +6383,7 @@ B61E6643CE61DA4C=エンベロープとオートメーション
 ;^D4FDE496446E78EF=Playrate
 ;^FC55E4C505C541DE=Parameter
 
-[actiondialog]
+[actiondialog]	; 選択と閉じるはアクセスキー重複回避のため
 38A196CB11DA0146=ここにアクションをドラッグしてください...
 A561B455F5DE58BB=他のアクションに使われているキーです:
 343573884A47DD66=上書きしますか？
@@ -6395,11 +6395,11 @@ E4850748DBD946C8=カスタムアクションを作成
 ;^514129849A113DA0=(unknown)
 ;^6037A596D672320D=Shortcut
 ;^7DA8EA3426CA11D3=Description
-;^20AFB48FFE418F4F=Select
+20AFB48FFE418F4F=選択 (&T)
 ;^F09E4B5C35AA14B9=Cancel
 ;^87DB547E0C57B4B8=Run
 ;^3F0C4A774B49AF33=Run/close
-;^BAC64C1B2E060EE5=Close
+BAC64C1B2E060EE5=閉じる (&X)
 ;^B762E77EB85D7B6C=off
 ;^D8ADC6186B88361A=on
 ;^744B2F6CFBA0A242=Actions
@@ -8048,7 +8048,7 @@ F76DD04A785D875C=前のプロジェクトタブ @@ Previous project tab
 ;1096DB15F7D5884D= @@ ReaScript: Run/edit last ReaScript (EEL, Lua, or Python)
 ;92F7AD4975DF3DB3= @@ ReaScript: Run/edit last ReaScript (EEL or Lua)
 ;108C6B5D2F6D3897= @@ Video: Show/hide Video window
-;/^1A236FDD7E5FF32C=Custom
+;^1A236FDD7E5FF32C=Custom
 ;/^FDFF2C38C037D04E=No-op (no action)	; @@済
 385A68019D9A9A61=新規プロジェクトタブ @@ New project tab
 3460E53D021E70FE=現在のプロジェクト以外全て閉じる @@ Close all projects but current
@@ -8418,7 +8418,7 @@ BC15D33B8E7A1967= / 削除: %d 個のファイル
 ;^9EC3E20500624AAF=Error
 ;^2F799723962762C7=Stop
 
-[cpumeter]
+[cpumeter]	; トラックはアクセスキー除去
 AC9CE5BD66CC273B=モニタリング FX
 ;1B23661F1BBB9A19=%sCPU: %.1lf%%\n
 ;93279AF94ECAFA8D=RT CPU: %.1lf%%\n
@@ -8435,10 +8435,10 @@ FC19414CC54B044B=システム%s: %uMB/%uMB\r\n\r\n
 36A965ABAC0E2CF3=パフォーマンス
 953C6D46CA27A548=CPU 使用率
 0F2A70052EBB526C=レイテンシ: %.0fms
-;/4CF6043E6041E61E=現在値/平均値: 	; この2つは化けるのでオフ
-;/01FDED75265EB99E=振れ幅: 
+4CF6043E6041E61E=現在値/平均値:
+01FDED75265EB99E=振れ幅: 
 ;^E53622684802B745=Master
-;^D0C04B9E79D271AE=Track
+D0C04B9E79D271AE=トラック
 ;^EE1268CA4B845A22=# FX
 9747AB7E1489B5C8=レイテンシ補償
 ;^43855E7B817F2992=ReaMote
@@ -8591,9 +8591,9 @@ CA75087D62903387=選択アイテムに伸縮マーカーを書き込み (グル�
 BE0AAD79340CB0B6=閉ゲート音量: 
 5AA85530749D1CB0=開ゲート音量: 
 
-[dx]
+[dx]	;; 化け未解決
 ;B2752BD2D1A63C8E=Scanning DX plug-in: 
-;/A6373A10EB021B50=Scanning 	; 下のは化け防止
+;A6373A10EB021B50=Scanning
 274E7C84B3E58DB8=Reset to factory default
 0EC28D42C155A657=----  User Presets (.rpl)  ----
 93244D3BB94E6F33=No preset
@@ -8673,7 +8673,7 @@ E81A578EDE83B19C=Trim/Read (デフォルト、フェーダを記録しない) (&
 ;^7C92092A41B00EDC=Latch (record fader movements after first movement)
 ;^EC02F0F810FC7CDF=Latch Preview (allow adjusting parameters but do not apply to envelopes)
 
-[envname]	; 下4つはアクセスキー削除のため
+[envname]	; 下3つはアクセスキー除去
 C3E0C0E766B4F425=センドの音量
 984D1E61B8205D5A=センドのパン
 33B387658A238D22=センドのミュート
@@ -8682,7 +8682,7 @@ C3E0C0E766B4F425=センドの音量
 829EFC883EA4A099=音声ハードウェア出力: ミュート
 F956A6770719C64E=音量 (エフェクト前)
 67878F6B498F7713=パン (エフェクト前)
-C4BD3F12A35FA956=パンの幅 (エフェクト前)
+C4BD3F12A35FA956=パン幅 (エフェクト前)
 11AA619ABC3FD5D1=パン (右、エフェクト前)
 45948CCBB91E3CDF=パン (右)
 6572A9BA5BFF9C58=パン (左、エフェクト前)
@@ -8694,7 +8694,7 @@ E471A461788E4141=トラック%d
 8FC86C263760ACB9=音量
 96E5C67E1437194E=パン
 61946358B1034B76=ミュート
-8A3F14717826D8D1=パンの幅
+;^8A3F14717826D8D1=Width
 
 [epin]
 E015C3A2845BEBCA=ルーティングヘルプ
@@ -8749,12 +8749,12 @@ BB4AB6B66771B736=新規データベースを作成
 ;^0DBD7F7EE933458C=end
 ;^2D64A463B95C3074=Media Explorer
 
-[explorer_DLG_101] ; IDD_MAIN
+[explorer_DLG_101] ; IDD_MAIN	;; メディアエクスプローラはアクセスキー除去
 79BACE7E952719A0=音量
 C9773CE5D391B6EE=自動再生
 38E212B2E5D542C7=再生同期
 D7F1122F4DDE0EEB=シーク
-;^2D64A463B95C3074=Media Explorer
+2D64A463B95C3074=メディアエクスプローラ
 ;^6D0FDC8D1C9C5504=+0.0 dB
 ;^322690F7CBF0FD23=Pitch:
 5CA1E00000000000=1 1.2
@@ -9051,10 +9051,10 @@ C1BDF555F6EEBD1D=%d 個のクロスフェードを編集しています
 B46A8CE3DC715692=クロスフェードのプリセット
 ;^DDFC41E99D604844=Crossfade Editor
 ;^1616D990C579771C=seconds
-;/^268986373F235EF0=beats	; 下のは化け防止
-3BEB0AE437FA2F12=center
-1B262DDE53BE63B5=start
-0DBD7F7EE933458C=end
+;^268986373F235EF0=beats
+;^3BEB0AE437FA2F12=center
+;^1B262DDE53BE63B5=start
+;^0DBD7F7EE933458C=end
 ;^37E1C985732EDDC1=Save preset...
 ;^B814E3BFB72A607B=Delete preset
 
@@ -9313,7 +9313,7 @@ C5BB3E261FC3ACB9=%d 個の選択トラックのグループ制御
 ;^C92094118C504736=Rename Group
 ;^6208D6BE485CCB06=Group
 
-[grouping]
+[grouping]	;; マトリックスの「主」「従」アイコン（？）の化けは未解決
 08323207B4EADDCB=V
 92EB577EA331D805=ON
 3388257EA7711160=OFF
@@ -9323,8 +9323,8 @@ C5BB3E261FC3ACB9=%d 個の選択トラックのグループ制御
 0290B261F50F69E8=の従
 45BA669EFB95947A=のグループ:
 7E33A5817A3394B5=は対象外です:
-;/^08323507B4EAE2E4=従	; この2つは化けるので避難
-;/^08323B07B4EAED16=主
+;/08323507B4EAE2E4=従
+;/08323B07B4EAED16=主
 1EBBCAFED2D3BA25=主 ON
 ;^6208D6BE485CCB06=Group
 
@@ -9577,11 +9577,11 @@ C6E94E5DE48F0F51=コンパイルエラー:
 ;^386EB65EE2979317=Load
 
 [jsfx_DLG_114] ; IDD_JSDEBUG
-;41489135006FED08=JS Development Environment
-;0650ABC07DC1D288=Full recompile/reset
-;F7C1F3827A407A86=Refresh now
-;5C6441D5492E93B6=Auto-refresh
-;124D08E0043A0E1A=Open in external editor
+41489135006FED08=JS 開発環境
+0650ABC07DC1D288=再コンパイル/リセット (&S)
+F7C1F3827A407A86=表示を更新 (&N)
+5C6441D5492E93B6=自動更新 (&A)
+124D08E0043A0E1A=外部エディタで開く (&O)
 ;^D9B12705AD844C62=List1
 
 [jsfx_DLG_115] ; IDD_VST_CFG2
@@ -9626,14 +9626,14 @@ C6E94E5DE48F0F51=コンパイルエラー:
 ;^B38F0668237C09EC=Channel 15
 ;^B38F0968237C0F05=Channel 16
 
-[jsfx_ide]	; NameとValueは文字化け対策
-;BB07DD2F46B76299=Refs
+[jsfx_ide]
+BB07DD2F46B76299=参照
 848866D16FDA3957=エフェクト %s に外部から変更が加えられました。\r\n再読み込みしますか？
 FA5AC83F63EC2A5B=JS エフェクトを再読み込み
 D5B3CEB34955D699=閉じる前に、\r\n\r\n%s\r\n\r\nへの未保存の変更を保存しますか？
 2681A9306FB38F95=JS の変更を保存
-DCEF2B4D03DE723C=Name
-772CECA01AD73CB4=Value
+;^DCEF2B4D03DE723C=Name
+;^772CECA01AD73CB4=Value
 
 [knob]
 ;6F86B37E8EEF7BA9=wet
@@ -9662,7 +9662,7 @@ AF908AD98D533548=四角波
 0F39829489A7CAC9=リズムパターンを設定 (&M):
 ;AA1B9A3E6F206718=This time signature marker will force the previous measure to end at 
 ;FC309F77FF9569CE=but the marker itself will be positioned at 
-;/C7B4DAF847DAFE0C=Move time signature change to 	; 最後が "(位置)?" 固定なのでうまく訳せない
+;/C7B4DAF847DAFE0C=Move time signature change to 	;; 最後が "(位置)?" 固定なのでうまく訳せない
 71DEB1BBF89CA7A9=拍子マーカーの位置
 
 [mbox]
@@ -9916,11 +9916,11 @@ A5720ABF016C9AE6=アクティブな編集履歴の名前を変更 (&N)...
 56FF174E07D714CA=アイテムを開く: 
 3FD1B97D9477C0F2=アイテムのコピーを開く: 
 ;E2804B9BFBF48369= (recording)
-;60A4456384726C15=Load automation item:
+60A4456384726C15=オートメーションアイテムを読み込み:
 BE57C7BDBF518666=(ディスクにオートメーションアイテムがありません)
 1CE3691FE9CFD1BC=(プロジェクト履歴がありません)
 A78692BAD3D1D4CB=(プロジェクトテンプレートがありません)
-;645A76739154419C=Load track template:
+645A76739154419C=トラックテンプレートを読み込み:
 DDD8097069E82E24=(保存されたトラックテンプレートがありません)
 C67CF3952F9EA6B2=(選択アイテムがありません)
 7140A75D79E31461=(テイクがありません)
@@ -9934,7 +9934,7 @@ C67CF3952F9EA6B2=(選択アイテムがありません)
 924A9191988B5A83=ソロ (ルーティング無視) (&R)
 ;^D96196186C20B90D=: 
 ;^2430BBE52E3FC625=Comp %d
-;/^62C49C467C0C15D3=Load...	; どこ？？
+;/^62C49C467C0C15D3=Load...	;; どこ？？
 ;^A35385C769502F3F=Move up
 ;^E485FC63E796EFFA=Move down
 ;^5F8BE96FAB61772F=Custom actions:
@@ -10003,11 +10003,11 @@ C67CF3952F9EA6B2=(選択アイテムがありません)
 ;^BA0039FB59D95325=MASTER
 ;^4B1F235812EEE9D6=MUTE
 
-[metronome]	; ちなみにメトロノームソースのプロパティで波形選択肢が化ける
+[metronome]
 ;BF21C68D229566B5=<space>
 069C235C454CF6E9=. (ピリオド)
 2F90E3509B93D0B6=強=%c, 弱=%c, 三連=%c, 休=%s
-;/66C31BA5D527D8CB=パターンは	; 最後が"b."で終わる文なので日本語への当てはめが困難
+;/66C31BA5D527D8CB=パターンは	;; 最後が"b."で終わる文なので日本語への当てはめが困難
 ;/AA2CC191B64B730E=に強制されます。余りは切り捨てられ、空きは～～で埋められます。
 90C3CF77963D43DF=サイン波 - ソフト
 06F40FE0CBACEBB2=サイン波 - ハード
@@ -10023,7 +10023,7 @@ D296E073FBA420D9=ステレオ:
 ;^5D4FC446DED74611=Output Channel
 ;^2C078B30A2995EDB=ReaRoute Output
 
-[midi]
+[midi]	;; クオンタイズの「グリッド」の化けは未解決
 A18A57ED9326617F=MIDI カラーマップファイルを開く:
 394D5C4E34531167=レーンを非表示 (&H)
 C98CC625866DAF62=レーンをクリア (&C)
@@ -10034,7 +10034,7 @@ FDB578659538E420=カーソルの乗ったノートを選択
 010F8FEEC3B0CA7E=時間選択を削除 (&V)
 79D4BBF32121AE96=ループポイントを削除
 3547B294F721DD33=グリッド
-;/0E20B188F8964553=グリッド	; クオンタイズのメニューなどで化けが出る
+;/0E20B188F8964553=グリッド
 CDE08800BC2608FE=トラック名を変更
 845D09F2FB14692F=指示を編集
 CC3A754F05D6B4F9=コードを入力
@@ -10190,7 +10190,7 @@ ADBD5837DE3EE9CB=それより長いノートで、表示クオンタイズより
 15C0A2C717318977=表示のクオンタイズ設定について
 AEF753AB8D13173D=ReWire バス
 D0C04B9E79D271AE=Track
-;/^D722FAC57CDCD58A=%d media items	; 上のTrackは化け防止
+;/^D722FAC57CDCD58A=%d media items	;; 上のTrackは化け防止←これどこだっけ？
 ;^B817B56070E01709=<MIDI media item list>
 ;^D52782E5368E8EA1=Error writing to MIDI file
 ;^6D6F3C9161BBF878=Edit Lyric
@@ -10198,7 +10198,7 @@ D0C04B9E79D271AE=Track
 ;^D726E2A6E8466B26=Create new MIDI file:
 ;^5EF7E5C1AEA8878B=Load note names from file...
 ;^01DA63B41FEE389F=<no patch file loaded>
-;/^D3D2747652BD318E=All channels	; 下は省スペース化のため
+;/^D3D2747652BD318E=All channels	;; 下のは省スペース化のため←これどこだっけ？
 F3238895531F739E=チャンネル
 ;^90803304EBE7C40E=track
 ;^DD491F831B629F78=item
@@ -10249,7 +10249,7 @@ F3238895531F739E=チャンネル
 ;^E4DA54B8178F9F4F=Edit Sysex Event
 ;^361AF2206DE0E16A=bytes
 ;^2ADD7A879D22FA5C=Position
-;/^1E894CD06766E128=octaves	; 下のProjectは化け防止
+;/^1E894CD06766E128=octaves	;; 下のProjectは化け防止←これどこだっけ？
 A2BF58A6DFD853DC=Project
 ;^3D9702905AC5B44C=Virtual MIDI keyboard
 
@@ -10345,12 +10345,12 @@ F6B884BE6F5BDBB3=&Off ベロシティ:
 ;^12848776E53AAD00=Use + -* / for relative changes in any field.\r\nUse +1o2  to add 1 octave and 2 semitones.
 ;^D7323C887B0A2951=Apply
 
-[midi_DLG_124] ; IDD_EVTPROP	; このPitchは何だ？？
+[midi_DLG_124] ; IDD_EVTPROP	;; このPitchは何だ？？
 130CE035AD1318FE=イベントのプロパティ
 9CBA741ED68265FB=形式 (&T):
-;/029DFA9FB2B6AF07=っっっっっっっっっっっっっっっっっっっっっっっっ
+;/029DFA9FB2B6AF07=&Pitch:
 3AA68023268A3059=&Off 値:
-7F93CC1ADBCE5F9B=(ピッチ値)
+;7F93CC1ADBCE5F9B=(pitchval)
 ;^CEEE8377C1EF8C86=&Position:
 ;^E2071FAD9CE62FAB=&Length:
 ;^366298521A7B6338=&Channel:
@@ -11420,12 +11420,12 @@ AADEEC8374C0F104=編集: 音高カーソルを移動 - 最も近い A に @@ Edi
 E0D997608FAEDAC2=編集: 音高カーソルを移動 - 最も近い A#/Bb に @@ Edit: Move pitch cursor to nearest A#/Bb
 AADEEF8374C0F61D=編集: 音高カーソルを移動 - 最も近い B に @@ Edit: Move pitch cursor to nearest B
 F5723564ACAEB6FB=MIDI ノート名ファイルのメニューをマウスカーソル位置に表示 @@ Show menu of MIDI note name files at mouse cursor
-;/BB391CE045020C28= @@ Edit: Paste events into the active MIDI media item regardless of source MIDI media item	; わかんね
+;/BB391CE045020C28= @@ Edit: Paste events into the active MIDI media item regardless of source MIDI media item	;; わかんね
 ;/670DC9CD22CE7229= @@ Edit: Paste events preserving position in measure, into the active MIDI media item regardless of source MIDI media item
 210CB656F59E84C5=オプション: MIDI トラックリストにツールチップを表示 @@ Options: Show tooltips in MIDI track list
 FA6C92F02CDC3C65=オプション: MIDI トラックリストやメディアアイテムレーンでの選択を編集対象とリンク @@ Options: MIDI track list/media item lane selection is linked to editability
 162EBB9C08863A55=オプション: MIDI トラックリストやメディアアイテムレーンでの選択を表示対象とリンク @@ Options: MIDI track list/media item lane selection is linked to visibility
-;/6AA5061B6E53203F= @@ Options: Only MIDI items on the same track as the active item are editable	; わかんね
+;/6AA5061B6E53203F= @@ Options: Only MIDI items on the same track as the active item are editable	;; わかんね
 E9B49CE816504702=オプション: 楽譜表示では全てのアイテムを編集可能にする @@ Options: All media items are editable in notation view
 EC99064D457BE92B=オプション: 全てのトラックで CC イベントを描き入れ・編集 @@ Options: Draw and edit CC events on all tracks
 40D60E90E04EA418=オプション: 全てのトラックで CC イベントを編集 @@ Options: Edit CC events on all tracks
@@ -11437,7 +11437,7 @@ E6A12A5B608B9224=オプション: ベロシティレーンでは現在のグリ�
 CAE9C7D719C42445=オプション: トラックリストやメディアアイテムレーンをアレンジビューでの選択に追従させる @@ Options: Track list/media item lane follows selection changes in arrange view
 9AA50A191AA9D4BB=オプション: アクティブなメディアアイテムがアレンジビューで削除されたら MIDI エディタを閉じる @@ Options: Close MIDI editor when the active media item is deleted in the arrange view
 A4767523092FE120=オプション: トラックリストで表示するトラックを選ぶ @@ Options: Choose which tracks appear in track list
-;/7F132D3055C7BDE5= @@ Edit: Delete trailing notes of less than 1/8 note in length	; わかんね
+;/7F132D3055C7BDE5= @@ Edit: Delete trailing notes of less than 1/8 note in length	;; わかんね
 ;/9AE0A1D9BA951B64= @@ Edit: Delete trailing notes of less than 1/16 note in length
 ;/EBDAE662F31B48F6= @@ Edit: Delete trailing notes of less than 1/32 note in length
 ;/D16B5528E72DA2AF= @@ Edit: Delete trailing notes of less than 1/64 note in length
@@ -11503,7 +11503,7 @@ B999AE2E62325D17=編集: 音高カーソルを半音上げる @@ Edit: Increase 
 F0BF7B5535B45C45=編集: 音高カーソルを 1 オクターブ上げる @@ Edit: Increase pitch cursor one octave
 BC28E44B58070ABF=編集: 編集カーソルを左に 1 ピクセル移動 @@ Edit: Move edit cursor left one pixel
 A8143169848E0614=編集: 編集カーソルを右に 1 ピクセル移動 @@ Edit: Move edit cursor right one pixel
-;/64A5BCD495E34AED=Groove: Edit groove grid	; 無くない？
+;/64A5BCD495E34AED=Groove: Edit groove grid	;; 無くない？
 807EF2DDFFF04D1B=グリッド: 幅を乗算 - 2 倍 @@ Grid: Multiply grid size by 2
 807EF1DDFFF04B68=グリッド: 幅を乗算 - 3 倍 @@ Grid: Multiply grid size by 3
 BA5F9C60B1303CD3=グリッド: 幅を乗算 - 1/2 倍 @@ Grid: Multiply grid size by 1/2
@@ -11642,7 +11642,7 @@ BAE5BBE281FEAC4B=編集: 時間選択内にイベントがあれば複製 (か�
 652378F394ED7074=編集: イベントのミュートを解除 @@ Edit: Unmute events
 85712914E6BCC16B=ノートの始端をグリッドにクオンタイズ @@ Quantize notes position to grid
 9F2237C4D6CADCAB=ノートの始端と終端をグリッドにクオンタイズ @@ Quantize notes position and end to grid
-;/B9DC9D56C2403D6D= @@ File: Save file (MIDI file mode only)	; わかんね
+;/B9DC9D56C2403D6D= @@ File: Save file (MIDI file mode only)	;; わかんね
 ;/D2445C53ED158E0C= @@ File: Revert file (MIDI file mode only)
 0FE56FA767BC8173=表示: ファイルの終端に移動 @@ View: Go to end of file
 497100F1540AE4AE=表示: ファイルの始端に移動 @@ View: Go to start of file
@@ -11798,7 +11798,7 @@ DBBAB3326B686454=ノートを挿入: @@ Insert note: -
 39E2633651F5ADAD=カーソルを進める: @@ Cursor: Advance - 
 1D1C89DBB1032FAB=挿入ノートの音価を設定: @@ Set length for next inserted note: - 
 14B9227A11B91CFC=編集: 音価を設定 @@ Edit: Set note length to - 
-;/^887AC55D66DDCCA9=Options: MIDI editor mouse modifier preferences...	; @@済	; 上の5つは%s形式にしてほしいなぁ
+;/^887AC55D66DDCCA9=Options: MIDI editor mouse modifier preferences...	; @@済	;; 上の5つは%s形式にしてほしいなぁ
 71AFE5DB5650A1AC=前のノートを追加選択 @@ Add previous note to selection
 478CB748FDBE3CCC=次のノートを追加選択 @@ Add next note to selection
 ;/^60FDC47CC49E565A=View: Scroll view down	; @@済
@@ -11823,7 +11823,7 @@ C4C608138A054AEE=テンポ/拍子マーカーを表示 @@ Show tempo/time signat
 ;/^C1284F3D2876ADCE=Toolbar: Open MIDI toolbar 8 at mouse cursor
 ;/^00A326BE1D4B4B0F=View: Scroll view left	; @@済
 ;/^3CAB5198F069B180=View: Scroll view right	; @@済
-;/^B1403E623CE3075B=Split notes on grid
+;/^B1403E623CE3075B=Split notes on grid	; @@済
 ;/^3029AAC716696009=Grid: Set to 1/128	; ここにあるこのシリーズは@@済
 ;/^A735F6AA893ADB6A=Grid: Set to 1/64
 ;/^2CE4869C340ECB40=Grid: Set to 1/48 (1/32 triplet)
@@ -12003,13 +12003,13 @@ AACF547AD36BAFE6=REAPER 注釈
 09CFD67E55F48F42=キュー
 7315DDC3986F9688=プログラム名
 0FDDD160BF8E37AC=デバイス名
-;/8B6A08130ECF80F4=オールサウンドオフ	; 無効にしてるのはイベントプロパティのドロップダウンリストで化けるもの
+8B6A08130ECF80F4=オールサウンドオフ
 6CDBEA3AFFDB8B9E=Local
-;/B446C4DA641F7976=オールノートオフ
-;/B202804EB9FFBF8B=Omni オン
-;/79E402C60D7AC02F=Omni オフ
-;/9DC186B12C6339C9=Mono オン
-;/4AB49787B8279ECA=Poly オフ
+B446C4DA641F7976=オールノートオフ
+B202804EB9FFBF8B=Omni オン
+79E402C60D7AC02F=Omni オフ
+9DC186B12C6339C9=Mono オン
+4AB49787B8279ECA=Poly オフ
 84758372119D9FBF=Off ベロシティ
 817A9C4CB9B01E51=プログラムチェンジ
 4235CF09DF07D6A9=テキストイベント
@@ -12023,8 +12023,8 @@ BE8D83106D4A1747=メタイベント
 FC7C5BB198567CED=小節
 ;^DD0CE22D75D36ED1=Track name
 ;^8AE9AE7D7775A16B=Lyrics
-;/^90AF657379F9511D=Marker	; 下のResetはイベントプロパティで化けるCC121
-28450354F52CB7AE=Reset All Controler
+;^90AF657379F9511D=Marker
+28450354F52CB7AE=リセットオールコントローラ
 ;/^D869A3186B4E2DD5=CC	; 下のPitchはMIDIエディタのVelo/CCレーン左のドロップダウンリスト
 073F0BD84FB2C598=ベロシティ
 57F28E456CC0FEEB=ピッチベンド
@@ -12465,7 +12465,7 @@ BABB523832F9AE4F=検索エラー
 ;^D66D409D600C2D04=Mixer
 
 [mousemap]
-;/9965C532C14FFE31=Set default mouse modifier action for	; %s形式になってくれ～～～
+;/9965C532C14FFE31=Set default mouse modifier action for	;; %s形式になってくれ～～～
 167FBDFE83A381FB=(ファクトリーデフォルト)
 ;^D89CC7186B79C49A=to
 
@@ -13215,8 +13215,8 @@ CC85814B7AF4CCED=REAPER 3.x バランス (非推奨)
 2C5641A7269CB8F3=MIDI エフェクトパラメータリンクを削除
 0986E47C35912C30=CC 14 bit (&1)
 0D787B476878BFE6=Omni (&O)
-;/2762372D6D14F1E5=シーク/ループ時 (確定的出力)	; この2つは文字化けするのでオフ
-;/EB06AC7EBF68A535=フリー (一意に定まらない出力)
+2762372D6D14F1E5=シーク/ループ時 (確定的出力)
+EB06AC7EBF68A535=フリー (一意に定まらない出力)
 D83986186B24D8CC=分音符
 ;5C6CD2CA6CEDBA99=(not found)
 43DDA011529770E8= (自)
@@ -13651,7 +13651,7 @@ E9C54E0B935698EF=操作履歴を記憶する最大メモリ量 (初期値: 256 M
 ;C41402DEBD47E168=Ignore multitouch gestures of a different type for a short time after a multitouch gesture is seen.
 ;8462F0CD2F2F64D9=Assign any enabled multitouch gesture to a REAPER action, using the Actions dialog.
 
-[prefs_list]	; ProjectとVSTはアクセスキー回避のため
+[prefs_list]	; ProjectとVSTはアクセスキー除去
 0A9476D2DAF58CB5=一般
 D61B178BCBC28C11=パス
 1A898A131B917D7B=キーボードとマルチタッチ
@@ -14031,8 +14031,8 @@ BAEF587C3AA07700=必要な時に自動でブリッジ
 831BE53E4A04D874=プラグイン用のプロセス内で起動
 816D9333A010CBFD=プラグインごとのプロセス内で起動
 2230D079B09366B9=ネイティブのみ (ブリッジ無効)
-CB26A3CA44D04B68=ヒープ破壊保護を無効にするため、REAPER を再起動する必要があります。
-;031550A99A3DBA44=Note: you have selected to use the synchronous UAD-1 compatible mode!\r\n\r\nIt is highly recommended to disable \"Anticipative FX processing\", reducing native plug-in performance and multiprocessor utilization.\r\nTo re-enable \"Anticipative FX processing\" later, go to Preferences/Audio/Buffering. \r\n\r\nDisable \"Anticipative FX processing now\"?
+CB26A3CA44D04B68=ヒープ破壊保護を無効にするには、REAPER を再起動する必要があります。
+031550A99A3DBA44=※ UAD-1 同期モードの使用を選択しました。\r\n\r\n「エフェクト処理の先読み」を無効化することを強く推奨しますが、その場合ネイティブプラグインのパフォーマンスやマルチプロセッシングの利用が抑制されます。\r\n今後再び「エフェクト処理の先読み」を有効にしたい場合は、\"設定 > 音声 > バッファリング\" から設定できます。\r\n\r\n「エフェクト処理の先読み」を今すぐ無効化しますか？
 ;^D790926420BA2EB7=Notice
 
 [prefs_plugin_help]
@@ -14058,7 +14058,7 @@ CB26A3CA44D04B68=ヒープ破壊保護を無効にするため、REAPER を再�
 1D75478FD209EC92=円周的変化
 8D3D701CD5FDAF4F=相対的変化
 ;^AB2A3D4EF1C9D1A8=Default
-;^CA47517BDEFA4232=Linear
+CA47517BDEFA4232=直線的変化
 
 [prefs_plugin_vst]
 ;B150A2F1CC68BBAF=Ignore when plug-in window is not open [default]
@@ -14265,25 +14265,25 @@ CE84A8764F3997DE=トラック番号 (大→小) ⇔ 表示順位 (前面→背�
 ;DB1AD925D830A08C=Special mode, applied to UAD plugins only, that reduces parallel processing benefits to avoid UAD-1 crashes.
 
 [projbay]
-;00C3EF5C0B634B6E=Source Media
-;74B1E6549A40A805=Media Items
-;ECDBB74C1B43A388=Item Groups
-;4F2D327AF8BC0B38=Take Comps
-;DE8C2727D599C9C8=File name
-;EFA75D43B72E443E=Retain
-;AD645A7EB24016DD=Sample rate
-;9007BD4650E2DD83=Active take name
-;2C5B5609D9FC338D=Takes
-;3E45455ACFBA41E0=Fade-in/out
-;6280F373A57F4916=Active take details
-;8682AD9E3F8AFD88=Preset
-;43F9CD2EC502348F=Developer
-;675741A18076844C=FX/Parameter name
-;D2869C227E2EDDA3=Envelope
-;57F6F53C4FAAD179=Modulation
-;9C70A65A4A4187D2=Parameter link
-;BFA2F665F3A989FF=Take name
-;34E1AFED2E371412=Take details
+00C3EF5C0B634B6E=ソース
+74B1E6549A40A805=メディアアイテム
+ECDBB74C1B43A388=アイテムグループ
+4F2D327AF8BC0B38=テイク編集履歴
+DE8C2727D599C9C8=ファイル名
+EFA75D43B72E443E=保持
+AD645A7EB24016DD=サンプリングレート
+9007BD4650E2DD83=アクティブテイク名
+2C5B5609D9FC338D=テイク数
+3E45455ACFBA41E0=フェードイン/アウト
+6280F373A57F4916=アクティブテイクの詳細
+8682AD9E3F8AFD88=プリセット
+43F9CD2EC502348F=開発元
+675741A18076844C=エフェクト/パラメータ名
+D2869C227E2EDDA3=エンベロープ
+57F6F53C4FAAD179=モジュレーション
+9C70A65A4A4187D2=パラメータリンク
+BFA2F665F3A989FF=テイク名
+34E1AFED2E371412=テイクの詳細
 ;8B94098F4C037237=Save Project Bay:
 ;F9CC006D450B4779=(unnamed media item)
 ;CC08F95D7C89C235=(unnamed take)
@@ -14303,9 +14303,9 @@ CE84A8764F3997DE=トラック番号 (大→小) ⇔ 表示順位 (前面→背�
 ;A7968517861E5FA2=Delete group, keep items
 ;9FF26658812E26C6=Delete comp, keep takes
 ;A5F21AE1DC3190E9=Delete folder, keep items
-;5217A7A9035D38ED=Remove from bay if removed from project
-;243BBEF41871DEFD=Remove from bay
-;DC9C685173D59620=Remove from project
+5217A7A9035D38ED=プロジェクトから削除されたらベイからも削除
+243BBEF41871DEFD=ベイから削除
+DC9C685173D59620=プロジェクトから削除
 ;9C6E8829741C49AC=take
 ;B9BE27CA74A111E1=Input FX
 ;93172ED741B93FF9=Multiple FX parameters
@@ -14349,12 +14349,12 @@ CE84A8764F3997DE=トラック番号 (大→小) ⇔ 表示順位 (前面→背�
 ;8CFA21E35F72FC3A=Activate
 ;E8589482D635CA30=Unbypass
 ;8485C46311AD5159=Unmute
-;183F8B77513F14EA=Media Explorer...
+183F8B77513F14EA=メディアエクスプローラ...
 ;00406157C195493F=Add selected items
 172E6AECBC20BFE5=エフェクト一覧...
 ;9141FC43E57F329F=(take FX)
 ;C6FC4984F7D98C3A=(input FX)
-;22A5431A2741FBFD=instances
+22A5431A2741FBFD=件
 ;2253BF5869AF0F8F=hidden
 ;9D3567DD46788EEE=armed
 ;1940027E5E2A3018=ACS
@@ -14384,17 +14384,17 @@ E8B3E508FC4AEFA5=このプロジェクトベイを丸ごと削除しますがよ
 BDC2331AE3F4F7BF=プロジェクトベイの削除確認
 23185877917B984A=エラー: ファイルを削除できません:\r\n
 DF67DA95E6EB35A5=プロジェクトベイ削除エラー
-;^D85ED6186B447CF9=FX
-;^94FDEB80682CF963=FX Parameters
+;/^D85ED6186B447CF9=FX	; エフェクトパラメータ、トラック、形式、コメント、ラーンはアクセスキー除去
+94FDEB80682CF963=エフェクトパラメータ
 ;^2A6ED1B48E88BCC9=Status
-;^D0C04B9E79D271AE=Track
+D0C04B9E79D271AE=トラック
 ;^0A8BAF4C6945400F=Length
-;^2D126F1D4BD6B8C7=Type
-;^09A01E8714A0B688=Comment
+2D126F1D4BD6B8C7=形式
+09A01E8714A0B688=コメント
 ;^9F31623C59553158=Path
 ;^FA08A03DC81EC720=Plug-in name
 ;^7666307E026A82D2=TCP
-;^E763E06A994AAAFB=Learn
+E763E06A994AAAFB=MIDI ラーン
 ;^AF63BD4C8601B7DF=
 ;^2ADD7A879D22FA5C=Position
 ;^71E0871D72ABD5CC=Take
@@ -14422,8 +14422,8 @@ DF67DA95E6EB35A5=プロジェクトベイ削除エラー
 ;^BA0F8B7E28468276=LFO
 ;^46526B6C96E7851A=Source
 ;^8FC86C263760ACB9=Volume
-;/^96E5C67E1437194E=Pan	; 下、プロジェクトメディアベイのどこにPitchが…？？
-;/^57F28E456CC0FEEB=おおおおおおおおおおおおおおおおおおおおおおお
+;/^96E5C67E1437194E=Pan	;; 下、プロジェクトメディアベイのどこにPitchが…？？
+;/^57F28E456CC0FEEB=Pitch
 ;^C685A28B8DBF7F8B=Folder
 ;^AD6ADC4BDE973BA3=Select replacement file:
 ;^397E19C8F7486840=Project Bay
@@ -14850,18 +14850,18 @@ B4F466C090612B1D=既に存在するファイル:
 B23B89217AF6A17B=既に存在するキュー:
 57DC58B3B7C72DE1=今回は自動ナンバリング
 12984B6147726F16=今回は自動ナンバリング
-3404046DA09FC69F=パターン履歴
-E820D811FA928312=マスターの $track 名に \"master\" を用いる
-E0A526D768B2938E=トラック名やリージョン名の \"/\" を許可（サブフォルダになります）
-8F172C76448450DA=ワイルドカードのヘルプ...
+3404046DA09FC69F=パターン履歴 (&P)
+E820D811FA928312=マスターの $track 名に \"master\" を用いる (&M)
+E0A526D768B2938E=トラック名やリージョン名の \"/\" を許可 (サブフォルダになります) (&S)
+8F172C76448450DA=ワイルドカードのヘルプ (&H)...
 C129889B8F00B0F1=個のファイル
 3A43A253FE2BECE6=個のファイル
 153CF73D1FD5006C=1 個のファイルをレンダリング...
 90542BD908D1D6DB=%d 個のファイルをレンダリング...
-EED1AC952953EE12=直近のレンダリング設定
-A82D8163A8484674=バウンスと出力
-3912E287492971ED=オプションとファイル形式
-7807BF68DE4D492B=全ての設定
+EED1AC952953EE12=直近のレンダリング設定 (&R)
+A82D8163A8484674=バウンスと出力 (&B)
+3912E287492971ED=オプションとファイル形式 (&O)
+7807BF68DE4D492B=全ての設定 (&A)
 004DC15672AB96AA=レンダリング設定プリセット
 5E7C99D3AAB0A3D1=1 個のメディアアイテム ($M)
 B27350F6CC3B912A=1 個のリージョン
@@ -15041,14 +15041,14 @@ A35F51E7C033B146=高 (512pt Sinc)
 FCBF2A5B01E951F7=ReCycle ファイル
 ;^FEAA833C7533B5D0=File not found
 
-[routdlg]	; マスターはほんとはマスターセンドって書きたいが見切れる
+[routdlg]	;; マスターはほんとはマスターセンドって書きたいんだけど見切れる。それをオフにしても隣の「親チャンネル」をオフにしても見切れる。英語版だと見切れない。
 DD096F9E880C0C96=センド先:
 998074CE650BE8E4=レシーブ元:
 8A1BF18F1F9B40A5=マスタートラック出力
 B821BAE9983182E7=ルーティング: トラック
 90A862E9C710864E=親センド (トラック %d)
 4A523771DC809C34=親センド (トラック %d %s)
-76E9739D9859A3D9=マスター
+76E9739D9859A3D9=マスターセンド
 C4323AA50B927915=親チャンネル (&P):
 892EE6A6A9935F84=センドを追加...
 32842BAD35BDAEFF=全トラックへのセンドを追加
@@ -15168,11 +15168,11 @@ D7BDD52F4DB24DAB=設定、
 ECC9A80133B0E90A=、モニタリングなし
 66378E8DA1FA9C8D=、モニタリング
 94FBF5228AB2DE4A=、自動モニタリング
-;^8FC86C263760ACB9=Volume
-;^96E5C67E1437194E=Pan
-;^61946358B1034B76=Mute
-;^0420AF237D97ECB8=Solo
-;^8A3F14717826D8D1=Width
+8FC86C263760ACB9=音量
+96E5C67E1437194E=パン
+61946358B1034B76=ミュート
+0420AF237D97ECB8=ソロ
+;^8A3F14717826D8D1=Width	; 上4つはアクセスキー除去
 ;^18C90F7E5DC51FCA=All
 ;^BB1D7DBC1BA8233C=Routing Matrix
 ;^AF8A1AC00E231ACB=Grouping Matrix
@@ -15297,7 +15297,7 @@ CEA684B164D5B08B=.ReaScale ファイルを選択:
 ;^2ED640682AB36744=Windows
 ;^A61CBD25C6796002=Layouts
 
-[sendmenu]
+[sendmenu]	; トラックはアクセスキー除去
 4C5B729196E92FF9=マスターにセンド (&M)
 2FB9CF7149422649=親フォルダにセンド (&P)
 D00966C35B600008=入出力パラメータの調整 (音量フェーダを右クリックでも可能です) (&P)
@@ -15310,7 +15310,7 @@ EB1082ABBC920993=MIDI 出力 (&D)
 ;^4A47B5FB012F8EBE=Sends
 ;^1978358DE99DE2C5=Receives
 ;^C685A28B8DBF7F8B=Folder
-;^D0C04B9E79D271AE=Track
+D0C04B9E79D271AE=トラック
 ;^2C078B30A2995EDB=ReaRoute Output
 ;^3390D94D34F06461=None
 
@@ -15608,7 +15608,7 @@ E2A9442343FE70F5=ウィンドウ：背景
 35DE04AF4D82897D=ツールバー：ボタン文字
 70C2A7D970F4BDF2=ツールバー：ボタン文字 (ON)
 374CCE612D7C4054=ツールバー：枠 (独立時、ドッキング時)
-;/E7915E3E6A099632=Toolbar button armed color	; わかんね
+;/E7915E3E6A099632=Toolbar button armed color	;; わかんね
 ;/BC84C51A714ED29C=Toolbar button armed draw mode
 637FC2FB9F7218EB=入出力ウィンドウ：文字
 DC14FE448251351B=入出力ウィンドウ：3D ハイライト
@@ -15620,7 +15620,7 @@ CE29355922B1153C=ウィンドウ内リスト：文字
 3D132691B6F4237D=ウィンドウ内リスト：選択文字
 AEB0FBA64A3D9032=ウィンドウ内リスト：選択行 (非アクティブ時)
 DD23A4D9A4DBEC8B=ウィンドウ内リスト：選択文字 (非アクティブ時)
-;/85D05A02599C2A69=Force button background/border:	; わかんね
+;/85D05A02599C2A69=Force button background/border:	;; わかんね
 ;/3221AB37708C9F05=Button background
 B6E3CE32B4EAB6D8=非選択状態のトラックコントロールパネルにおいて、Windows の通常色をテーマで上書きする
 7BAD93AB76E7418F=トラックパネル：文字
@@ -15734,7 +15734,7 @@ FF015348C4CE8FE8=VU メーター：中部
 6AA3AE3F7AEB87FA=VU メーター：下部
 DB58195D4530C671=VU メーター：ブロック線/枠線
 0345900F40125341=VU メーター：MIDI
-;/D361F42A9FC10FC4=VU (indicator) - no signal	; わかんね
+;/D361F42A9FC10FC4=VU (indicator) - no signal	;; わかんね
 ;/1468DA4EC2D3CDAD=VU (indicator) - low signal
 ;/0F4D66A19DD388A5=VU (indicator) - med signal
 ;/E445E72A37B758AE=VU (indicator) - hot signal
@@ -15770,7 +15770,7 @@ B3E317CA0AD0438F=MIDI インラインエディタの背景色：♯や♭
 BB1871D50D37E428=MIDI エディタのノート：選択 (midi_note_colormap に上書きされます)
 B482801CB8A88B0A=MIDI エディタのノート：ミュート、非選択 (midi_note_colormap に上書きされます)
 D665B3A6E774EE33=MIDI エディタのノート：ミュート、選択 (midi_note_colormap に上書きされます)
-;/E673881F880A2D15=MIDI editor note controls	; わかんね
+;/E673881F880A2D15=MIDI editor note controls	;; わかんね
 ;/CAF9FD7CE71AB0C9=MIDI editor note (offscreen)
 ;/D1998C25F1514422=MIDI editor note (offscreen, selected)
 71CD9F4995CA63F3=MIDI エディタのカーソル
@@ -15796,7 +15796,7 @@ F5C428DB77ADDCF2=MIDI イベントリストのグリッド線
 110D670D992BC037=MIDI イベントリストの文字 (secondary)
 7F671CB073F8865D=MIDI イベントリストの選択行 (secondary)
 64DEBB1B46DC42AE=MIDI イベントリストの選択テキスト (secondary)
-;/4613C0B0BAEC8191=Tab control shadow	; わかんね部分の方が多いのでパス、あと上のsecondaryもわかんね
+;/4613C0B0BAEC8191=Tab control shadow	;; わかんね部分の方が多いのでパス、あと上のsecondaryもわかんね
 ;/71E39193A98EC5CB=Tab control selected tab
 ;/D9C23DF586FBFF00=Tab control unselected tab
 ;/F26C25D910FB2D0E=Tab control text
@@ -15813,7 +15813,7 @@ F007AD510DF30238=エンベロープ：パン
 17CD49C7AAD72038=マスターエンベロープ：テンポ
 CBCA027C47D01D83=センドエンベロープ：音量
 9CC10E448B6324C0=センドエンベロープ：パン
-;/0D3EED3545E1F9F1=エンベロープ：センドの音量 2	; わかんね
+;/0D3EED3545E1F9F1=エンベロープ：センドの音量 2	;; わかんね
 ;/566C595986537016=エンベロープ：センドのパン 2
 427082CB450B4FA8=エンベロープ：センドのミュート
 79C9898A1C69B7C6=音声ハードウェア出力エンベロープ：音量
@@ -16112,8 +16112,8 @@ D121DAD8615D7265=編集カーソル位置のテンポ
 ;^DD8A091DA2BE9107=Move envelope to media lane
 ;^D26FE1B4C8988F96=Muted
 ;^272E5D69D552CDA7=Not muted
-;^E53622684802B745=Master
-;^D0C04B9E79D271AE=Track
+;/^E53622684802B745=Master	; トラックはアクセスキー除去
+D0C04B9E79D271AE=トラック
 ;^6B4795AB9EC37475=Input:
 ;^480A73B43C308366= (folder)
 ;^AEF53FB432FD3810=Tempo map
@@ -16237,16 +16237,16 @@ F2FA601BD169D08C=トラックの MIDI をエディタで開く
 ;9B511A5968C6FD3D=Calculating transient guides
 ;D5410F7694BE5A88=Calculating item %d/%d: %s
 
-[transport]	; メイン画面の再生コントローラ
+[transport]	; メイン画面の再生コントローラ。選択開始位置～選択長さは多分アクセシビリティ
 629C54803B0AC212= / 
 00B9D2E30D69BE2F=[%s]
 014216EEA08B6600=バウンス中
 455B12DE92C1A943=タイムコードを待機中
 ;5086F582D5199414=Home
 4E45CA229B084583=選択範囲:
-;6413E5E8A8CC3003=Selection start
-;B0113A49F4AF3516=Selection end
-;707292B451272E69=Selection length
+6413E5E8A8CC3003=選択開始位置
+B0113A49F4AF3516=選択終了位置
+707292B451272E69=選択長さ
 37AC65CA184CE3EA=<プロジェクトマーカーがありません>
 75F2047E02074780=タップ！
 178831D54E3E203C=停止
@@ -17156,7 +17156,7 @@ C134703B1C276C93=下位ビットの色情報変化を無視 (0～7, 0 で最高�
 A9A749DD692B866B=アスペクト比を保つ (&A)
 B5E526F25B189750=動画ウィンドウサイズを元サイズに合わせる (&S)
 4A6FDF38F55E8554=動画アイテムプロパティ (&P)...
-;^5493EE7052DCF71B=Options
+;^5493EE7052DCF71B=Optionsあ
 ;^99C2D7A58FC45822=Full screen
 ;^82EE5475CB6FCE9F=Close window
 
@@ -17190,7 +17190,7 @@ B8F37664711499FA=幅/高さ/フレームレートをプロジェクトから取�
 [video_menu]
 ;^0BCDBB9F888031BA=Video Window
 
-[video_processing]
+[video_processing]	; リセットはアクセスキー除去
 ;798FEF0F530409BA=no params
 ;87660D0A7857FB75=Param %d
 ;DB9EF2872E47B399=Loaded preset
@@ -17202,10 +17202,10 @@ B8F37664711499FA=幅/高さ/フレームレートをプロジェクトから取�
 ;830D76EB44451B94=Unsaved code, save before closing?
 ;^11B3B66593F236CF=Confirm Preset Delete
 ;^7C0BD7F6D6C1126C=Code error
-;/^4D0B7C1B0447364A=Video processor	; 下2つは文字化け対策
-28450354F52CB7AE=Reset
+;^4D0B7C1B0447364A=Video processor
+28450354F52CB7AE=リセット
 ;^0EC28D42C155A657=----  User Presets (.rpl)  ----
-93244D3BB94E6F33=No preset
+;^93244D3BB94E6F33=No preset
 
 [video_processing_help]
 ;E51CE4222AFE4D67=special variables:
