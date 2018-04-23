@@ -28,14 +28,15 @@ DAW ソフト [REAPER][1] の**製品版**を日本語化するパッチです�
 3. REAPER への適用  
    解凍したフォルダの中にある `JPN_Phroneris.ReaperLangPack` というファイルを見てください。  
    これがまさに日本語化パッチのファイルです。  
-   ![Icon](https://github.com/Phroneris/ReaperJPN-Phroneris/blob/develop/img/icon.png)
    
-3.1 パッチのアイコンがなんかTシャツみたいなのになっている場合  
-    たぶんダブルクリックすれば適用できます。  
-    
-3.2 そうなっていない場合や、ダブルクリックしても上手くいかない場合  
-    REAPER を起動してから、その画面にパッチをドラッグ＆ドロップして適用できます。  
-   
+   ![Langpack Icon](https://github.com/Phroneris/ReaperJPN-Phroneris/blob/develop/img/icon.png)
+
+   3.1. パッチのアイコンがなんかTシャツみたいなのになっている場合  
+        たぶんダブルクリックすれば適用できます。  
+
+   3.2. そうなっていない場合や、ダブルクリックしても上手くいかない場合  
+        REAPER を起動してから、その画面にパッチをドラッグ＆ドロップして適用できます。  
+
    適用すると「Install language pack?」というタイトルのダイアログが出るので、`OK` を押し、  
    その後「Language pack installed」というタイトルのダイアログが出れば適用完了です。  
    REAPER を再起動すれば、もう日本語になっているはずです。お疲れ様でした。  
