@@ -14974,7 +14974,7 @@ B8581C871BEB3EA6=旧版 REAPER のライセンスキーです -- 更新には ww
 ;D69A3191067760AF=Region ID %d is already in use, please choose another.
 ;^9EC3E20500624AAF=Error
 
-[regmgr]
+[regmgr]	; 開始はアクセスキー除去
 20A393F3D3AFA090=レンダリングマトリックス
 2C688F600ED80D01=プロジェクトのリージョン/マーカーのエクスポート
 817110A55C0013EA=ファイルに書き込めません
@@ -14991,7 +14991,7 @@ F977CC75F7FF827D=ファイルの最初の行はヘッダーとすることがで
 6EE5D029D455D6D4=選択トラックを除外 (&R)
 ;^0832A507B4EBA134=#
 ;^DCEF2B4D03DE723C=Name
-;^5B664677E1A91155=Start
+5B664677E1A91155=開始
 F7B45F7E4B7A392C=終了
 ;^0A8BAF4C6945400F=Length
 ;^73235A4845CE69AF=Master mix
