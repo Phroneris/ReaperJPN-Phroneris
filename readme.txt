@@ -1,1 +1,1 @@
-https://github.com/Phroneris/ReaperJPN-Phroneris/wiki
+Wiki: https://github.com/Phroneris/ReaperJPN-Phroneris/wiki
