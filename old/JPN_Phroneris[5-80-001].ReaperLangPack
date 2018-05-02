@@ -1,5 +1,5 @@
 #NAME:日本語（森）
-; https://github.com/Phroneris/ReaperJPN-Phroneris/tree/master ver 5.80.002?
+; https://github.com/Phroneris/ReaperJPN-Phroneris/tree/master ver 5.80.001
 ; ・「;」で始まる行は未翻訳部です。翻訳後は「;」を消してください。
 ; ・「;^」で始まる行は未翻訳部かつオプションです。最初の [common] 部で既に出てきているので、
 ;   改めて別の訳を当てたい場合のみ編集します。翻訳後は「;^」を消してください。
@@ -11388,8 +11388,8 @@ E801468AEF4057BD=編集: 選択ノートのボイシングを上に移動 @@ Edi
 E7849E3DB66C6DFF=編集: 各選択コードのボイシングを上に移動 @@ Edit: Invert voicing upwards for each selected chord
 0C9530B3BAB365B4=編集: 各選択コードのボイシングを下に移動 @@ Edit: Invert voicing downwards for each selected chord
 ED7BF684EE335C84=編集: ノートを 1 つ上に移動 @@ Edit: Move notes up one semitone
-B06FAA9F583E6B63=編集: ノートを 1 つ下に移動 @@ Edit: Move notes down one semitone
-24FC42552B788B63=編集: ノートを 1 つ上に移動 (スケールやキーを無視) @@ Edit: Move notes up one semitone ignoring scale/key
+B06FAA9F583E6B63=編集: ノートを 1 つ上に移動 (スケールやキーを無視) @@ Edit: Move notes down one semitone
+24FC42552B788B63=編集: ノートを 1 つ下に移動 @@ Edit: Move notes up one semitone ignoring scale/key
 0276FB69090520AE=編集: ノートを 1 つ下に移動 (スケールやキーを無視) @@ Edit: Move notes down one semitone ignoring scale/key
 8C32CCBDD5B7F18E=編集: ノートを 1 オクターブ上に移動 @@ Edit: Move notes up one octave
 94DC68F8BA162581=編集: ノートを 1 オクターブ下に移動 @@ Edit: Move notes down one octave
