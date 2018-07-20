@@ -2522,7 +2522,7 @@ E79764031E9008D0=直前のアイテムに少し重なるまで開始位置を拡
 ;^D8B3B3186B8C817F=ms
 
 [DLG_226] ; IDD_SETSRCOPTS
-;55F8E978D7A92025=Update all similar items in project with new filename
+55F8E978D7A92025=全ての類似アイテムを新規ファイル名で更新 (&U)
 
 [DLG_227] ; IDD_PREFS_REAMOTE
 907FC93E7A8516FC=ReaMote 構成
@@ -3782,8 +3782,8 @@ DA643DE3AB8A1A76=レンダリングマトリックス...
 ;^D9B12605AD844AAF=List2
 
 [DLG_509] ; IDD_RENDERWARN
-ABD2F614EE0DE91B=常にファイル名を自動ナンバリングして上書き回避
-438408651E1E4D5C=上書き
+ABD2F614EE0DE91B=常にファイル名を自動ナンバリングして上書き回避 (&A)
+438408651E1E4D5C=上書き (&O)
 ;^043FBD1700F7067B=Render Warning
 ;^F09E4B5C35AA14B9=Cancel
 
@@ -15023,8 +15023,8 @@ F7CD69D31E23F2C7=既に存在するファイル:
 B4F466C090612B1D=既に存在するファイル:
 66FF38D6E1ADCC48=既に存在するキュー:
 B23B89217AF6A17B=既に存在するキュー:
-57DC58B3B7C72DE1=今回は自動ナンバリング
-12984B6147726F16=今回は自動ナンバリング
+57DC58B3B7C72DE1=今回は自動ナンバリング (&I)
+12984B6147726F16=今回は自動ナンバリング (&I)
 3404046DA09FC69F=パターン履歴 (&P)
 E820D811FA928312=マスターの $track 名に「master」を用いる (&M)
 E0A526D768B2938E=トラック名やリージョン名の「/」を許可 (サブフォルダになります) (&S)
