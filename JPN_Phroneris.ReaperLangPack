@@ -17281,13 +17281,13 @@ BBBCEA2135CF6381=ナウい REAPER - 現在のバージョンが最新版です�
 ;^BAC64C1B2E060EE5=Close
 
 [video]
-;194E5068694CECF5=Using Quicktime decoder (bridged)
-;94F74EC0A5D5F4B7=Using DirectShow decoder
-;CC832E7DAD6F870D=========== ffmpeg/libav ==========
-;7F682DCB619B14E3=ffmpeg/libav not found\r\n
-;0C18C48D200EE48C=Using ffmpeg/libav DLL decoder v%d.%d.%d
+194E5068694CECF5=Quicktime デコーダ (bridged) を使用
+94F74EC0A5D5F4B7=DirectShow デコーダを使用
+CC832E7DAD6F870D=========== ffmpeg/libav ==========
+7F682DCB619B14E3=ffmpeg/libav が見つかりません\r\n
+0C18C48D200EE48C=ffmpeg/libav DLL デコーダ v%d.%d.%d を使用
 9949B7F19029C538=読込: %s
-;DCD62C87319DB37F=ffmpeg/libav configuration:
+DCD62C87319DB37F=ffmpeg/libav 設定:
 ;376F7107B8688798=converted from pixfmt %d
 ;CF8223208FA8C4F2=converted from full-range YV12
 ;344BD64B913E2F1F=Invalid format specified
@@ -17299,18 +17299,18 @@ BBBCEA2135CF6381=ナウい REAPER - 現在のバージョンが最新版です�
 ;953774A2816F6AF4=Error finding audio encoder
 ;6E41AB6692BECF14=Error creating audio stream
 ;3AC3F4277606702E=Error initializing audio encoder
-;2D3F16FE9E406AF0=ffmpeg/libav DLL decoder v%d.%d.%d
+2D3F16FE9E406AF0=ffmpeg/libav DLL デコーダ v%d.%d.%d
 ;7A0FC040EB2027C1=Error writing .gif file
-;1D00880522771C85=GIF %dx%d
+1D00880522771C85=GIF %dx%d
 438001B73C39CB47=動画 (GIF)
-;E533517E40A9E24F=GIF
-;B9FE927E28381B28=LCF
+E533517E40A9E24F=GIF
+B9FE927E28381B28=LCF
 D125388D0EE850C4=画像
 ;4CBBD26011BA9F3C=Error writing .LCF file
-;C5E89D555E6388C2=LCF %dx%d %.2f fps
-;9E59637CB9818F62=Video (LCF)
+C5E89D555E6388C2=LCF %dx%d %.2f fps
+9E59637CB9818F62=動画 (LCF)
 DFA7D7C102936D13=%s - 動画プロセッサ
-;E272BC36856482E4=Invalid file
+E272BC36856482E4=不正なファイル
 A54690FDE9328A08=動画:
 FBE6CA251A12814C=%dx%d@%.2ffps, アスペクト比=%.02f, デコード形式=%s
 6072C327FB3BE9E0=音声: %dHz %dch %dbps
@@ -17319,7 +17319,7 @@ C40AE4B976A6517E=左右反転
 239485152B66F91F=180°回転
 24E14F5971F937C9=時計回りに 90°回転
 A3E8A2FCAA56CDF6=反時計回りに 90°回転
-;EB4077E33690D24D=Preserve .gif transparency
+EB4077E33690D24D=.gif の透明度を保つ (&G)
 ;A44BDD7A5EEA710E=Change all audio settings for all video sources
 10C37E06D4D247A3=AVI 動画ファイル
 A7F12DBA570C593B=MPG 動画ファイル
@@ -17329,21 +17329,21 @@ CF5D1BBBDD67FBBB=WMV/WMA 動画ファイル
 1DEB42FBE8D82BE4=Quicktime ファイル
 EC7F5DB3B2441E95=WebM ファイル
 867C82C516B75EF0=現在の動画フレーム: %dx%d '%s' #%.0f
-;140954BEB703134E=Available decoder information:
-;A2A7AB384D9887E5=========== AVFoundation ==========
+140954BEB703134E=利用可能なデコーダ情報:
+A2A7AB384D9887E5=========== AVFoundation ==========
 ;2203316171ED7CA1=AVFoundation decoder/encoder available
 ;F19BF99C7542291A=AVFoundation decoder/encoder NOT available, requires macOS 10.7+
-;6237387F75967F9F=========== DirectShow ==========
-;F2E491E4103AA80C=DirectShow available
-;F26768BE33C92A74=No encoder
+6237387F75967F9F=========== DirectShow ==========
+F2E491E4103AA80C=DirectShow 利用可能
+F26768BE33C92A74=エンコーダなし
 A611431BEF0D5E67=動画 (ffmpeg/libav エンコーダ)
 ;DD865616E4990B09=AVFoundation API not available, requires macOS 10.7+
 ;96BD360086879B0A=FFMPEG: Can't find FFMPEG libraries
 ;2FD4372E9330F928=FFMPEG: Format not specified
-;E104AD220F1408C9=MPEG-4/MOV (macOS 10.7+ AVFoundation)
-;833F75A6D34BB398=========== VLC ==========
+E104AD220F1408C9=MPEG-4/MOV (macOS 10.7+ AVFoundation)
+833F75A6D34BB398=========== VLC ==========
 ;8AE097C18F409E80=VLC 2.0.x-2.2.x not found for correct architecture
-;A6FADFE050AD9CCC=search path:
+A6FADFE050AD9CCC=検索パス:
 ;D7EDBF968B8C0D20=VLC install path not found, install VLC 2.0.x-2.2.x
 ;^0C24CB76A6860C27=Error creating output file
 ;^0121AF72166A79F7=kbps
@@ -17435,13 +17435,13 @@ A1D42CC9345564A9=800x600 (SVGA)
 FE67C8BA281439A8=1024x768 (XGA)
 D75039D03D5DC6E6=1280x720 (HD)
 234DB244C89F7BAE=1920x1080 (Full HD)
-2370306F283B7A66=ソースのアスペクト比を保つ
+2370306F283B7A66=ソースのアスペクト比を保つ (&A)
 7DDB469D754C873C=24fps
 F8853C9137A8D5F9=25fps
 54073C2EBFD9DF87=29.97fps
 56C160B20B2D48EB=30fps
-FDD673B12EE98AB4=幅/高さ/フレームレートを現在の動画アイテムから取得
-B8F37664711499FA=幅/高さ/フレームレートをプロジェクトから取得
+FDD673B12EE98AB4=幅/高さ/フレームレートを現在の動画アイテムから取得 (&I)
+B8F37664711499FA=幅/高さ/フレームレートをプロジェクトから取得 (&P)
 ;^08329707B4EB896A=1
 
 [video_menu]
