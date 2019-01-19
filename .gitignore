@@ -1,0 +1,21 @@
+# テンプレートファイルを無視
+*template*ReaperLangPack.txt
+
+# Notepad++ セッションファイルを無視
+*.npps
+
+# あらゆる _ignore フォルダを無視
+_ignore/
+
+# img フォルダで画像ファイル以外を無視
+/img/*.*
+!/img/*.png
+!/img/*.jpg
+
+# ReaPerLang のフォルダを無視（一応）
+# /tool/
+# /ReaPerLang/
+
+# 他
+*.zip
+string_calculator.html.url
