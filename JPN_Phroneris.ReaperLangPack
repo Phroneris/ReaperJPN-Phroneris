@@ -1,5 +1,5 @@
 #NAME:日本語（森）
-; https://github.com/Phroneris/ReaperJPN-Phroneris/tree/master ver 5.965.001
+; https://github.com/Phroneris/ReaperJPN-Phroneris/tree/master ver 5.965.002?
 ;
 ;【はじめに】
 ; ・OS標準のメモ帳ではなく、ある程度本格的なテキストエディタで編集することを強く推奨します。
@@ -737,7 +737,7 @@ E3DAA9F7F82CB67B=エンベロープのデフォルト(&F)
 CD674FEA536FDABD=エンベロープを非表示(&H)
 A221F0C79D56397A=新規オートメーションアイテムを挿入(&I)
 7A13F82CEDFD20A9=ピッチ: 幅/スナップ(&P)...
-176C5452D56FF52A=オートメーションアイテム外の元エンベロープはプロジェクトのデフォルト挙動とする(&D)
+176C5452D56FF52A=オートメーションアイテム外の挙動はプロジェクトのデフォルトに従う(&D)
 1A62BA3FE4EDC314=プロパティ(&R)...
 21E4A0FB10179834=ポイントを間引く(&B)...
 0943685A571BB951=共有化を解除(&V)
@@ -1858,7 +1858,7 @@ C4E03DF9A8333134=時間に飛ぶ (mm:ss.xx, M|B|S, mm.bb.ss などの形式):
 [DLG_145] ; IDD_COLORTHEMEDEV
 26A41802E656AB2D=テーマの開発・調整
 76CA49A564380AB8=テーマの色/フォント設定:
-72E77C5A7CC1D2B0=テーマを読み込む(&L)...
+72E77C5A7CC1D2B0=テーマを読込(&L)...
 C63F867B1B382AE3=テーマを保存(&S)...
 A439058D27884637=イメージのリソースパス:
 80682754268B716C=エクスプローラで表示(&X)
@@ -4135,7 +4135,7 @@ D4EC5A82932B5414=自動判別フォルダ(&A)
 
 [DLG_576] ; IDD_DEVICE_ERRORS
 E5BE82CE7EF165E8=デバイスオープンエラー
-;0E898154E6AC35BF=Retry
+0E898154E6AC35BF=再試行(&R)
 336560F6444C4D2F=音声デバイス(&A)
 E65D106B2B1EE745=MIDI デバイス(&M)
 DC550AF3D8DE1D84=以後表示しない(&N)
@@ -5964,7 +5964,7 @@ E596C2C9B4F74069=マーカーを編集(&E)...\ダブルクリック
 ;E2D5F7E4A9D9BD25=34_1regionctx
 701DD219CAF4A724=リージョンを編集(&E)...\tShift+ダブルクリック
 B74B37DC130D2D95=リージョンを編集(&E)...
-9DE3EFE448C02203=リージョンを選択(&S)\ダブルクリック
+9DE3EFE448C02203=リージョンを選択(&S)\tダブルクリック
 22CB5ECBAD45A865=リージョンを選択(&S)
 AD44E0ADD0C31560=リージョンを削除(&V)\tAlt+クリック
 ;^591C4FE46C7B0E21=Remove Region
@@ -6036,7 +6036,7 @@ E62C127D8E57826D=メニューをリセット
 4B511B83E1912702=全ツールバーをデフォルトにリセット
 E25C01AE063BC448=メニューをエクスポート
 6C71A82BB8F8529C=全メニュー/ツールバーを ReaperMenuSet ファイルにエクスポート(&E)...
-D9A206BCE996E764=現在のメニュー/ツールバーを ReaperMenuSet ファイルにエクスポート (C)...
+D9A206BCE996E764=現在のメニュー/ツールバーを ReaperMenuSet ファイルにエクスポート(&C)...
 ;CE2F0C4F975A25BA=toolbar ctx menu
 8873F6AC4C349AF6=アクションを挿入(&A)...
 5B4A7F3DF7771A45=セパレータを挿入(&S)
@@ -7083,7 +7083,7 @@ FE8E0B0D0D625842=トラック：トラックのパンエンベロープをアク
 E14D4A22930A5381=トラック：トラックのトリミング音量エンベロープを表示（切替） ▲▼ Track: Toggle track trim envelope visible
 61D6A08044D4FB0B=トラック：トラックの音量エンベロープを表示（切替） ▲▼ Track: Toggle track volume envelope visible
 26E6566DED455B7B=トラック：トラックのエフェクト前音量エンベロープを表示（切替） ▲▼ Track: Toggle track pre-FX volume envelope visible
-EEFEEB2A8242A04A=トラック：トラックのパンエンベロープをエンベロープを表示（切替） ▲▼ Track: Toggle track pan envelope visible
+EEFEEB2A8242A04A=トラック：トラックのパンエンベロープを表示（切替） ▲▼ Track: Toggle track pan envelope visible
 8959E6480F41FCBA=トラック：トラックのエフェクト前パンエンベロープを表示（切替） ▲▼ Track: Toggle track pre-FX pan envelope visible
 A1036A4E1889B2CA=トラック：トラックのミュートエンベロープをアクティブ化（切替） ▲▼ Track: Toggle track mute envelope active
 CCF5C769ED04F2E2=トラック：トラックのミュートエンベロープを表示（切替） ▲▼ Track: Toggle track mute envelope visible
@@ -7301,11 +7301,11 @@ DB63656B8F94FDD6=アイテムプロパティ：ロック（切替） ▲▼ Item
 454F9A9841E5FCD4=アイテムプロパティ：アクティブなテイクにロック ▲▼ Item properties: Lock to active take (mouse click will not change active take)
 B04AE083D2892BA6=アイテムプロパティ：アクティブなテイクへのロックを解除 ▲▼ Item properties: Unlock takes (mouse click will change active take)
 62B0C9687B514E74=アイテムプロパティ：アクティブなテイクにロック（切替） ▲▼ Item properties: Toggle lock to active take (toggle mouse click changes active take)
-C9ED572935F2A1E5=アイテムプロパティ：アイテムの時間基準をプロジェクト/トラックのデフォルトに設定 ▲▼ Item properties: Set item timebase to project/track default
+C9ED572935F2A1E5=アイテムプロパティ：アイテムの時間基準をプロジェクト/トラックの時間基準に設定 ▲▼ Item properties: Set item timebase to project/track default
 ED415083E66CF2D6=アイテムプロパティ：アイテムの時間基準を実時間に設定 ▲▼ Item properties: Set item timebase to time
 E8124C72C53D3490=アイテムプロパティ：アイテムの時間基準を拍（開始位置、長さ、再生速度）に設定 ▲▼ Item properties: Set item timebase to beats (position, length, rate)
 70838D9BD1F6785E=アイテムプロパティ：アイテムの時間基準を拍（開始位置のみ）に設定 ▲▼ Item properties: Set item timebase to beats (position only)
-CC0B9BEC667C8269=トラックプロパティ：トラックの時間基準をデフォルトに設定 ▲▼ Track properties: Set track timebase to project default
+CC0B9BEC667C8269=トラックプロパティ：トラックの時間基準をプロジェクトの時間基準に設定 ▲▼ Track properties: Set track timebase to project default
 FBECE4010CFB26AE=トラックプロパティ：トラックの時間基準を実時間に設定 ▲▼ Track properties: Set track timebase to time
 00BA15BE62CF1F68=トラックプロパティ：トラックの時間基準を拍（開始位置、長さ、再生速度）に設定 ▲▼ Track properties: Set track timebase to beats (position, length, rate)
 65CD50D4A21C04D6=トラックプロパティ：トラックの時間基準を拍（開始位置のみ）に設定 ▲▼ Track properties: Set track timebase to beats (position only)
@@ -8887,10 +8887,10 @@ EB289C99B437F75A=間引くには 3 個以上のエンベロープポイントが
 
 [envdlg]	; 絞込はアクセスキー除去
 ;B37C4D7E2524FD4D=Mod
-;41F92F73B3109041=Mod...
+41F92F73B3109041=ﾓｼﾞｭ...
 6C7C9B94E39DDDA3=表示
 189A2C7E5D9DE04F=記録
-;210B1557F40D7B87=Learn...
+210B1557F40D7B87=ﾗｰﾝ...
 ;76909180E734EF7F=Global override mode
 009DEEBBB8E32B8E=エンベロープ - テイク
 4ED592C8593F12E8=エンベロープ - マスタートラック
@@ -10077,8 +10077,8 @@ C0B83AE69DBC62A5=アイテムの逆再生は MIDI には適用できません。
 ;A26C142476E29342=Error creating subproject filename
 ;15CA39CFF34E89FB=Error creating track in subproject
 ;94D8889DAA28CEB2=Error activating subproject
-;1013F95E5E56BDAB=The following MIDI inputs could not be opened: 
-;E469C2406A17223C=The following MIDI outputs could not be opened: 
+1013F95E5E56BDAB=以下の MIDI 入力が開けませんでした。: 
+E469C2406A17223C=以下の MIDI 出力が開けませんでした。: 
 ;5C004DD5C0CFA863=You have not yet selected an audio device.\r\n\r\nWould you like to select your audio device driver now (recommended)?
 ;4EF943653BC1F32A=File exists - Overwrite?
 ;0850FB29DC6ABA64=Error writing output
@@ -10777,7 +10777,7 @@ A77F2843D5933805=音価:
 [midi_DLG_141] ; IDD_DISPQUANT
 C51D8835A6D16CFC=楽譜表示のクオンタイズ設定
 2056413EF6F383A5=ノート/休符のクオンタイズ(&Q):
-D8C2F344D60F082A=プロジェクトのデフォルト設定を使用
+D8C2F344D60F082A=プロジェクトのデフォルト値を使用
 91C0802F16BBA7E3=最小音価(&M): 
 AC1439E2AB694673=表示のクオンタイズ設定について(&A)...
 ;^649ECB151A2B4705=Slider1
@@ -10794,7 +10794,7 @@ C5393BBF364C9A2B=timewise 型(&I)
 
 [midi_DLG_227] ; IDD_CUSTOM_NOTATION
 4F0D60D8E0830C9E=カスタム記譜
-54798EFA9A2A5F76=内容 (T):
+54798EFA9A2A5F76=内容(&T):
 09A7D23A670CFA42=シンボル(&S)...
 ;^48D899DD92FBC032=Name:
 ;^D840E3186B2B9581=OK
