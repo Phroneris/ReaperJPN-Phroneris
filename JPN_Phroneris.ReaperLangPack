@@ -1665,7 +1665,7 @@ BC44E5DF05AB42DE=選択した録音を改名(&N)
 ;^D9B12705AD844C62=List1
 ;^E99EBA7FF6970DBB=...
 
-[DLG_132] ; IDD_FXADD	; 絞込はアクセスキー変更、OKは&Oをオプションに譲る（OKする手段は他にもあるので）
+[DLG_132] ; IDD_FXADD	; 絞込はアクセスキー変更、OKは(O)をオプションに譲る（OKする手段は他にもあるので）
 80D9B10D4633D016=新規エフェクトを追加
 ;^5AEDD7C14E3CAEC2=Clear filter
 D840E3186B2B9581=OK
@@ -2510,7 +2510,7 @@ ADAB85F9EE55B656=水平スクロールを反転
 ;^CA95C3C55E05662B=Reverse
 ;^D8B3B3186B8C817F=ms
 
-[DLG_221] ; IDD_PREFS_KBDFIND	; 「キャンセル(&C)」だとAlt+Cが検索できないのでアクセスキー回避
+[DLG_221] ; IDD_PREFS_KBDFIND	; 「キャンセル(C)」だとAlt+Cが検索できないのでアクセスキー回避
 F433E22A84FF458F=キーまたは MIDI コントローラを検索
 F09E4B5C35AA14B9=キャンセル
 
@@ -4353,8 +4353,8 @@ D27EE7DC82211566=選択時間に空白を挿入(&O)
 C85901B72E094DA4=アイテム内の選択範囲をループとしてコピー(&C)
 168903519701870A=テイクチャンネルモード: ステレオ LR 反転(&N)
 61C27997277BA016=テイクチャンネルモード: モノラル L+R(&D)
-599A27402687A04D=テイクチャンネルモード: モノラル &L
-4CA3123877D52AE6=テイクチャンネルモード: モノラル &R
+599A27402687A04D=テイクチャンネルモード: モノラル L(&L)
+4CA3123877D52AE6=テイクチャンネルモード: モノラル R(&R)
 25AC3C63E81691A5=ピーク(&K)
 EFA5B5880467AF59=ピークを構築(&B)
 235AC9AE2F95277D=ピークを再構築(&R)
@@ -5702,10 +5702,10 @@ D8FAB2121646193D=ドック位置: 上側(&T)
 0E9C63761FCBD7E9=ウィンドウが小さくてタブが単一の時にドックを小型化(&S)
 3BF8D5CBB30734D4=タブを閉じるボタンを表示(&C)
 AD1CD450EA65F62C=透明度(&O)
-C5B5EF7FE1E4BE59=&25%
-ACA4047FD3F409FD=&50%
-9A88C27FC97A0DF6=&75%
-B99E3955E3A3AAAD=&100%
+C5B5EF7FE1E4BE59=25%(&2)
+ACA4047FD3F409FD=50%(&5)
+9A88C27FC97A0DF6=75%(&7)
+B99E3955E3A3AAAD=100%(&1)
 358730B81FD48466=選択時は不透明にする(&A)
 052CF490C8935FF2=ドックを非表示(&H)
 08FEB056C6CB9471=ドックの全てのウィンドウを閉じる(&W)
@@ -9088,7 +9088,7 @@ A63638018887C3C4=データベースの新規ファイルをスキャン＋全メ
 ;^86A4F3F3E1A5932A=Year
 ;^4435244E8273302A=Genre
 ;^09A01E8714A0B688=Comment
-;/^49F3858E533190F8=BWF Description	; 下のはメディアエクスプローラの適当右クリック→検索(&S)→BPM
+;/^49F3858E533190F8=BWF Description	; 下のはメディアエクスプローラの適当右クリック→検索→BPM
 10D0E37E59744608=BPM(&M)
 ;^C22D827E2CB7D166=Key
 ;^D388E3E89010C0A9=Custom database tag
@@ -9156,7 +9156,7 @@ BA9960D09EFE41CD=閉じる(&C)\tESC
 ;^86A4F3F3E1A5932A=Year
 ;^4435244E8273302A=Genre
 ;^09A01E8714A0B688=Comment
-;/^49F3858E533190F8=BWF Description	; 下のはメディアエクスプローラのオプション(&O)→検索(&S)→BPM
+;/^49F3858E533190F8=BWF Description	; 下のはメディアエクスプローラのオプション→検索→BPM
 10D0E37E59744608=BPM(&M)
 ;^C22D827E2CB7D166=Key
 ;^D388E3E89010C0A9=Custom database tag
@@ -10151,7 +10151,7 @@ A5DD886F0B75CC0D=「%s」を上書きしますか？
 ;^BF7C871A52628C99=Warning
 ;^9EC3E20500624AAF=Error
 ;^A4C0C852A5B25572=Confirmation
-;/^C93417DD40352E1B=Error saving	; 下のNoteは「ノート(&N)」になっちゃうため
+;/^C93417DD40352E1B=Error saving	; 下のNoteは「ノート(N)」になっちゃうため
 33A5C54D35029E6F=ヒント
 ;^BBA33ABA3D67B8AA=REAPER Error
 ;^01BF66E624968F18=REAPER Query
@@ -10616,8 +10616,8 @@ E74D3C6A8F24B632=詰める
 ;^C01085DD37178417=File info:
 ;^D840E3186B2B9581=OK
 
-[midi_DLG_123] ; IDD_NOTEPROP
-F6B884BE6F5BDBB3=&Off ベロシティ:
+[midi_DLG_123] ; IDD_NOTEPROP	; 多分もう使われてない
+F6B884BE6F5BDBB3=Off ベロシティ(&O):
 ;^430304A419B0E574=Note Properties
 ;^4EC7F7461DF2D993=&Note:
 ;^366298521A7B6338=&Channel:
@@ -10633,7 +10633,7 @@ F6B884BE6F5BDBB3=&Off ベロシティ:
 130CE035AD1318FE=イベントのプロパティ
 9CBA741ED68265FB=形式(&T):
 ;/029DFA9FB2B6AF07=&Pitch:
-3AA68023268A3059=&Off 値:
+3AA68023268A3059=Off 値(&O):
 ;7F93CC1ADBCE5F9B=(pitchval)
 ;^CEEE8377C1EF8C86=&Position:
 ;^E2071FAD9CE62FAB=&Length:
@@ -16594,7 +16594,7 @@ ADF3B620E4CA9EA9=アレンジビューでコントロールパネルを表示
 ;^61946358B1034B76=Mute
 ;^0420AF237D97ECB8=Solo
 
-[trackrecstatus]	; トラック録音状態のツールチップ	;; Channelはチャンネル(&H)とすることでトラックが4チャンネル以上の時のメニューにアクセスキーを与えられると思ったけどそうでもなかった
+[trackrecstatus]	; トラック録音状態のツールチップ	;; Channelはチャンネル(H)とすることでトラックが4チャンネル以上の時のメニューにアクセスキーを与えられると思ったけどそうでもなかった
 ;DFD6E20CFF9A0503=MIDI (all inputs): 
 ;5D6DCE66B061856D=MIDI (not connected): 
 43FFDD8C94E61FA0=入力なし
