@@ -795,7 +795,7 @@ A66F5FD1FF70F568=ドックをメインウィンドウに表示(&D)
 B814E3BFB72A607B=プリセットを削除(&L)
 37E1C985732EDDC1=プリセットを保存(&S)...
 0A406B52D72D3189=トラックをミュート (切替)
-;/166EA90B165E1A9C=Automation notifications(&U)	;; わかんね
+166EA90B165E1A9C=オートメーションへの伝達設定(&U)
 6C837121717D4EA3=可能なら操作履歴の読み込みを避ける(&L)
 7C52DE0969C08A82=バグ傾向のあるプラグイン向け互換モード(&B)
 674FB3DE1B272051=チャンネル 1
@@ -815,13 +815,13 @@ B38F0968237C0F05=チャンネル 16
 674FAADE1B271106=チャンネル 8
 674FABDE1B2712B9=チャンネル 9
 A2AD8A8A1376F812=互換性設定(&C)
-;F3BA3A8E6686C922=Default notification settings (set in preferences/VST)
+F3BA3A8E6686C922=デフォルトの伝達設定 ([環境設定] > [プラグイン] > [VST] で指定) (&D)
 4D7E1F0F4DFA5B57=VST パッチ/バンクをエクスポート (.fxp/.fxb) (&B)...
 B9ABDBF036490D44=プリセットライブラリをエクスポート (.rpl) (&X)...
 ;7619F5E2F83AE927=Hard reset on playback start
-;A20B1F2055BF5412=Ignore all notifications
-;553098B8452B6F0C=Ignore when not from UI thread
-;C514867DEFC3A26A=Ignore when plug-in window is not open
+A20B1F2055BF5412=全ての伝達を無視(&G)
+553098B8452B6F0C=UI スレッド経由でない限り無視(&U)
+C514867DEFC3A26A=プラグインウィンドウが開いていない限り無視(&W)
 A323B989757B042A=VST パッチ/バンクをインポート (.fxp/.fxb) (&P)...
 1E031E71B52167CD=プリセットライブラリをインポート (.rpl) (&I)...
 18A8E487E05046F8=トラックの総チャンネル数の設定変更をプラグインに伝える(&C)
@@ -830,7 +830,7 @@ E485FC63E796EFFA=下に移動(&D)
 A35385C769502F3F=上に移動(&U)
 DF45382BC646671C=リンクしない(&N)
 9590CA1D43A60188=プラグイン状態記録データサイズ:  0 kB
-;4523D3871D7D7B77=Process all notifications
+4523D3871D7D7B77=全ての伝達を実行(&A)
 888CF2A8F9990B9E=プリセットの名前を変更(&N)...
 C35B6227A5807B01=プラグインの操作履歴の保存を最小限にする(&M)
 77D4606E1E255B38=プリセットをデフォルトとして保存(&E)...
@@ -2428,9 +2428,9 @@ F27EE9EB697AD546=オフラインレンダリングをプラグインに認識さ
 EB5AD63A75E962D6=プラグインの設定立ち上げ中は音声をバイパス (マルチスレッド処理に弱い一部の VST に有効です)
 9AFB50287E6BE13A=UAD-1 同期モード (CPU の過剰使用を抑制します) - エフェクト先読みは切ってください
 D7D5E6EF54BF3AAB=VST プラグインの完全なクリアを許可 (メモリ使用が抑えられますが、互換性を損ないます)
-;/40D2555271B4D0B9=Parameter automation notifications:	;; わかんね
+40D2555271B4D0B9=パラメーター→オートメーション 伝達設定:
 ;1DA2552C95819AA4=Enable ARA for VST3 plug-ins that support it (requires restarting REAPER)
-;^C39132F1A8047E9F=Edit...
+;/^C39132F1A8047E9F=Edit...	;; ↑↑「パラメーターからオートメーションへの伝達設定」としたいが、入り切らないので一旦パス
 
 [DLG_212] ; IDD_PREFS_PROJECT
 4D218C9A346F7B79=プロジェクト設定
@@ -14619,11 +14619,11 @@ CB26A3CA44D04B68=ヒープ破壊保護を無効にするには、REAPER を再�
 ;^AB2A3D4EF1C9D1A8=Default
 CA47517BDEFA4232=直線的変化
 
-[prefs_plugin_vst]
-;B150A2F1CC68BBAF=Ignore when plug-in window is not open [default]
-;^553098B8452B6F0C=Ignore when not from UI thread
-;^A20B1F2055BF5412=Ignore all notifications
-;^4523D3871D7D7B77=Process all notifications
+[prefs_plugin_vst]	; アクセスキー除去のため全翻訳
+B150A2F1CC68BBAF=プラグインウィンドウが開いていない限り無視 [デフォルト]
+553098B8452B6F0C=UI スレッド経由でない限り無視
+A20B1F2055BF5412=全ての伝達を無視
+4523D3871D7D7B77=全ての伝達を実行
 
 [prefs_plugincompat_help]
 ;811F90A56BF55F69=Test all plug-in input and output for denormalized sample values (meaninglessly small values that can cause very high CPU use).
@@ -14816,7 +14816,7 @@ CE84A8764F3997DE=トラック番号 (大→小) ⇔ 表示順位 (前面→背�
 ;D331EE0B5ABED394=Save the state of every patch in the VST preset bank, not just the active patch. Some plugins will not restore themselves properly otherwise.
 ;A33160A83CBD4DE3=Use the generic slider view instead of the VST's custom GUI. You can switch views at any time using the UI button on the plug-in window.
 ;24C425763A91B75D=Set the default VST knob behavior. Almost no plug-ins support this setting.
-;062E0C5C05471D20=Set how automation notifications are handled from VST plug-ins. You can also override this per-plugin, most people will want to leave this on the default.
+062E0C5C05471D20=VST プラグインからオートメーションへの伝達がどのように取り扱われるかを設定します。プラグイン毎に設定を上書きすることもできますが、ほとんどの場合にはデフォルトが最適です。
 ;2EAA3B50A18F889D=Don't inform VSTis that playback has stopped. Most synths (especially arpeggiators) want to know playback has stopped to avoid hanging notes.
 ;5709C6930F8F1BE9=Preserve held notes and current pitch when resetting VSTis. This is probably needed when disabling Preferences/Audio/Playback/Reset MIDI CC/Pitch.
 ;1DE74C0937316C7F=Some VSTs behave differently when rendering offline (not in realtime).  When deselected,  plugins always think they are online.
