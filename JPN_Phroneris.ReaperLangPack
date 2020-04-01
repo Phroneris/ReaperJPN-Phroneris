@@ -1842,8 +1842,8 @@ FE1F26B1104E7C16=プロジェクト履歴に表示する数 (最大 100):
 ;^D9B12705AD844C62=List1
 ;^18E4377E5DDC2B7A=Add
 ;^F812C7145E261C23=Remove
-;^28450354F52CB7AE=Reset
-;^62C49C467C0C15D3=Load...
+;^28450354F52CB7AE=Reset	; Loadは省スペースのため
+62C49C467C0C15D3=読込(&L)...
 ;^925B2CEB12D2D978=Save...
 ;^D840E3186B2B9581=OK
 ;^F09E4B5C35AA14B9=Cancel
@@ -3233,10 +3233,10 @@ D037E80E157C9825=アスペクト比を保ってリサイズ (レターボック�
 ;^C32C641180B224AC=Frame rate:
 ;^08325007B4EB10C5=x
 
-[DLG_421] ; IDD_FXPARMRENAME
+[DLG_421] ; IDD_FXPARMRENAME	; クリアはアクセスキー衝突回避
 608E64F93C5BFD52=エフェクトパラメータ名を変更
 ;^C3EB4B7A6BCD5F3C=New name:
-;^F10F4B1B4D6DC250=Clear
+F10F4B1B4D6DC250=クリア(&L)
 ;^D840E3186B2B9581=OK
 ;^F09E4B5C35AA14B9=Cancel
 
@@ -5686,12 +5686,12 @@ B880D4A96E9537CA=エフェクトを削除(&D)
 
 [MENU_315] ; IDR_CONTEXTS_15	; センド削除はアクセスキー付与
 ;4D20578AB111ACF0=15was2SendMixerCtx
-B75CC57A4B1F89C5=センドパラメータを表示(&S)\tClick
+B75CC57A4B1F89C5=センドパラメータを表示(&S)\クリック
 AB3A6BCE325A5628=センドパラメータを表示(&S)
-A3128BC4BBE6C116=センドをミュート(&M)\tShift+Click
+A3128BC4BBE6C116=センドをミュート(&M)\tShift+クリック
 E42B7D098D9F7AD0=センドをミュート(&M)
-071444E5F7680782=センドを削除(&R)\tAlt+Click
-74BCDB48801CC2DA=トラックのルーティングウィンドウを表示(&W)\tCtrl+Click
+071444E5F7680782=センドを削除(&R)\tAlt+クリック
+74BCDB48801CC2DA=トラックのルーティングウィンドウを表示(&W)\tCtrl+クリック
 B19A3615EADF772D=トラックのルーティングウィンドウを表示(&W)
 F0411A69BCF40C1B=センド先のトラックに移動(&T)
 ;^476CA46F5CC9791B=Remove send
@@ -5843,8 +5843,8 @@ B99E3955E3A3AAAD=100%(&1)
 
 [MENU_322] ; IDR_CONTEXTS_22
 ;7E02CFB8966DECE8=22MidiPrefs
-F09282AB2265717E=入力の詳細設定(&I)...\t(ダブルクリック)
-6786B0C60EFD69C5=入力の詳細設定(&I)...
+F09282AB2265717E=入力の詳細設定(&G)...\t(ダブルクリック)
+6786B0C60EFD69C5=入力の詳細設定(&G)...
 B9EA41CA74C678FA=入力 ID (&D)
 08329807B4EB8B1D=0
 D97FFF186C3A6907=17
@@ -5894,8 +5894,8 @@ D96EFE186C2BF421=60
 D96EFD186C2BF26E=61
 DA7E7524AFE750D4=デバイスを一覧から削除(&F)
 1D543734374ACE0C=入力を有効化(&E)
-0E5C993D86877C8B=出力の詳細設定(&O)...\t(ダブルクリック)
-1E683F71A896913C=出力の詳細設定(&O)...
+0E5C993D86877C8B=出力の詳細設定(&G)...\t(ダブルクリック)
+1E683F71A896913C=出力の詳細設定(&G)...
 93A9B27F38F913AB=出力 ID (&D)
 D96EFC186C2BF0BB=62
 D96EFB186C2BEF08=63
@@ -9569,7 +9569,7 @@ CE9229C691739C56=レシーブ: トラック %d
 617E95F30033D513=エフェクト: %s\n
 71258FD7D1871C54=メディアアイテム: %d\n
 
-[fx]
+[fx]	; バイパスはエフェクトパラメータ一覧におけるアクセスキー除去
 C1FA445408219BF5=エフェクトパラメータのラーン解除
 5D98345178A68868=エフェクトパラメータのラーン
 59A1D2B72129D344=履歴
@@ -9603,7 +9603,7 @@ F17BD15BC982BD69=エフェクトチェーンを追加:
 E561B4BD0979C906= [バイパス中]
 340461BC0069FBA9=モニタリング
 ;2B37998FE21F1A9B=FX: 
-;^1C9976E435832BEB=Bypass
+1C9976E435832BEB=バイパス
 ;^67D35DD28653A00A=bypassed
 ;^12D1E2F79FD7BDB8=Rename FX instance
 ;^17E7264672EB4EC9=FX comment for: 
@@ -10397,7 +10397,7 @@ C67CF3952F9EA6B2=(選択アイテムがありません)
 57DC25160CC84703=拡張(&X)
 6936F4B2ED5C783C=ソロ (Solo in place) (&P)
 924A9191988B5A83=ソロ (ルーティング無視) (&R)
-;883C781B11CDF661=Click
+883C781B11CDF661=クリック
 ;^D96196186C20B90D=: 
 ;^2430BBE52E3FC625=Comp %d
 ;/^62C49C467C0C15D3=Load...	;; どこ？？
@@ -13878,7 +13878,7 @@ FA7C612AB981A126=スクラブする
 ;^79DF6C21E88B8F28=Show the last user action in REAPER's menu bar. Clicking the action will open the undo window.
 
 [prefs_audio]
-85222607B31F6CB7=プロジェクトの全マスターアウトを用いる
+85222607B31F6CB7=プロジェクトの全マスター出力を用いる
 
 [prefs_audio_help]
 ;9864B7B74DAD01DC=When enabled, REAPER will share audio devices with other applications by closing the audio hardware not active.
@@ -15289,7 +15289,7 @@ FF21A80D800F172E=「reaper.%s」が不明
 D450BF663AF0F1E3=前詰め
 3B7998D665998A53=トラックの録音設定: Track
 
-[recmenu]
+[recmenu]	; 順繰りは複数トラック選択時のみ出現
 5672C710FBC6C520=全 MIDI 入力(&A)
 ;67C7AD9F5370E4BF=Ch%d: %s
 5BA4FD0495383A98= ～ %s [%d チャンネル]
@@ -15308,12 +15308,12 @@ BD6BDF2B89B0D125=録音: 入力 (形式を指定) (&F)
 CB583F872ABE35DD=入力: %d チャンネル(&H)
 9FBD3B7C7D482A63=入力: マルチチャンネル(&H)
 8B6B47A8BE35ED96=入力: MIDI(&D)
-145E67C5F043EBA4=MIDI (順次入力/チャンネル)
+145E67C5F043EBA4=MIDI (順繰りな入力またはチャンネル)
 4DD9C390E127A0E6=Ch %d ～ %d
 301435B0001182A3=入力チャンネルをマッピング(&M)
 B332C15E45DB07B9=元のチャンネル(&O)
 56C59DA37A313EB1=入力: なし(&N)
-1E071B9647C6E815=入力を順次設定
+1E071B9647C6E815=入力を順繰りに割り当て(&Q)
 ECAF11E2B0ADF073=トラックの録音設定 (入力、クオンタイズ、形式、etc) (&T)...
 BCD3C22A1D934649=トラック入力エフェクトチェーン(&X)...
 ;^D89CC7186B79C49A=to
