@@ -104,7 +104,7 @@ E0B104299A7A8E2E=時間
 62C49C467C0C15D3=読み込み(&L)...
 28450354F52CB7AE=リセット(&R)
 925B2CEB12D2D978=保存(&S)...
-ABEC79059CAD0B0E=別名:
+ABEC79059CAD0B0E=名前を変更:
 4D5B21719C8D85CE=ファイルを参照...
 81F584F9FDAE6C4F=Finder で表示
 08329D07B4EB939C=+
@@ -1838,7 +1838,7 @@ FE1F26B1104E7C16=プロジェクト履歴に表示する数 (最大 100):
 ;^E0B104299A7A8E2E=time
 ;^80BE1395BCF8C169=Download language packs
 
-[DLG_140] ; IDD_ALIASLIST
+[DLG_140] ; IDD_ALIASLIST	; 環境設定→音声→チャンネル改名/マッピング
 ;^D9B12705AD844C62=List1
 ;^18E4377E5DDC2B7A=Add
 ;^F812C7145E261C23=Remove
@@ -1848,8 +1848,8 @@ FE1F26B1104E7C16=プロジェクト履歴に表示する数 (最大 100):
 ;^D840E3186B2B9581=OK
 ;^F09E4B5C35AA14B9=Cancel
 
-[DLG_141] ; IDD_ALIASITEM
-5E9EC9164DF038AD=別名・チャンネルマッピング
+[DLG_141] ; IDD_ALIASITEM	; ↑の命名ダイアログ
+5E9EC9164DF038AD=チャンネルの改名とマッピング
 44D4B9BC3E717FAC=チャンネル:
 ;^D840E3186B2B9581=OK
 ;^F09E4B5C35AA14B9=Cancel
@@ -1978,10 +1978,10 @@ CB2AA5F907FD5B5E=有効にした MIDI デバイスが存在しない時に警告
 AC7AE7A176147DD5=再生停止時に微小フェードアウト
 6AF1C766315DA216=再生開始時に微小フェードイン
 28DF1513ACC005F5=再生時、無音トラックの CPU 使用を抑制 (実験的機能)
-C5A76E243C28A4AB=チャンネル命名／対応付け
-4554DB9B26BD7F5D=入力チャンネルをカスタマイズ
-BC4FB48156117258=カスタマイズ...
-FC22C6EF8E185AD2=出力チャンネルをカスタマイズ
+C5A76E243C28A4AB=チャンネルの名前とマッピング
+4554DB9B26BD7F5D=入力チャンネルを改名/マッピング
+BC4FB48156117258=編集...
+FC22C6EF8E185AD2=出力チャンネルを改名/マッピング
 7744ECC4A8F97396=一般的でないステレオチャンネルの組み合わせも表示 (Input 2/Input 3 など)
 ;F67D1FDC9D0ABC37=main outs
 644113753F9A2FD9=デフォルトのメトロノーム出力:
@@ -7768,7 +7768,7 @@ EFAC62541238E2A3=トラック：トラックの録音モードをMIDI置換（To
 ;75D8D1FC3DD49354=FX: Arm track envelope for last touched FX parameter
 ;7109C6A3CC89E006=FX: Show parameter modulation/link for last touched FX parameter
 ;33DF05F0646C1BC8=FX: Set MIDI learn for last touched FX parameter
-;DFC0C42EE13ECFBD=FX: Set alias for last touched FX parameter
+DFC0C42EE13ECFBD=エフェクト：最後に接触したエフェクトパラメータ名を変更 ▲▼ FX: Set alias for last touched FX parameter
 ;416DCDE726D30CC1=Options: ripple edit all affects tempo map
 ;BD4CD61A1154CEE3=Options: Envelope points move with media items
 ;49B495C0FDCD71C7=Options: Automation items do not connect to the underlying envelope
@@ -8462,15 +8462,15 @@ A9D4F8A41900FD2E=マスタートラック
 8A1F0F35A4C8FD3E=選択トラック
 
 [aliasdlg]
-;C2C9675C6F6C0768=Output channel alias/mapping
-;12622FC57125BBC7=Input channel alias/mapping
-;04BC1D63A93DB113=Aliased Name
-;DE13AB7E3D1029FF=HW#
-;B5043558DA4E6D19=HW Name
-;E5EE58A37A698AA8=Load channel map from:
-;654702982910C3C9=Save channel map as:
-;3B4D783DE04FE3DC=Reset all names/mappings to default?
-;725278CFF3575289=Confirm
+C2C9675C6F6C0768=出力チャンネルの改名とマッピング
+12622FC57125BBC7=入力チャンネルの改名とマッピング
+04BC1D63A93DB113=名前
+DE13AB7E3D1029FF=#
+B5043558DA4E6D19=ハードウェア名
+E5EE58A37A698AA8=チャンネルマップを読み込む:
+654702982910C3C9=チャンネルマップを保存:
+3B4D783DE04FE3DC=全ての改名とマッピングをデフォルトに戻しますか？
+725278CFF3575289=確認
 ;^73532F71FB46906C=(not connected)
 ;^0832A507B4EBA134=#
 
@@ -9694,11 +9694,11 @@ FF225ECB120E936B=エフェクト追加:
 ;^C3EB4B7A6BCD5F3C=New name:
 ;^82E42D2FF8D25A8D=Could not get channel info for effects (are they multichannel?)
 
-[fxmenu]
+[fxmenu]	; 上4つと「エンベロープ: 」はTCP掲載パラメータの右クリ時に出るが、アクセスキーを書いても効かない
 3D781F4D51AC0219=リストから削除: 
 201E6F9517E04589=MIDI ラーン: 
 BDEEA53C88DD085E=モジュレーション: 
-C3FB94BE32BA2A3B=名前変更: 
+C3FB94BE32BA2A3B=パラメータ名の変更: 
 BFB99C70CB51B59E=全てのパラメータ
 ;C66D8C4857F36AED=parm
 7E680E30DB01BDC0=最後に編集したパラメータはありません
@@ -17485,7 +17485,7 @@ B4BFDA20E9981233=トラックを録音待機
 ;9E156D61DBB2028F=Duplicate Track Send
 0C5F536DA72ABBC6=トラックの MIDI 出力を削除
 FB8FEFF6831F33F8=トラックのエンベロープを表示/非表示
-;950D0020BE292DF6=Alias FX parameter
+950D0020BE292DF6=エフェクトのパラメータ名を変更
 ;5ACDC8D13C50E284=Toggle all FX parameters in track panel
 07F5CC6F2E499C72=ハードウェア出力を削除
 71450AC5DAF0303E=トラックのセンドを削除
