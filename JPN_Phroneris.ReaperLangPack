@@ -117,7 +117,7 @@ F8E6A0B81A77C5E9=全てのMIDIデバイスをリセット ▲▼ Reset all MIDI 
 1EEF91D385882BBE=プラグイン
 46B10D8B633443CD=BWF データにプロジェクトファイル名を含める
 B90A279A7257C793=編集(&E)
-C7A89083E6E728EB=プロジェクトディレクトリの整理
+C7A89083E6E728EB=プロジェクトの未使用ファイルの削除
 ;8C2AEE7E9FE91BE0=to:
 F9519A70026F7B52=位置(&P):
 6D27CBDC5943D7B6=形状(&S):
@@ -2008,7 +2008,7 @@ FC22C6EF8E185AD2=出力チャンネルを改名/マッピング
 [DLG_159] ; IDD_DIRCLEANUP
 75501023A0653617=選択ファイルを削除(&R)
 BD65489FE41F2336=※注意: このリスト上のファイルは現在のプロジェクトで使われていないものですが、他で使われていない保証はありません。
-1A0D36499DEB718F=ごみ箱に移動 (より安全です) (&B)
+1A0D36499DEB718F=ごみ箱に移動 (比較的安全です) (&B)
 A0B572EEEF748C02=見に行く(&E)
 ;^C7A89083E6E728EB=Project Directory Cleanup
 ;^F09E4B5C35AA14B9=Cancel
@@ -8996,16 +8996,16 @@ A0755903D143E4DE=閉じようとしています
 ;50E7839A4C514644=LANGUAGES:
 ;^AF63BD4C8601B7DF=
 
-[dirclean]
-;8526440B07707361=Send files to trash (safer)
-;02137CBE81838764=Scanning project directory...
-;0D74709687427C94=%d of %d files are not used in 
-;E1B7D88D39E1EB01=No unused files found
-;2B0D285A38123897=Remove %d selected files?
-;7DD3D3B3AF7CDCD0=Delete Files Confirmation
-;8D1A56E0463971F7=%d files could not be deleted.
-;F2F4267894F0AB1D=Delete Files Error
-;F3B9104AAEBB1249=Project media path not found!
+[dirclean]	; 最初のは多分Mac用
+8526440B07707361=ゴミ箱に移動 (比較的安全です)
+02137CBE81838764=プロジェクトのディレクトリをスキャン中...
+0D74709687427C94=未使用ファイル %d 個 / 全 %d 個: 
+E1B7D88D39E1EB01=未使用ファイルが見つかりません
+2B0D285A38123897=%d 個の選択ファイルを削除しますか？
+7DD3D3B3AF7CDCD0=ファイル削除の確認
+8D1A56E0463971F7=%d 個のファイルを削除できませんでした。
+F2F4267894F0AB1D=ファイル削除エラー
+F3B9104AAEBB1249=プロジェクトのメディアパスが見つかりません！
 ;^C7A89083E6E728EB=Project Directory Cleanup
 
 [docker]
