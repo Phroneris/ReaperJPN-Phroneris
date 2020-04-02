@@ -1,6 +1,9 @@
 # テンプレートファイルを無視
 *template*ReaperLangPack.txt
 
+# 非Windows向けパッチを無視（差分に意味が無いので）
+JPN_Phroneris-Mac_Linux.ReaperLangPack
+
 # Notepad++ セッションファイルを無視
 *.npps
 
