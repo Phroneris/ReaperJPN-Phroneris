@@ -1,28 +1,32 @@
-
 編集してGitHubに反映する流れ
 
 - developをチェックアウトしていることを確認する。
 - JPN__NppSession.nppsから言語パッチを編集する。
 - パッチ冒頭とhistory.txtの表記バージョンを上げる。historyには日付とたわごとも入れる。
-- できた最新パッチを "old" フォルダに複製し、ファイル名を JPN_Phroneris[X-XX-XXX] とする。
+- できた最新パッチを "old" フォルダに複製し、ファイル名を JPN_Phroneris[X-XX-XXX].ReaperLangPack とする。
 - コミットメッセージを「ver X.XX.XXX」として全てコミットする。
-- masterをチェックアウトし、developをマージする。「vX.XX.XXX」のタグも付ける。
+- masterをチェックアウトし、developをマージする。masterで「vX.XX.XXX」のタグも付ける。
 - masterとdevelopの両方をプッシュする。
 - GitHubのWikiの表記バージョンを上げる。
 
-+ GitHub: https://github.com/Phroneris/ReaperJPN-Phroneris
++ GitHub Wiki: https://github.com/Phroneris/ReaperJPN-Phroneris/wiki
 
 
 
-単体DL用zipを上げる流れ
+DL用ファイルを各所に上げる流れ
 
-- 旧zipをOneDriveの "_old" フォルダに上げ、ファイル名を ReaperJPN_Phroneris-vX.XX.XXX とする。
-- パッチ、readme.txt、history.txtをOneDriveに上げる。
-- パッチ、readme.txt、history.txtをzipper.batでzip化する。
-- 新zipをGitHubのreleasesとREAPER Stashに上げる。Stashではキャプションのバージョンを更新する。
+- 配布ファイルをzipper.batでzip化する。
+- できた最新zipを色々する。
+  - ローカルの "old" フォルダに複製し、ファイル名を ReaperJPN_Phroneris-vX.XX.XXX.zip とする
+    （.gitignoreで除外してるのでリモートにzipは残らない）。
+    その名前のままOneDriveの "_old" フォルダにも上げる。
+  - GitHubのreleasesとREAPER Stashに上げる。Stashではキャプションのバージョンを更新する。
+- パッチ（両OS用）、readme.txt、history.txtをOneDriveに上げる。
 
-+ OneDrive: https://onedrive.live.com/about/ja-jp/
++ OneDrive（_old）: https://1drv.ms/f/s!AhtRdcWiGWJDiWjQMxU5tVyBTN5V
++ GitHub releases: https://github.com/Phroneris/ReaperJPN-Phroneris/releases
 + REAPER Stash: http://stash.reaper.fm/v/27131/JPN_Phroneris.zip
++ OneDrive（配布）: https://1drv.ms/f/s!AhtRdcWiGWJDiVMCWRcv3Ac1rVcF
 
 
 
@@ -30,7 +34,7 @@
 
 - 自サイトのバージョン表記も最新を反映させる。
 
-* zip化の際、非Windows向けパッチ（アクセスキー除去、LFで改行）が自動生成される。
+* zip化の際、非Windows向けパッチ（アクセスキー除去、LFで改行）が自動生成される。ちなみに.gitignoreで除外してる。
 * readmeはかつてはマークダウンで書いていたが、Wikiに完全移行した。
 * ReaPerLang（旧toolフォルダ）はかつては同じリポジトリで管理していたが、分離した。
 * かつてはダブルクリックで編集するために*._RLPをlangpackerで言語パッチ化していたが、
@@ -38,9 +42,9 @@
   * langpacker実行時に古い言語パックを一度だけ生存させていたが、役立った試しがないので廃止。
 * tesutoリポジトリで事前にコミットとかをテストするという工程があったが、git慣れにより廃止。
 
+* GitHub Actionsかなんかで最大限自動化した方が絶対に良いと思う。
+
 
 
 
 以上、がんば。
-
-
