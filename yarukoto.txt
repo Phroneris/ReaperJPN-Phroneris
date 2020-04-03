@@ -6,7 +6,7 @@
 - パッチ冒頭とhistory.txtの表記バージョンを上げる。historyには日付とたわごとも入れる。
 - できた最新パッチを "old" フォルダに複製し、ファイル名を JPN_Phroneris[X-XX-XXX] とする。
 - コミットメッセージを「ver X.XX.XXX」として全てコミットする。
-- masterをチェックアウトし、developをマージする。
+- masterをチェックアウトし、developをマージする。「vX.XX.XXX」のタグも付ける。
 - masterとdevelopの両方をプッシュする。
 - GitHubのWikiの表記バージョンを上げる。
 
