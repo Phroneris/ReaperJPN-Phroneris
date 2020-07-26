@@ -7,7 +7,7 @@
 - コミットメッセージを「ver X.XX.XXX」として全てコミットする。
 - masterをチェックアウトし、developをマージする。masterで「vX.XX.XXX」のタグも付ける。
 - masterとdevelopの両方をプッシュする。
-- GitHubのWikiの表記バージョンを上げる。
+- GitHubのWikiの表記バージョンを上げる（3箇所）。
 
 + GitHub Wiki: https://github.com/Phroneris/ReaperJPN-Phroneris/wiki
 
