@@ -117,6 +117,7 @@ sub divide		# 言語パック内のセクションを、個別のファイルに
 {
 	my $lpName = shift;
 	my @sections = split /^(?=\[)/m, &readFile($lpName, 1);
+	&abort("This isn't langpack: ${lpName}", 1) if $sections[0] !~ /^#NAME:/;
 	print "\n";
 	my @secNames = map { /^\[([^\[\]]+)\]/ ? $1 : $zerothSectionName } @sections;
 	&mightMkdir($sectionDirName);
