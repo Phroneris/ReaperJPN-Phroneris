@@ -16,8 +16,8 @@
 
 
 
-use strict  ;	# デバッグ用
-use warnings;	# デバッグ用
+# use strict  ;	# デバッグ用
+# use warnings;	# デバッグ用
 use autodie ;	# エラー時に$@を得るため
 use File::Copy 'copy';
 use autodie    'copy';	# 大事
@@ -123,7 +123,7 @@ sub divide		# 言語パック内のセクションを、個別のファイルに
 	my $i = 0;
 	foreach my $sec (@sections)
 	{
-		&writeFile("${sectionDirName}/${secNames[$i++]}.txt", $sec =~ s/[\r\n]+$//r);	# 末尾の改行は全削除
+		&writeFile("${sectionDirName}/${secNames[$i++]}.txt", $sec =~ s/[\x0d\x0a]+$//r);	# 末尾の改行は全削除
 	}
 	&writeFile($mapFilePath, [ map { $_."\n" } @secNames ]);
 }
@@ -183,7 +183,7 @@ elsif ($processMode eq 2) {
 	print '* Cloning...', "\n\n";
 	&clone($langPackName);
 } else {
-	&abort("Invalid process mode.\n", 1);
+	&abort("Invalid process mode.", 1);
 }
 
 print "\n", 'Done.', "\n";
