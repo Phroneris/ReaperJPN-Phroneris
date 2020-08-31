@@ -1,0 +1,10 @@
+[csurf_DLG_268] ; IDD_SURFACEEDIT_WWW
+;DEDDEFB0D4AC4971=Run web server on port:
+;DDBFA7339AE9FDBC=Username:password:
+;45829D2DE675DF73=(blank for none)
+;78F3062A0BFFA603=Default interface:
+;62453F0E0CFBA85A=User pages...
+;B25F244509A7442B=Built-in pages...
+;B35E79081B2BCC11=Use rc.reaper.fm
+;4606CA318D4A8CDE=Access URL:
+;^D405917E36F95CF8=ID:

@@ -1,0 +1,8 @@
+[wavpack]
+;3B00640A5CD4EBA3=Bad filename
+;2720D47F4C902D25=Error parsing WV structure
+78BAED85F788CCC9=WAVPACK ファイル
+31A9C850EDD24AFD=WavPack %dHz %dch
+D755D0C7D79C93E5=WavPack 可逆圧縮
+;5348443D4679AAC6=%dbit WavPack
+;^D9220AE04A08F86B=Error opening file

@@ -1,0 +1,5 @@
+[automute]
+;B2AE811100D0DBB6=Automute: track output exceeds
+;A565C29A3016483F=(no tracks automuted)
+;^F420AC1723391ECE=Master track
+;^D0C04B9E79D271AE=Track

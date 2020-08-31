@@ -1,0 +1,19 @@
+[DLG_578] ; IDD_PREFS_AUDIOCONFIG_LINUX
+;FFAE57EC0BA56FE1=Blocksize:
+;F143541CC4FBB847=Periods:
+;9AFDF664A489933B=RT priority:
+;8C576A763B47579A=Auto-start jackd, launch command (blank=libjack):
+;EC20FB93DB548DE3=Auto-connect jack audio channels to hardware
+;33EECA0DB7DB4D32=Auto-connect jack MIDI channels to hardware
+;EBAA66188F58E2C6=Auto-suspend PulseAudio
+;775661C1B339B845=Disable power management if supported (requires permissions to /dev/cpu_dma_latency)
+;CE0D75895E3F6560=Lock process memory with mlockall() (CAUTION)
+;^16464B290024A7A0=Audio device settings
+;^0314604C3913412E=Audio system:
+;^DA38E298C189302F=Input channels:
+;^9324D41856E3D6C5=Input device:
+;^C6FA709C7A5DB354=Output channels:
+;^CD3ECB2096970F76=Output device:
+;^F97A12BF98D450CF=Samplerate:
+;^FA904550054D55C7=Bit depth:
+;^E9C70EA3B03F0A91=Allow projects to override device sample rate

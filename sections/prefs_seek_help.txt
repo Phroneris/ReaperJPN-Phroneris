@@ -1,0 +1,10 @@
+[prefs_seek_help]
+;4F2087FAE26C18FC=Define which areas of the REAPER window will trigger playback seek when clicked with the mouse.
+;81AFE5EA775827BD=By default, playback will seek to the loop start or end point when you edit that point, and repeat is enabled.
+;02D537546704E4C2=How far before the loop start or end playback should begin, when seeking is triggered by a loop point edit.
+;A679F6E2ECA9D19D=By default, playback will not seek to a media item when you edit that item's position, length, or fade-in/fade-out.
+;885F90320DF7472D=How far before the media item end playback should begin, when seeking is triggered by a media item edit.
+;67B3D55ACD31588D=By default, if the project timebase is in beats, adjusting tempo (including tapping tempo) will preserve the beat-based playback position.
+;F2E47DB3ECD725D3=Smooth seek enables a more natural-sounding transition. This setting can also be toggled via the Actions list.
+;79A89EFDC71E002C=Wait until the current measure ends before changing the playback position, for a smoother sounding transition.
+;44DB7EC0EF2A942C=This setting can be used to enable sequencing of audio blocks for live playback. Also search the Actions list for \"seek\".

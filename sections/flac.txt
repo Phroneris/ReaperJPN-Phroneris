@@ -1,0 +1,10 @@
+[flac]
+;2592AA17A3AD044D=FLAC %d/24 bit %dHz %dch
+;D396B383CAF3056A=FLAC %d bit %dHz %dch
+;D84F7690441E9F2D=FLAC
+;382F018EE0FF1939=%dbit FLAC
+;9CB777E10B83940A=Error creating decoder
+;71E61151248199A1=Error synchronizing decoder to stream
+;29411238FD99390E=Invalid stream parameters
+195608B7F810C8CE=FLAC ファイル
+;^FEAA833C7533B5D0=File not found

@@ -1,0 +1,14 @@
+[rex]
+;0E5806C9C8983EC1=File not loaded
+;3327FD7E3FD34079=REX shared library not found
+;5EF0D6E505ECE664=REX error, out of memory
+;B6A2608A77E338A8=Not a valid REX file
+;7FD64034ABADEB1D=REX dll out of date
+;6F2EFED5C0E18CBA=REX error, user canceled
+;85D5559702FDD8B2=REX file has zero length
+;50012604D30851DF=REX dll not found
+;186A15E64B52A3FD=REX dll not initialized
+;7AF78F9C6764865A=REX file load error
+;9D94DA833147EE28=REX error
+FCBF2A5B01E951F7=ReCycle ファイル
+;^FEAA833C7533B5D0=File not found

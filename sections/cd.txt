@@ -1,0 +1,5 @@
+[cd]
+;92898DA95631C3C6=CD Audio - Track #%d
+;20CAA0535662188D=CD Audio track
+;B613A8B6F6972A5C=Audio CD Image %dHz %dch
+;FA1D8BAB473747AA=Audio CD Image (CUE/BIN format)

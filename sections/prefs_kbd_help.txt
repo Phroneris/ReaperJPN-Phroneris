@@ -1,0 +1,18 @@
+[prefs_kbd_help]
+;F22AA82C438102B7=You can maintain a separate set of keyboard shortcuts for use only when recording.
+;09FBC55225607971=Prevent pressing/holding the ALT key in the main view from focusing the main menu (suppress the default Windows behavior).
+;6F4B9E67C8A5B45C=Allows the space key to be used for checkboxes/etc in various windows including the media item properties.
+;299E361BD0DD5ECA=When typing new values in some edit fields, the new value can be committed after 1 second, or only after pressing enter.
+;AE8C4322F1210768=Assign any keyboard shortcut to a REAPER action, using the Actions dialog.
+;E6DF7FAFBD4D5EF7=View a list of all existing keyboard shortcuts as a web page in an external browser.
+;A644F5A7E023DF4F=Enable the multitouch swipe action: two fingers moved together horizontally or vertically.
+;683B9D0EF44270F1=Enable the multitouch zoom action: two fingers moved closer together (pinch) or farther apart.
+;9AC5CDA7F3DEE099=Enable the multitouch rotate action: rotate one finger around another stationary finger.
+15404EE74C8C7AC5=ジェスチャーの方向を反転します。
+;9AEECDA0C63BAD39=Suppress inertia, so that each gesture triggers only one action, rather than a series of actions.
+;9019EA02A23CB19C=Scale the magnitude of this gesture.
+;8C7C943B86A10E08=Reverse the direction of the vertical scroll (standard mousewheel).
+;DE335332D548C6CD=Reverse the direction of the horizontal scroll (horizontal mousewheel).
+;23A6362D948C5CA1=Ignore mousewheel messages for a short time after a multitouch gesture is seen.
+;C41402DEBD47E168=Ignore multitouch gestures of a different type for a short time after a multitouch gesture is seen.
+;8462F0CD2F2F64D9=Assign any enabled multitouch gesture to a REAPER action, using the Actions dialog.

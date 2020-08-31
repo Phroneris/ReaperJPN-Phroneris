@@ -1,0 +1,2 @@
+[DLG_570] ; IDD_SAVEOPTIONS_API_HEADER
+;31156AD71A7CB1DE=Write functions exported by 3rd party extensions

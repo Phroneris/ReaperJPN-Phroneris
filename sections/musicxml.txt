@@ -1,0 +1,17 @@
+[musicxml]
+;FE4595F379F227BE=Unable to read .mxl file
+;7CF7A21C0A6EC89F=META-INF/container.xml does have <container> object at root
+;26D86E0C2B55A95F=META-INF/container.xml does have <rootfiles> suboject of <container> object
+;15103E56EFB496D6=META-INF/container.xml does have <rootfile> subobject of <rootfiles> object
+;C4E0AE3AD3F8AAFC=META-INF/container.xml <rootfile> lacks full-path attribute
+;35333EBF2348F288=META-INF/container.xml specifies XML file not found in zip index
+;4818424400991F76=Could not find META-INF/container.xml in .mxl file
+;1D706EAF139B5DE1=File is neither score-timewise nor score-partwise
+;2B68F5097551BA8E=Can't read midi-instrument id
+;F81C3931B68B0DE1=Can't read MusicXML part
+;4512FF4C5B515AEE=Can't read part ID
+;6A912866A8EA3D25=Can't read measure number
+;87840801028F6CA4=Can't read measure divisions
+;B1CC581617E19413=Can't read time signature
+;BAB69D989C38B4E2=MusicXML Import Error
+;^F664CFB0307502A6=Can't open file

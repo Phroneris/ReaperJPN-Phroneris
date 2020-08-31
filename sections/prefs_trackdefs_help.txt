@@ -1,0 +1,23 @@
+[prefs_trackdefs_help]
+;4EE204156D89D4D5=Volume envelopes can be scaled by amplitude (half as high is half as loud), or by the track fader scale (envelope height corresponds to the track fader).
+;058F8E251BC33C9E=Changing scaling for an existing envelope may change the sound, because changes on the track fader are not linearly equivalent to changes in amplitude.
+0614CE6C05F547EB=新規トラックのデフォルトのフェーダ位置です。ファクトリーデフォルトは +0dB です。
+583D434BE1F4936A=有効な場合、新規トラックはミキサー上に表示されます。
+;A7D59AB48C99ED23=When enabled, new tracks created within a folder will send audio and MIDI to the folder parent track.
+;8435D40B1A543A8E=Certain track envelopes may be shown automatically for new tracks.
+;A06640FC98DC6287=Automatically show volume envelopes for new tracks.
+;871B42A204ABD900=Automatically show pan envelopes for new tracks.
+;9DB02CA9A1AAEE43=Automatically show pre-FX volume envelopes for new tracks.
+;16F5F8078D3F839C=Automatically show pre-FX pan envelopes for new tracks.
+;46293FD16449C446=Default point shape for new track envelopes.
+;798A8BC8BB77A088=The default automation mode for new tracks.  The factory default is Trim/Read Mode.
+;01966E3463989F62=Default track height in new projects. This is also set via File/Project Settings/Save as default project settings.
+;7D71B6C52AB0A7DE=When enabled, new track envelopes will be automatically armed for recording automation.
+;3314D8F8A63D0350=Automatically enable Free Item Positioning for new tracks.
+;98FA43DA61B338EE=Automatically record-arm new tracks.
+;1E7C6F759324FBD1=Default record settings for new tracks.
+;CBB4206A82B6C0A2=Default gain for new track-to-track sends.
+;B3B008304E94DF56=Default gain for new hardware outputs.
+;AA0925ABD83BC541=Default send type for new sends and hardware outputs.
+;5B0472B23A6FDB71=When enabled, new sends will send MIDI from the source track.
+;4EB8C05F0CB68BBA=When enabled, new sends will send audio from the source track.

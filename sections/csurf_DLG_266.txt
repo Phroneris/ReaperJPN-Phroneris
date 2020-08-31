@@ -1,0 +1,14 @@
+[csurf_DLG_266] ; IDD_SURFACEEDIT_OSC
+;7F974C0CA8DBF93F=Pattern config:
+;39B5CD0E367BC486=Device port:
+;E2967D2698BCDD14=Device IP:
+;EF328D628E583896=Local listen port:
+;0B6547A48B6D12F3=Local IP:
+;99640F2ABCC3ED1E=Listen...
+;71957DB82912F75F=Allow binding messages to REAPER actions and FX learn
+;BDB8AE1BF642600A=If outgoing packets are dropped by the network, try increasing these values:
+;4C18F82C0F40CA0C=Outgoing max packet size:
+;BA82955B864FAE7F=Wait between packets:
+;^84225D657EA873E2=Device name:
+;^46F1486DB9B6A7A6=Mode:
+;^D8B3B3186B8C817F=ms

@@ -1,0 +1,23 @@
+[rewire]
+;FEC84A2F0D8F7170=ReWire Output
+;4DBA0AFB98AC1633=<none>
+;34513446786D9268=ReWire MIDI
+;B18D8939F7BCCD0B=Track MIDI
+;6CC6BFB87892AB54=Bus %d Channel %d
+;DB1978C86B8B7FF4=Bus %d
+;AFD0E825908A16B3=ReWire Destination
+;B83D03094A48A05E=Master Keyboard
+;9114974073008A4F=%s (Bus %d Channel %d)
+;F64E0E6A1FA55CE7=MIDI Send To ReWire
+;BB6C7B8133B94EB7=Audio From ReWire
+;B83F58F685DF9F42=MIDI From ReWire
+;D7D63167BC14B377=ReWire Client Error: ReWire may not have been installed at install time
+;7E30AD2014FEBD4B=ReWire Client Error: Error opening ReWire subsystem
+;B98FDA4313106241=ReWire Client Error: No mixer application appears to be running
+;A6F4FE9A69CFDDFB=ReWire Client Error: Error loading REAPER device
+;78D18A88BD007F84=ReWire Client Error: Error creating communication channel
+;9F00616CF6B74ED6=ReWire MIDI Bus
+;2B3937F53B667F70=ReWire Client Audio
+;^A74298433E1F4B3D=Track Channel
+;^B3D2C76823B56BAB=Channel %d
+;^3390D94D34F06461=None

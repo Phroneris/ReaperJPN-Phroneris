@@ -1,0 +1,10 @@
+[reamote]
+;8CFFE05DC6461F1B=Can't connect to ReaMote server \"%s\"! Aborting operation.
+;08E21163DCB189AF=Incompatible plugin type for DSP \"%s\"! Aborting operation.
+;B2EA8CE93250C950=This ReaMote server doesn't have the following DSP: \"%s\"! Aborting operation.
+;12BB1D689C96663D=Can't initalize DSP \"%s\" on the ReaMote server!\r\n\r\nPossible causes might be out of date version or plugin not installed on the ReaMote server computer.\r\n\r\nAborting operation!
+;AF11D92899770FB1=Local processing
+;38A59C6E47639409=This plugin type is not supported by ReaMote, aborting add operation.
+;C0DC71AA00B1EA3C=Error adding plugin to ReaMote server, aborting add operation.
+;94F1B6BD42FD987A=This ReaMote server is not connected!
+;^A659FA8F04A8C6D6=Can't open ReaMote UDP port!

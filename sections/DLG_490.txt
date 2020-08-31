@@ -1,0 +1,27 @@
+[DLG_490] ; IDD_PREFS_MIDIEDITOR
+4CEF25468B1C4064=MIDI エディタ設定
+13ED09240C7A9D7B=トラックへの入力で MIDI エディタのキーを強調
+305DA11B2E2644FA=CC レーンに水平グリッドを表示
+6F011A2D15EEE603=CC レーンのイベント描き入れ間隔 (デフォルト 32):
+DDDFDA2C4B7C5C26=分音符
+0F1B38F71F042A73=ズームに依存
+;D6F76E614588C408=Default shape for CC segments:
+;52CFAFAFE213C1A8=Reduce CC events when drawing
+;E34B135B3690F83C=Prevent mouse edits of single CC events from moving past other events
+CAC61707DC51ADCE=MIDI エディタ起動基準:
+E044BDDEB9333E54=メディアアイテム
+CD981B0C7D0A4B3C=プロジェクト
+4D822965788F7100=更に詳しく
+769F4D0D54EE8F27=[付属 MIDI エディタで開く] 際の挙動
+464772AC160FF50F=[MIDI エディタ起動基準] > [プロジェクト] のオプション(&P)
+1D73C8ED879F8FD0=アクティブなメディアアイテムがアレンジビューで削除されたらエディタを閉じる
+E785DA0D49AF80A7=メディアアイテムの領域外をダブルクリックしたら直近のメディアアイテムを長くする
+CD16A4A833CF3F6A=副メディアアイテムのノートや CC の透明度 (1 ～ 3):
+35889979F7713B9D=デフォルトのノートカラーマップ:
+;^90803304EBE7C40E=track
+;^AD510FC22D6EECAC=Active MIDI item follows selection changes in arrange view
+;^19E78BE8A7F79DE0=Media item selection is linked to visibility
+;^6B715267FFEB9F05=Selection is linked to editability
+;^FDADCA59F6C3539B=Make secondary items editable by default
+;^472B99EE9A28AFB0=Avoid automatically setting MIDI items from other tracks editable
+;^F685FB3A91025549=Browse...

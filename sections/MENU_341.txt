@@ -1,0 +1,8 @@
+[MENU_341] ; IDR_CONTEXTS_41
+;BA643005EA6CA5ED=41_ConvertCtx
+;F693834CABA4C9E3=Add items...\tA, Insert
+;A542E524A5FE5828=Add items...
+;6650ACE8FE9BB205=Delete selected items\tDel
+;902415A38893F829=Delete selected items
+;6B10E47BB5FD619A=Select All\tCtrl+A
+;707FF6825939C50C=Select All

@@ -1,0 +1,12 @@
+[DLG_466] ; IDD_PREFS_EDIT_MOUSEMAP
+FCF67B57094B9AE0=マウスコマンド設定
+CB9E54FADD0BFAD4=項目:
+EFDF2A9533CCDDA9=読込/書出
+D9B12505AD8448FC=リスト3
+C64D048E7E806999=ラベルをアイテム上部に描画している場合、ラベル領域をトラックの空白部として扱う
+EF47D7DCDE3A3FA9=手のひらスクロール時の水平ズームの挙動を逆転させる
+;/5ACE749F82E122A4=Edits affect all pooled automation items at the same time position	;; わかんね
+;1126AC27130151E1=Right-click deletes CC events
+A41294BBAE6DD182=マウスクリックで直ちに描き入れ/編集する
+;/E02DEE53682EC25E=Disable targeting bottom part of media item when take lane height is less than:	;; わかんね
+;^10EC54E7BB0B3282=pixels

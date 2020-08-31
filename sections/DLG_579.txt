@@ -1,0 +1,9 @@
+[DLG_579] ; IDD_LYRICIMPORT
+;9C4F9E297401BE7F=tabs
+;37BBEEDCE2DE6F68=any whitespace
+;4FDC1EFF5C6004A7=Lyrics should be in a text file, one measure per line, separated by spaces or tabs.
+;94FB231FB797C408=Lyrics will be imported to the last touched track, as MIDI lyric events.
+;67B478FBAAAE55DA=A new MIDI item will be created on that track if needed.
+;1196B16C194B9363=Divide lyrics on:
+;2D34054801CD4D52=every
+;^268986373F235EF0=beats

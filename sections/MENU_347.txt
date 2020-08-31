@@ -1,0 +1,5 @@
+[MENU_347] ; IDR_CONTEXTS_47
+;1F8AB71E475E4064=47_ItemPropsDlgCtx
+3D3F09D279B09D88=変更を 2 秒後に自動適用(&A)
+955759B7BDB8B435=アイテムプロパティウィンドウをドッキング(&D)
+;^82EE5475CB6FCE9F=Close window

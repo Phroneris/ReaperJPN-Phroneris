@@ -1,0 +1,12 @@
+[midi_DLG_123] ; IDD_NOTEPROP	; 多分もう使われてない
+430304A419B0E574=ノートのプロパティ
+F6B884BE6F5BDBB3=Off ベロシティ(&O):
+;^4EC7F7461DF2D993=&Note:
+;^366298521A7B6338=&Channel:
+;^742F5D29C7564242=&Velocity:
+;^CEEE8377C1EF8C86=&Position:
+;^E2071FAD9CE62FAB=&Length:
+;^D840E3186B2B9581=OK
+;^F09E4B5C35AA14B9=Cancel
+;^12848776E53AAD00=Use + -* / for relative changes in any field.\r\nUse +1o2  to add 1 octave and 2 semitones.
+;^D7323C887B0A2951=Apply

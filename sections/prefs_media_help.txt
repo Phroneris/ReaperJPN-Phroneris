@@ -1,0 +1,20 @@
+[prefs_media_help]
+;6D5D90510FB69C2A=Choose how to place imported media items on import/drag and drop/etc
+;69070241C7B1090D=If checked, copy imported media items to the project media path (if they are not already in the project path)
+;703EE29F62AAD911=If checked, name unnamed tracks after the media on media import
+;AB4066F22744D3A5=If auto-naming tracks on import, remove trailing numbers from track names
+;B170F8FE480761BC=Sets project media inactive when REAPER is inactive, so that other programs can access/modify the media
+;3C7FC9C0AC6DB4BC=Allows video items (and certain audio items decoded by VLC/ffmpeg, and still images) to be set offline, which can be slow to bring back online.
+;837ADBF34235C0DC=If project media is set inactive when REAPER is inactive, having this checked will cause peaks to be rebuilt on demand if necessary.
+;AA2E20F87ABF9B32=Allow choosing the filename used when using \"open copy\" action. If unchecked, the default filename will be used.
+;9E9982D536949C1E=When using apply FX action, allow this much extra time at the end for reverb tails/etc
+;A18271E55C7E58C7=When using per-item/take FX, render FX tails for this much time past the item end
+;821F929BB8BB41ED=Generate item peak cache files on file import (recommended)
+;EC7FFDE5CC65615D=Generate item peak cache files on project load (recommended)
+;36ADEFB9BD4953A4=Display a status window when generating peaks.
+;FA14F6695C42A6BE=The highest resolution peaks generated in peak cache files. 300 is recommended. Higher or lower can result in diminished performance in different scenarios.
+;0AFC077605BAFB72=If unable to write to the media directory, use the alternate path (set in Preferences/General/Path) to store peak cache files.
+;22D88B25908D6899=Prefers to store newly created peak cache files in a directory named \"peaks\" relative to the media file.
+;3E30281017B53D27=When using take FX, duplicate take FX when splitting (so that new split items get copies of the FX). Caution, this can use a lot of RAM if you aren't careful.
+;78DE8A31904C1141=Calculate spectral information for peaks files even when spectral peaks are not enabled (larger peak files, higher RAM use)
+;5EF284FB2B799EF0=Automatically re-generate peaks files with spectral information when enabling spectral peaks.

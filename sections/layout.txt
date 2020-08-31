@@ -1,0 +1,2 @@
+[layout]
+;0C5F2002CAF148B3= (DPI-translated to %s)

@@ -1,0 +1,8 @@
+[joystick]
+;133B50C3D3FC7CF5=no converter loaded
+C6E94E5DE48F0F51=コンパイルエラー:
+1B80ADD7903187FC=<デバイスが見つかりません>
+5EC879DC705C29B1=ジョイスティックのオープン/探知エラー
+9ECB7C2A172AA01F=デバイスエラー
+;^D9220AE04A08F86B=Error opening file
+;^7C0BD7F6D6C1126C=Code error

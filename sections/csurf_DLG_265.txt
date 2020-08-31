@@ -1,0 +1,9 @@
+[csurf_DLG_265] ; IDD_SURFACEEDIT_MCU1
+;CD63BA887FD856AF=Ignore fader moves when fader is not being touched
+;129DE252B83355A6=Map F1-F8 to go to markers
+;D59C93FE2FB9057B=Ignore global bank offsets (always map to tracks specified)
+;^28B58959477A4C84=MIDI input:
+;^8E37CA9F4D4DE00B=MIDI output:
+;^5800FB6F53EAD40E=Surface offset (tracks):
+;^18CD0ED91946CEB8=Size tweak:
+;^FE54809EE740B495=(leave at 9 unless you know what you're doing)

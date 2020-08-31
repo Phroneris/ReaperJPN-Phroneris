@@ -1,0 +1,22 @@
+[csurf_osc]
+;ED18E10A5F8ADCD1=Unknown action \"%s\" on line %d
+;D9D6B42A61F1F4C5=Pattern \"%s\" starts with unknown flag '%c' on line %d (allowed: [nfbtrsi])
+;BFED4B3ABB427F4C=Pattern \"%s\" does not start with '/' on line %d
+;6A1E3BA4E67042FB=Pattern is too long on line %d
+;956B2EDD33997D2B=recv-from-destination
+;2258412401973058=recv %d
+;5CD5767121BD815A=send-to-last-source
+;432C78D3148F0F22=send %s:%d
+;36FD34C499AA2E46=OSC: listening to port %d
+;B6EAC3AFD3B9AD9F=Error: can't create OSC listener
+;22CDAF58A584E9B4=Device IP/port
+;75A4714E8993BB36=Device IP/port [send only]
+;44357958B85689F5=Local port
+;700E6B264FEFA8A0=Local port [receive only]
+;9C43007B6260B849=Configure device IP+local port
+;5EAE5AF234DB82BE=Warning: possible error parsing config file \"%s\"
+;7D5CC7BEDCA8C062=OSC Config File Warning
+;D0F681DA8CBE07E7=(refresh list)
+;1C8C0CA509E44299=(open config directory)
+;^686CBDF778971C6F=Disabled
+;^AB2A3D4EF1C9D1A8=Default

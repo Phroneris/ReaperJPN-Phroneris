@@ -1,0 +1,8 @@
+[DLG_424] ; IDD_MIDILEARN_DEFSELMODE
+02A35AD7E967D78F=デフォルト MIDI ラーン
+CD40FE987B274220=デフォルトのエフェクトラーン割り当て設定は、以下の場合にのみ有効となるよう制限されます。
+;^542A194EAA789AB0=Enable only when track or item is selected
+;^DDD50B6B9C96D4AA=Enable only when effect configuration is focused
+;^780AC67AB2044E79=Enable only when effect configuration is visible
+;^D840E3186B2B9581=OK
+;^F09E4B5C35AA14B9=Cancel

@@ -1,0 +1,5 @@
+[midi_MENU_138] ; IDR_SNAP_CTX
+;^00F8AF1A6A14D288=Snap settings
+;^A958A4ED6B3FE77D=Always snap notes/CC to the left
+;^CBB62A841502FD76=Snap note ends to grid
+;^B97C90B7FAB41974=Snap notes/CC relative to grid

@@ -1,0 +1,3 @@
+[DLG_214] ; IDD_PREFS_AUDIOCONFIG2
+B0347433BD1E62FD=このページを見るには、全ての再生や録音を停止してください。
+;^16464B290024A7A0=Audio device settings

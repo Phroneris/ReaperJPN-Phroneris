@@ -1,0 +1,26 @@
+[au]
+;4311DCC4B14F6C05=AU input
+;CD932145DA3C560A=AU output
+;A04C0CA272A78C95=----  AU Factory Presets (.aupreset)  ----
+;F2E22710BBB6C3B6=----  AU User Presets (.aupreset)  ----
+;0BE297C8D70E44F6=MIDI Input
+;CD28B16B1EC54420=Export Preset
+;E646C8D381A49972=The file already exists:
+;7867D1BDD657C87B=Could not create file:
+;F4285503718048FD=Exported to:
+;E3A2CED4A1F8407E=Preset Export
+;CC617F46EED7875C=Preset Export Error
+;39E43E277073A460=A preset named
+;4763AE16FF8B6DA3=already exists. You must delete it first.
+;830814774F5BEE0E=Rename Preset Error
+;^B762E77EB85D7B6C=off
+;^D8ADC6186B88361A=on
+;^D8C1A6186B98A8C4=in
+;^B7290B7EB82C4051=out
+;^274E7C84B3E58DB8=Reset to factory default
+;^0EC28D42C155A657=----  User Presets (.rpl)  ----
+;^93244D3BB94E6F33=No preset
+;^0A98866C997B323D=MIDI Bus %d
+;^17B3AE10A9CC3695=Plug-in state data size:
+;^B814E3BFB72A607B=Delete preset
+;^11B3B66593F236CF=Confirm Preset Delete

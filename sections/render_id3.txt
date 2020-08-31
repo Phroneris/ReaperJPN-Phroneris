@@ -1,0 +1,26 @@
+[render_id3]
+;1C841481CAB9E2EE=32x32 pixel file icon (PNG only)
+;9CC33AD977ED2410=Other file icon
+;88BF84CE126BA0D0=Cover (front)
+;959346A91359856C=Cover (back)
+;DAB4F384299078DF=Leaflet page
+;F4ED7DC5326FE78B=Lead artist/Lead performer/Soloist
+;7A788FA6EEF023D5=Artist/Performer
+;FD50782F72066CA0=Band/Orchestra
+;08C3C56AC176C905=Recording location
+;49C125DA45EE06B1=During recording
+;5771339798D8E764=During performance
+;7176BEF2A7410325=Movie/video screen capture
+;CA53412C2BA72B7E=A bright colored fish
+;DECD2310B73C439D=Illustration
+;240BFFF88AB2382D=Band/Artist logotype
+;C1785570C5305FE7=Publisher/Studio logotype
+;0E035AC2D4828900=Not set
+;383BA19367FC60C9=No image
+;DC2046D9B406B60C=ID3 Image File
+;^66741785E8EFEB5B=Other
+;^09D15F38080A7701=Media
+;^7349DC4C0B10751C=Conductor
+;^A037053743F47D99=Composer
+;^68A7381ABF54707B=Lyricist/Text Writer
+;^118ECB568BF41A6F=Choose image...

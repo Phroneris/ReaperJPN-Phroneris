@@ -1,0 +1,20 @@
+[themeblend]
+D64ABE7656056465=オーバーレイ
+FCA60AD8EFD1FE3F=乗算
+A91837FC641E00F6=覆い焼き
+0E7BED71200DE9DB=HSV 調整
+;44B8F722EAF5F19A=HSV adjust (broken deprecated)
+;08328907B4EB71A0=?
+;442703CBF9806FF4=The blend color is drawn over the base color. Alpha closer to zero allows more of the base color to show through.
+E12CE2B25CC52833=CPU コスト:\r\n最小
+;DBD31747391089F2=The blend color is added to the underlying color. Dark colors become lighter, light colors are less affected. A black blend color has no effect, a white blend color always results in white.
+66F7A1C2A36F1349=CPU コスト:\r\n小
+;369F5B8F8989777D=The blend color is overlaid onto the base color. Dark base colors become lighter, and light colors become darker. Alpha closer to zero reduces the amount of overlay.
+9E7000DF2A21A7A5=CPU コスト:\r\n大
+;1833A600140DC7CB=The blend color is multiplied with the base color. A black blend color always results in black, a white blend color has no effect.
+8705C5E4122C1ED8=CPU コスト:\r\n並
+;67943E106FB37E22=The blend color is color-dodged with the base color. Dark areas in the base color will be tinted lighter, toward the blend color, light areas in the base color will be less affected. A black blend color has no effect.
+;016DF84757A0601A=Each RGB element in the blend color is interpreted as an offset from 128. R rotates hue, G adjusts saturation, B adjusts color value. A blend color of gray (128,128,128) has no effect. (192,96,255) will rotate the base hue +1/4 way around the color wheel, subtract 1/2 from the base saturation, and increase the base color value to full.
+24E2D1DBE7065C87=CPU コスト:\r\n最大
+;^63ACD193C4316F68=Normal
+18E4377E5DDC2B7A=加算

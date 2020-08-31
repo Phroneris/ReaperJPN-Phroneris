@@ -1,0 +1,5 @@
+[routdlg_heading]
+E585C664AC364DDB=音声ハードウェア出力(&A)
+BCFA8A3A8430A743=MIDI ハードウェア出力(&D)
+;^4A47B5FB012F8EBE=Sends
+;^1978358DE99DE2C5=Receives

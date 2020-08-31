@@ -1,0 +1,8 @@
+[dx]	;; 化け未解決
+;B2752BD2D1A63C8E=Scanning DX plug-in: 
+;A6373A10EB021B50=Scanning 
+274E7C84B3E58DB8=Reset to factory default
+0EC28D42C155A657=----  User Presets (.rpl)  ----
+93244D3BB94E6F33=No preset
+;^B814E3BFB72A607B=Delete preset
+;^11B3B66593F236CF=Confirm Preset Delete

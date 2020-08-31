@@ -1,0 +1,4 @@
+[faultyproject]
+;F63F949547590DE6=This project failed the last time a load was attempted:\r\n\r\n\t%s
+;CA7D51565D092570=Would you like to load it anyway?
+;F65CE241E2EF8530=REAPER - Previously failed while loading project

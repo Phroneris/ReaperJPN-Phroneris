@@ -1,0 +1,21 @@
+[cdburn]
+;ABACAA5CAC4D0AE1=Error creating pipe for cdrecord
+;B40A4350ABCC1151=Error creating cdrecord process
+;AADFD7D64910655A=Can't initialize IMAPI interface. Try cdrecord method?
+;E632D3ADB17E4AE5=Can't open IMAPI interface.
+;B2BBF85B9EB4E0D2=No CD recorders found.
+;21F12B8D9D7048F2=Can't set active CD recorder format.
+;34C36FBB7B6C1291=Can't set active CD recorder.
+;97640A3667441EA0=Can't open image file for reading.
+;5DC87DF4006D7122=Error adding new audio track to CD, disc full or no cd present?
+;4E0173EA3DA2D2F9=Error adding audio data to CD track
+;84BE0C5DA266D09A=Track %d is not long enough! Redbook audio CDs require track lengths >= 4 seconds.
+;01D9A0213815494D=Error closing audio data track
+;9B86B76D29C3F7E6=Error during CD recording.
+;A2999F33F58B204F=Error during CD recording: buffer underrun
+;47D21084909A8184=Error during CD recording: insufficient temporary space
+;71C9F10A01258ACC=Error during CD recording: error closing disc
+;6424BC50639E8D90=Error during CD recording: bad image
+;43AAF71E08B4506C=Can't find the selected recorder device!
+;^9EC3E20500624AAF=Error
+;^922845265318591C=Native CD Burning

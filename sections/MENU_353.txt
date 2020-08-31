@@ -1,0 +1,8 @@
+[MENU_353] ; IDR_CONTEXTS_53
+;8CB1DC85A67CC4C9=53FadeEditorCtx
+;85F217D7911726E0=Automatic behavior on playback start:
+;14973110A54729FC=  Solo tracks
+;E07423F09C9BFDE9=  Set playback repeat
+;0BD26159A5225211=  Disable autoscroll
+;87D709358F3B4432=Dock Crossfade Editor in Docker
+;^82EE5475CB6FCE9F=Close window

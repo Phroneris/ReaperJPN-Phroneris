@@ -1,0 +1,12 @@
+[DLG_124] ; IDD_RENDERPROCDLG	; 閉じるはアクセスキー重複回避（実質重複しないっぽいけど、念のため）
+89586449FDC7964E=ファイルに書き出し...
+052BBD8D885E3DDA=完了後にダイアログを自動的に閉じる(&A)
+E6860B129FE101D6=ファイルを開く
+;E24E56DF605D1E65=Shup File
+BAC64C1B2E060EE5=閉じる(&X)
+;^F09E4B5C35AA14B9=Cancel
+;^223F4865B99B73B0=Output file
+;^FDE95463547E83EB=Render status
+;^E1CA5A9A5CE93078=not rendering, ETA infinity
+;^511EAD28BA4AE493=format spec
+;^BDB7990C53BBB742=Show in explorer...

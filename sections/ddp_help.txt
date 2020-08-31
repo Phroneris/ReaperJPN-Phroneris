@@ -1,0 +1,57 @@
+[ddp_help]
+;15AA65451FBB7AB4=DDP is a Registered Trademark of DCA Inc., 1989-2008
+;8289D94FDB76144D=DDP format is used to make exchangable files for CD Audio manufacturing.
+;0CAF30396057EDBC=The CD Audio format is 44100Hz, 16-bit, stereo. Please set this format, otherwise the export will be cancelled.
+;E17F7F8449C401F5=DDP format consists of many files, which must all be sent to the CD manufacturing plant.
+;3D33D9F4D70D2359=In order to create standard CD\'s, Red Book specification limitations are included:
+;F46651C2F20A5AEC=- at least one track is automaticaly created
+;3001E81F417325E9=- INDEX0 is required only for the first track, and set to 0 seconds
+;49C78F8A1AC92D15=- first track\'s INDEX1 position is limited to at least 2 seconds,
+;C68576AA76FCCF93=  please consider this, to make at least 2 seconds of silence in the beginning,
+;CD8970415D9DC7B8=  otherwise the audio content will be ignored
+;0279EDA5D0196020=- minimum track length (distance of the next track\'s INDEX0/INDEX1 
+;AA502A266D789E09=  to the previous INDEX1) is set to 4 seconds, please consider this,
+;F651F6FD2BBDCB3E=  otherwise the INDEX0 and 1 are automatically moved in the next track\'s audio.
+;FB1ED348C6500FD3=- INDEX1 is set to be at least 1 frame after INDEX0, if INDEX0 is defined
+;ADF8FA44F480A815=- the audio length is padded with silence to be frame aligned (1 frame = 1/75 second)
+;E7B4C01D859D878F=------------------------------------------------
+;112895DFC7E712BF=Album and track metadata is set by the format of marker names:
+;98D777A7F6A4FA3A=- markers starting with \"@\" character represent album metadata
+;F40265BB80830887=- markers starting with \"!\" character represent INDEX0 position for the following \"#\" track
+;1CE3D62176A296B8=- markers starting with \"#\" character represent track metadata and INDEX1 position
+;829C22BD4EB2F4BC=If there is more than one @ marker, each one overwrites the previous one\'s defined values.
+;4BC414C233A03FC1=If there are more ! markers in one track, only the last one before # is used
+;291D125977438E08=The number of # markers represent the number of CD tracks.
+;BF1A3D9283ECB9BF=The position of @ marker(s) can be anywhere, the most readable position is at the end of the album.
+;0BE2F8B8A5B4A683=If the audio data is too short, only the (! and #) markers before the end of audio + 10 seconds are used.
+;2C4DF5BC30F9A8EE=The audio is padded with silence until the last used marker (and aligned to 1/75 second).
+;8954DDEF73351605=The metadata is in \"KEY1=VALUE1|KEY2=VALUE2|KEY3=VALUE3\" format. There can be any number of 
+;49DA32D88A786D82=KEY=VALUE pairs. KEYs are case insensitive.
+;10534E5F3F0575CC=@ markers recognize this keys:
+;D4EAFC825258A91E=- \"CATALOG\", \"EAN\" or \"UPC\" for the same EAN/UPC number, which is included in the CD
+;8C4360DA672DBBB0=- \"ALBUM\", \"TITLE\" or without a key for album\'s title
+;B8CBCB0D19586BF4=- \"PERFORMER\"
+;73D07F210A97238C=- \"SONGWRITER\"
+;FD85991FCE07E0A8=- \"COMPOSER\"
+;01F5B8F511351264=- \"ARRANGER\"
+;EA62DF879DB6E8AF=- \"MESSAGE\"
+;1D6FE7BF92062624=- \"IDENTIFICATION\"
+;947F1A1DBCCEC32F=- \"GENRE\" - write any text or use one of the predefined genres in the list at the bottom of this text.
+;E16D2128D3FF3B52=- \"LANGUAGE\" - use one of the names from the list at the bottom of this text. 
+;CE1142641FC3E067=# markers recognize this keys:
+;7E2053B530210A4A=- \"ISRC\" number for audio track
+;17EACD9FA3785CE9=- \"TITLE\" or without a key for track\'s title
+;5AFC6264E68ADD81=! markers ignore any metadata, only the position is used.
+;082C3C3645B48392=CD-TEXT will be exported only, if any of the CD-TEXT keys is specified.
+;40F17336F8611D09=Every key except the \"CATALOG\", \"EAN\", \"UPC\" and \"ISRC\" is a CD-TEXT key.
+;826DA9B42A127D2E=MARKERS EXAMPLE:
+;96956B1C50589459=1. \"#Intro|ISRC=012345678901\"
+;92D53927B190EBCC=2. \"#Second track|ISRC=012345678902\"
+;8FEC9804BF26616B=3. \"!\"
+;4C1D08AE9FE8CA6D=4. \"#TITLE=Third track|ISRC=012345678903\"
+;FBBC004D2CAE86B5=5. \"!\"
+;C34067D1D4BE3691=6. \"#Last track\"
+;6C7D0110549E4802=7. \"@My first album|PERFORMER=A good band|EAN=0123456789012|GENRE=Pop|LANGUAGE=English\"
+;0D0A488B415FD493=GENRES:
+;50E7839A4C514644=LANGUAGES:
+;^AF63BD4C8601B7DF=

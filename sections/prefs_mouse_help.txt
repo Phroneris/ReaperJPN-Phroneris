@@ -1,0 +1,16 @@
+[prefs_mouse_help]
+;F67975F4767A253F=Mousewheel messages are passed to the window under the mouse cursor (default), or the currently focused/active window.
+;59FD2A0A725F45F2=When the mouse cursor is over any fader, the mousewheel can move the fader, or not.
+;F7E9AF5F31BC16FE=Allow mousewheel edit of all mixer, plugin, and send faders, but not volume/pan faders in the track and mixer control panels.
+;0C8C2D8F2CF852F7=Disable mousewheel editing of project playrate, project tempo, and time selection start/end/length fields in the transport area.
+;51DD672ACD88C4D7=Mousewheel editing of the time selection fields in the transport can change the time selection by a small amount, or by the project beat grid.
+;3D42B29B6D5A6AC7=Some trackpads can send scroll messages. Reaper can try to convert these to mousewheel messages.
+;9C702B2F8DCB268D=Clicking faders and buttons on track control panels can select the track, otherwise only clicking empty track control space will select.
+;133E0703BF6E5D18=Enable editing track names with a single mouse click (default requires double click).
+;D380976C635C7C74=Clicking in the arrange view can select that track, otherwise tracks can only be selected by clicking the track control panel.
+;2E1CA4DF36D530D4=Clicking in the arrange view below the last track can deselect all media items, just as a click on empty track space does.
+;52C8EEFEFCA4A0F5=Allow editing the time selection where the selection edge passes through a media item, otherwise dragging will move the media item.
+;14313D92982F828A=Allow resizing the ruler height by dragging the bottom of the ruler. Otherwise the ruler can be resized by dragging below the toolbar.
+;0EA7AD786346117F=Control+click can be used for one-button mice to emulate right-click behavior, but then the control key will not be available as a mouse modifier.
+;9536EFBC51B5B368=If you use a pen or tablet or other absolute pointing device as a mouse, this will improve behavior when adjusting REAPER's knobs
+;87B75B70BFE01470=By default, horizontal mousewheel or trackpad over the mixer will scroll the arrange view, but can scroll tracks in the mixer instead.

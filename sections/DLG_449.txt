@@ -1,0 +1,23 @@
+[DLG_449] ; IDD_PREFS_MEDIA_VIDEO
+BCDE457135D00394=利用可能なデコーダ情報がありません。reaper_video はインストールされていますか？
+46810F836EA5D01F=利用可能なデコーダ情報の表示
+CED21E2589F4296E=動画出力遅延:
+4022F90F6DC5E484=動画アイテムには高解像度ピークを使用しない
+CEE3274FAE46E954=デコーダ優先順位:
+04F8C491E59F6D16=デフォルトにリセット
+400B3E030D735B46=特定の拡張子に制限する場合、デコーダ名の後に「:ext」「:ext1,ext2」「:!ext3」を付加してください。
+F5ADF056B3709BDD=動画ウィンドウを編集と同期
+F4981427F70572B6=音声アイテム移動時、次の位置へ動画をシーク:
+B5CF8BA44C2A22BC=動画や画像のインポート時に Orientation タグに合わせて自動回転
+93ABB433C5184D67=静止画のサムネイル表示モード:
+768439BADEEEE063=デフォルトの長さ (ms):
+;7968AEE3F4FE417B=Media with embedded slice information
+0E6A4821C2AD49FB=ファイルを次の形式でインポート:
+5C0EAD3BA3080616=余韻部の処理:
+CDD7AC65A6AE255A=テンポが埋め込まれたメディア
+92F6FF254897F352=インポート時:
+;6D86B9C85C538D44=When filename suggests bpm:
+;1AA4198DCD5FD638=After adjusting tempo, set imported media to auto-stretch at tempo changes
+;^BDB27E5D914EF9E2=Video
+;^1A566208F0C7B218=Output:
+;^D8B3B3186B8C817F=ms
