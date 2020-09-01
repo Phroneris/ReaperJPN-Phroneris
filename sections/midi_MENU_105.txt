@@ -120,7 +120,7 @@
 ;^9E9DB29C59430C85=Show velocity and names only on the active media item
 ;^AAD780F2936DFA0C=Color notes by
 ;^073F0BD84FB2C598=Velocity
-;/^F3238895531F739E=Channel	; 下のPitchはMIDIエディタ適当右クリック→表示→ノートに色を付ける→Pitch
+;/^F3238895531F739E=Channel	; 下のPitchはMIDIエディタ適当右クリック→表示→ノートに色を着ける→Pitch
 57F28E456CC0FEEB=音高(&P)
 ;^1A360D9AC072403B=Source, using color map
 D0C04B9E79D271AE=トラック(&T)
