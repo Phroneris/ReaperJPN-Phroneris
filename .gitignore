@@ -12,11 +12,6 @@ JPN_Phroneris-Mac_Linux.ReaperLangPack
 # あらゆる _ignore フォルダを無視
 _ignore/
 
-# img フォルダで画像ファイル以外を無視
-/img/*.*
-!/img/*.png
-!/img/*.jpg
-
 # ReaPerLang のフォルダを無視（一応）
 # /tool/
 # /ReaPerLang/
