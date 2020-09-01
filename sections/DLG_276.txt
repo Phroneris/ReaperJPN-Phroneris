@@ -1,11 +1,11 @@
-[DLG_276] ; IDD_ACTIONS_CUSTOM
+[DLG_276] ; IDD_ACTIONS_CUSTOM	; 構成アクションのやつは、アクション一覧の「状態」欄とツールバーのアイコン表示についてのもの	;; …と訳註したいが見切れる
 78E86E7B79A3F103=カスタムアクションエディタ
 78E918BD164F4BD9=カスタムアクション名(&N):
 0B3690D38AA97039=操作履歴を統合(&U)
 221E6802EDD4E5BD=アクションメニューに表示(&M)
-;2422BE2A7E1312C8=Show as active if all component actions are:
-;9A4FC0866DEFF4E1=Active
-;A06018BD1D8D0851=Active or indeterminate
+2422BE2A7E1312C8=構成アクション全てが次の状態の時にアクティブ表示(&S):
+9A4FC0866DEFF4E1=アクティブな時(&A)
+A06018BD1D8D0851=アクティブまたは曖昧な時(&I)
 069160A9CB72E75B=アクションを除去(&R)
 ;^D840E3186B2B9581=OK
 ;^F09E4B5C35AA14B9=Cancel

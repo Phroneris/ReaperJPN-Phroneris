@@ -12,7 +12,7 @@
 ;BD77360516B83B36=Media item selection in the arrange view can determine whether a MIDI item is editable in the MIDI editor.
 ;38748BD61880FF8A=By default all displayed MIDI items can be editable, or only those on the same track.
 ;0BC0E872C17D4C55=When displaying multiple MIDI media items in a single editor, the editor can be set to remain open if the active media item is deleted.
-;8BC16DD5EBF937E4=More information about displaying multiple MIDI media items within a single MIDI editor.
+8BC16DD5EBF937E4=単一 MIDI エディタにおける複数の MIDI アイテムの表示について、詳しい情報を掲載しています。
 ;DE1875B6CABFB266=When displaying multiple MIDI media items at once, choose how to switch the active media item within the MIDI editor.
 ;9B2ACE664429DF8D=MIDI notes/CC in inactive media items can be drawn more or less faintly.
 ;C486CCEB98553CDB=Colormap image to use for drawing notes in the MIDI editor. If no colormap is specified here, the colormap in the current color theme will be used.

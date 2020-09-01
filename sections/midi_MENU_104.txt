@@ -1,6 +1,6 @@
 [midi_MENU_104] ; IDR_MENU
-;84AF6BF27B779619=&Save MIDI file to disk
-;553CE52272560B64=&Revert to last saved MIDI file
+84AF6BF27B779619=MIDI ファイルをディスクに保存(&S)
+553CE52272560B64=最後に保存した MIDI ファイルの状態に戻す(&R)
 109608EBA667B4D6=エディタを閉じる(&C)
 1BF6FB25AB0DCD48=ウィンドウをドッキング(&D)
 ;^DB25337315BFD655=&File

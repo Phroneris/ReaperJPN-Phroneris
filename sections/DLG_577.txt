@@ -1,8 +1,8 @@
 [DLG_577] ; IDD_PREFS_GENADV_OSX
-;46208A15F33D1510=Last window position (default)
-;647F5086B66FDE9A=Center on current screen
-;8A21E6736F9C2FD6=Center on mouse cursor
-;7BC1296313E80DF0=OS positioning
+46208A15F33D1510=最後のウィンドウ位置 (デフォルト)
+647F5086B66FDE9A=現在の画面の中央
+8A21E6736F9C2FD6=マウスカーソル位置の中央
+7BC1296313E80DF0=OS 位置
 ;D90DB889070F72DA=Automatic (recommended, Metal on 10.11+)
 ;ED65BD6B2308B168=Disable all optimized drawing (reduces GPU use)
 ;44A17237483F40B1=Force classic (10.5-10.9) drawing mode

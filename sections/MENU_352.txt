@@ -1,4 +1,4 @@
-[MENU_352] ; IDR_CONTEXTS_52
+[MENU_352] ; IDR_CONTEXTS_52	;; markers, then regionsはわかんね
 ;0FE28B53D7BDC953=52RegionMgrCtx
 A5702B77A90FF044=選択リージョン/マーカーを削除(&R)
 043AE1AC506F3B9D=番号を時間順に付け直す (markers, then regions) (&N)

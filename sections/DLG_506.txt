@@ -1,7 +1,7 @@
 [DLG_506] ; IDD_RENDERDLG1
-2B4C9E294CADCAA2=レンダリングキューに追加
-70ED321E1F596E91=レンダリングキューに追加して閉じる
-B96DC62C8DAD2307=サンプル読み込みのためにキューのレンダリングを遅延させる
+2B4C9E294CADCAA2=レンダリングキューに追加(&A)
+70ED321E1F596E91=レンダリングキューに追加して閉じる(&C)
+B96DC62C8DAD2307=サンプル読み込みのためにキューのレンダリングを遅延させる(&D)
 0903AD556AF759BE=音声ファイルにレンダリング
 ;E557476A23EFCCC5=See all
 662BFCCECA0BCA20=範囲:
@@ -19,10 +19,10 @@ C7502BAD2630C160=ステムをノイズシェーピング
 ;EAC3236C52A59642=Metadata
 ;627AD64AEB6B04A3=Stretch markers/transient guides
 ;86C55D176585B2A2=Output formats
-;C781F39457E72180=Do not render files that are likely silent
-CD1596364EF5BF14=レンダリングしたアイテムをプロジェクトに新規トラックとして追加
+C781F39457E72180=無音になりそうなファイルをレンダリングしない
+CD1596364EF5BF14=レンダリングしたアイテムをプロジェクトの新規トラックに追加
 866E992086EB4D6C=プロジェクトのコピーを (出力ファイル).wav.RPP として保存
-;DCFEE5940030D28B=Queued Renders...
+DCFEE5940030D28B=レンダリングキュー...
 ;^87D8D79D63721460=Open render queue...
 ;^C1F07AAFF4522636=File name:
 ;^3BF0AA22A506F11A=Wildcards

@@ -70,4 +70,4 @@ E3BFB2365BCB9521=今プレビューしているメディアをクリア ▲▼ U
 ;C85877D94D3C9FA0=Close Media Explorer window
 ;602606A1EA20A08A=Toggle embedding Windows Explorer
 DCFEAB8BD451EB5C=アクションリストを表示 ▲▼ Show action list
-;^D80A0F95C8BEE0D1=Apply preview volume to inserted media item
+D80A0F95C8BEE0D1=メディアアイテムの挿入時にプレビュー音量を適用 ▲▼ Apply preview volume to inserted media item

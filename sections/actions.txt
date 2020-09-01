@@ -1,4 +1,4 @@
-[actions]	; NOT SWS NOT Script: NOT "for %s" NOT %02d NOT マウスコマンドのデフォルト NOT カスタム:
+[actions]	; NOT SWS NOT Script: NOT "for %s" NOT %02d NOT マウスコマンドのデフォルト NOT カスタム: NOT kawa:
 ;1546F599C0716CE8=Script
 ;94D7CE5B9AFFBCB6=Item: Apply track/take FX to items
 ;0ACE45AC861D5AC5=Item: Apply track/take FX to items (mono output)
@@ -1774,8 +1774,8 @@ A6F3EA432AA410A4=ソフトシンセを新規トラックに挿入... ▲▼ Inse
 ;^281B839DED6E7947=Track: Apply playback offset to receive source tracks
 ;/^4C2711165B524E16=Unselect all tracks/items/envelope points	; ▲▼済
 ;/^4F54BFB1FE7FA7B1=Send all notes off to all MIDI outputs/plug-ins	; ▲▼済
-23CA90FBC72F010D=マスタートラックとテンポエンベロープを表示 (切替) ▲▼ Toggle show master track and tempo envelope
-;^96C3317B95606339=Clear tempo envelope
+23CA90FBC72F010D=マスタートラックとテンポエンベロープを表示（切替） ▲▼ Toggle show master track and tempo envelope
+96C3317B95606339=テンポエンベロープをクリア ▲▼ Clear tempo envelope
 ;/^3029AAC716696009=Grid: Set to 1/128	; ここにあるこのシリーズは▲▼済
 ;/^A735F6AA893ADB6A=Grid: Set to 1/64
 ;/^2CE4869C340ECB40=Grid: Set to 1/48 (1/32 triplet)
