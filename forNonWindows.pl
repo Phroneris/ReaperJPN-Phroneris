@@ -1,8 +1,8 @@
 #!/usr/local/bin/perl
 
-use strict  ;		# デバッグ用
-use warnings;		# デバッグ用
-use autodie    ;	# エラー時に$@を得るため
+# use strict  ;	# デバッグ用
+# use warnings;	# デバッグ用
+use autodie ;	# エラー時に$@を得るため
 
 
 ##### 文字エンコーディング関連
