@@ -5,9 +5,9 @@
 6F011A2D15EEE603=CC レーンのイベント描き入れ間隔 (デフォルト 32):
 DDDFDA2C4B7C5C26=分音符
 0F1B38F71F042A73=ズームに依存
-;D6F76E614588C408=Default shape for CC segments:
-;52CFAFAFE213C1A8=Reduce CC events when drawing
-;E34B135B3690F83C=Prevent mouse edits of single CC events from moving past other events
+D6F76E614588C408=CC 区画のデフォルト形状:
+52CFAFAFE213C1A8=描き入れ時に CC イベントを間引く
+E34B135B3690F83C=マウスで CC イベントを動かす際に既存のイベントを越えない
 CAC61707DC51ADCE=MIDI エディタ起動基準:
 E044BDDEB9333E54=メディアアイテム
 CD981B0C7D0A4B3C=プロジェクト

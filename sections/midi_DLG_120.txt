@@ -4,11 +4,11 @@
 A9759EED1FED1E1A=特定チャンネルとしてセンド:
 716435436E335538=独自のテンポを設定:
 ;F83ED02F8879E4D6=Chase CC/pitch/program before take start offset
-;971ED57E1466F812=PPQ
+971ED57E1466F812=PPQ
 F7E0035AE601F663=共有 MIDI イベントは %d 個のアイテムで使用されています
 C9FF1554CD9D5FEB=共有を全選択(&S)
 8EC420BAFBE62496=共有解除(&U)
-;B9EEE1AE70AB8441=CC envelope interpolation resolution:
+B9EEE1AE70AB8441=CC エンベロープ補間解像度:
 ;^3BF92ABFA8425D90=Filename:
 ;^C01085DD37178417=File info:
 ;^2ACA9A5D3E5720F8=Transpose:
