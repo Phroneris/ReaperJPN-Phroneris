@@ -1,15 +1,15 @@
 [MENU_345] ; IDR_CONTEXTS_45	; 閉じるは[DLG_274]の閉じるとアクセスキーを合わせるため
 ;7FD83CFAFD120049=45_ActionDlgCtx
-;1D2C0C0BFB0D449F=Edit selected custom action/ReaScript
-;B365D6F10CF49E96=Delete selected custom action/ReaScript
+1D2C0C0BFB0D449F=選択カスタムアクション/ReaScript を編集(&E)
+B365D6F10CF49E96=選択カスタムアクション/ReaScript を削除(&R)
 F86DA01979DBF767=選択アクションのコマンド ID をコピー(&C)
 88671F5C9F600FB2=選択アクションのテキストをコピー(&T)
-;325CE726D1C9B296=Arm selected action
-;32B36460E94E98E6=Disarm actions
-EAA22874AC7EECF8=前回の絞り込みを記憶(&R)
-06F6E4D36435E6E6=ダブルクリック/エンターでのアクション実行後に閉じる(&E)
+;/325CE726D1C9B296=Arm selected action(&A)	;; armの訳を決めかねている
+;/32B36460E94E98E6=Disarm actions(&M)
+EAA22874AC7EECF8=前回の絞り込みを記憶(&F)
+06F6E4D36435E6E6=ダブルクリックや Enter キーでのアクション実行後に閉じる(&K)
 A04C4EA23D1F025E=アクション ID を表示(&I)
-C0BE663525BD3669=ReaScript のパスを表示(&S)
+C0BE663525BD3669=ReaScript のパスを表示(&P)
 9B042869A79FA02B=アクションウィンドウをドッキング(&D)
 ;^D1EB52BFBDF1AB33=Duplicate custom action
 82EE5475CB6FCE9F=ウィンドウを閉じる(&X)

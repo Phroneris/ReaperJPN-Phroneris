@@ -1,7 +1,7 @@
 [itemprop]	; 時間基準の選択肢はアクセスキー除去
 ;943504C358764A1E=%d media items selected.\r\nEdit multiple item properties all at once, or one by one?
 6130D9898B5B94EB=トラック/プロジェクトの時間基準
-;C4DC9407BD313431=Beats (auto-stretch at tempo changes)
+C4DC9407BD313431=拍 (テンポ変化位置で自動伸縮)
 734385B8B6365178=プロジェクトのデフォルト設定に従う
 439EBDA5ABDB058E=メディアアイテムプロパティ (アイテム未選択)
 DEB8A732FC3B1C09=メディアアイテムプロパティ:  

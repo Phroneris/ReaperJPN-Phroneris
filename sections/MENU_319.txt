@@ -1,13 +1,13 @@
 [MENU_319] ; IDR_CONTEXTS_19
-;B4B5D9BE21C00862=Show only VST3 if present
-;BE236D274C918047=Show only VST2 if present
-;96DA779BE18B35E2=Show only AU if present
-;118B3FA435F0C914=Show only VST3 if present, or only VST2 if present
-;E74D799A89BA5952=Show only VST2 if present, or only AU if present
-;FBED42F2D585FC01=Show only AU if present, or only VST3 if present
-;13901B697D16C77D=Show only VST3 if present, or only AU if present
-;E756DD0BDCB48FB2=Show only VST2 if present, or only VST3 if present
-;9071B539EDA24994=Show only AU if present, or only VST2 if present
+B4B5D9BE21C00862=VST3 のみ表示(&3)
+BE236D274C918047=VST2 のみ表示(&2)
+96DA779BE18B35E2=AU のみ表示
+118B3FA435F0C914=VST3 のみ、または VST2 のみ表示
+E74D799A89BA5952=VST2 のみ、または AU のみ表示
+FBED42F2D585FC01=AU のみ、または VST3 のみ表示
+13901B697D16C77D=VST3 のみ、または AU のみ表示
+E756DD0BDCB48FB2=VST2 のみ、または VST3 のみ表示
+9071B539EDA24994=AU のみ、または VST2 のみ表示
 ;08B4634CC77FCE14=19FxBrowseCtx2
 53DC5790656E0F99=エフェクトの名前を変更(&R)...
 49DCAE59C5BD3783=新しいプラグインをスキャン(&S)

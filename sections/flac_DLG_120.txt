@@ -1,7 +1,7 @@
 [flac_DLG_120] ; IDD_FLACITEMINFO
-;51DA1D9AD7B7E21D=Bits/sample: %d
-;A50DD9D73031FD98=Bitrate: %.1fkbps, %.1f%%
-;B2506BC9733E0CE2=FLAC File Properties
+51DA1D9AD7B7E21D=各サンプルのビット数: %d
+A50DD9D73031FD98=ビットレート: %.1fkbps, %.1f%%
+B2506BC9733E0CE2=FLAC ファイルプロパティ
 ;^71831478CADD789A=File offline
 ;^CD2E4AA3231DEC4D=File not opened
 ;^D730907ADC00D444=Unknown error/status

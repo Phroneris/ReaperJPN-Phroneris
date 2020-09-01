@@ -1,5 +1,5 @@
 [ddp_help]
-;15AA65451FBB7AB4=DDP is a Registered Trademark of DCA Inc., 1989-2008
+15AA65451FBB7AB4=DDP は、DCA Inc. の登録商標です。(1989-2008)
 ;8289D94FDB76144D=DDP format is used to make exchangable files for CD Audio manufacturing.
 ;0CAF30396057EDBC=The CD Audio format is 44100Hz, 16-bit, stereo. Please set this format, otherwise the export will be cancelled.
 ;E17F7F8449C401F5=DDP format consists of many files, which must all be sent to the CD manufacturing plant.

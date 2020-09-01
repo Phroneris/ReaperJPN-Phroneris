@@ -19,10 +19,10 @@
 ;621A4CFEEF708363=Double-character CD-TEXT is not supported!
 ;829FF353E414B7EA=Cannot read PQDESCR file
 ;A98DD060AFC9A87D=Corrupted PQDESCR file
-;996BB8B1F68C9472=DDP File Properties
+996BB8B1F68C9472=DDP ファイルプロパティ
 ;0E98F33959C6AD9F=Invalid DDP File!
-;90299796413F7EBA=DDP is a registered trademark of DCA, Inc. 1989-2008.
-;FB0841D8D8C574F0=See DDP help in Render dialog for more information.
+90299796413F7EBA=DDP は、DCA Inc. の登録商標です。(1989-2008)
+FB0841D8D8C574F0=詳細については、レンダリングダイアログから DDP のヘルプをご覧ください。
 ;4706E10B92F27F4A=Media offline
 ;2A24C23FA2E5F62C=Error initializing decoder
 ;^09A3E92731A691E1=Length: %s

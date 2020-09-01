@@ -1,7 +1,7 @@
-[reaper_opus_DLG_155] ; IDD_OPUSSINK_CFG
-;793C59618680CF12=Encode 3-8 channel audio as 2.1-7.1 (LFE)
-;47ADB9661E5394D9=Per-channel (6-256 kbps)
-;40734250890FBC24=Combined
+[reaper_opus_DLG_155] ; IDD_OPUSSINK_CFG	;; 長いと見切れる
+793C59618680CF12=3～8Ch 音声を 2.1～7.1 (LFE) Ch でエンコード
+47ADB9661E5394D9=チャンネル別 (6～256 kbps)
+40734250890FBC24=統合
 E78E0DEFF53B4BF3=複雑度:
 1947FE678014C0F4=0 ～ 10 … 10 にすると最高品質になりエンコードが遅くなります
 ;^46F1486DB9B6A7A6=Mode:

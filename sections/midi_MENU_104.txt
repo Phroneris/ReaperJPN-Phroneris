@@ -1,6 +1,6 @@
 [midi_MENU_104] ; IDR_MENU
-;84AF6BF27B779619=&Save MIDI file to disk
-;553CE52272560B64=&Revert to last saved MIDI file
+84AF6BF27B779619=MIDI ファイルをディスクに保存(&S)
+553CE52272560B64=最後に保存した MIDI ファイルの状態に戻す(&R)
 109608EBA667B4D6=エディタを閉じる(&C)
 1BF6FB25AB0DCD48=ウィンドウをドッキング(&D)
 ;^DB25337315BFD655=&File
@@ -130,7 +130,7 @@
 ;^9E9DB29C59430C85=Show velocity and names only on the active media item
 ;^AAD780F2936DFA0C=Color notes by
 ;^073F0BD84FB2C598=Velocity
-;/^F3238895531F739E=Channel	; 下のPitchはMIDIエディタ上部メニューバーの表示→ノートに色を付ける→Pitch
+;/^F3238895531F739E=Channel	; 下のPitchはMIDIエディタ上部メニューバーの表示→ノートに色を着ける→Pitch
 57F28E456CC0FEEB=音高(&P)
 ;^1A360D9AC072403B=Source, using color map
 D0C04B9E79D271AE=トラック(&T)
@@ -175,8 +175,8 @@ D0C04B9E79D271AE=トラック(&T)
 ;^5479D7FA9A2ADB81=Contents
 ;^6401143383A78B46=Track List
 ;^652EF93F64A683F6=Media Item Lane
-;^3A84A1513B5B67C0=One MIDI editor per
-;^A2BF58A6DFD853DC=Project
+;/^3A84A1513B5B67C0=One MIDI editor per	; 下のはアクセスキー付与
+A2BF58A6DFD853DC=プロジェクト(&P)
 ;^8AEA4F30E06A7A87=Behavior for \"open items in built-in MIDI editor\"
 ;^E964640878017639=Open the clicked MIDI item only
 ;^BBC1706D3B8635E2=Open all selected MIDI items
