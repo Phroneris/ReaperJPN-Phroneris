@@ -2,7 +2,8 @@
 *template*ReaperLangPack.txt
 reaper*ReaperLangPack.txt
 
-# 非Windows向けパッチを無視（差分に意味が無いので）
+# パッチ本体を無視
+JPN_Phroneris.ReaperLangPack
 JPN_Phroneris-Mac_Linux.ReaperLangPack
 
 # Notepad++ セッションファイルを無視
@@ -23,4 +24,3 @@ _ignore/
 # 他
 *.zip
 string_calculator.html.url
-JPN_Phroneris.ReaperLangPack
