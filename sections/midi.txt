@@ -1,9 +1,9 @@
 [midi]	;; クオンタイズの「グリッド」の化けは未解決
 A18A57ED9326617F=MIDI カラーマップファイルを開く:
-;20E9D9591D9A464A=More
+20E9D9591D9A464A=他(&M)
 394D5C4E34531167=レーンを非表示(&H)
 C98CC625866DAF62=レーンをクリア(&C)
-;E8CAE6E0F8B6FF33=Lanes with events
+E8CAE6E0F8B6FF33=イベントのあるレーン(&E)
 ;B2896D0D24968C34=Set lane (lanes with events)
 94CCCCF3DF57D4E5=レーンをセット(&S)
 8CF43A159717583C=レーンを追加(&A)
