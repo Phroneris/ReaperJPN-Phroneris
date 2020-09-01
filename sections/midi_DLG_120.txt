@@ -1,8 +1,8 @@
-[midi_DLG_120] ; IDD_MIDIITEMINFO	; MIDIアイテムプロパティ
+[midi_DLG_120] ; IDD_MIDIITEMINFO	; MIDIアイテムプロパティ	;; CCエンベロープにアクセスキー付与したくても、項目名に付けると情報文の選択になり、単位に付けるとOKになってしまう
 01D4CC44D0EFDC81=MIDI ファイルプロパティ
-4399BA4BD6E544BB=特定チャンネルのみ再生:
-A9759EED1FED1E1A=特定チャンネルとしてセンド:
-716435436E335538=独自のテンポを設定:
+4399BA4BD6E544BB=特定チャンネルのみ再生(&H):
+A9759EED1FED1E1A=特定チャンネルとしてセンド(&N):
+716435436E335538=独自のテンポを設定(&P):
 ;F83ED02F8879E4D6=Chase CC/pitch/program before take start offset
 971ED57E1466F812=PPQ
 F7E0035AE601F663=共有 MIDI イベントは %d 個のアイテムで使用されています
@@ -18,3 +18,4 @@ B9EEE1AE70AB8441=CC エンベロープ補間解像度:
 ;^D840E3186B2B9581=OK
 ;^F09E4B5C35AA14B9=Cancel
 ;^D7323C887B0A2951=Apply
+5CA1E00000000000=1.2
