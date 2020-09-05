@@ -13,6 +13,7 @@
 #         (Same as mode 0 except each content will be kept fully)
 #
 # Every mode overwrites existing files.
+#
 
 
 
@@ -119,8 +120,8 @@ sub getSetSubDir	# オプションでディレクトリ作成を避ける
 ##### メイン関数
 
 my $sectionDirName = 'sections';
-my $mapFilePath       = "${sectionDirName}/++section_map.txt";
-my $zerothSectionName = '+description';
+my $mapFilePath       = "${sectionDirName}/__section_map.txt";
+my $zerothSectionName = '_description';
 
 sub divide		# 言語パック内のセクションを、個別のファイルに分離
 {
@@ -143,7 +144,7 @@ sub divide		# 言語パック内のセクションを、個別のファイルに
 }
 sub unify	# 個別ファイルのセクションを、単一の言語パックに統合
 {
-	my $lpName = shift;
+	my $lpName = shift =~ s/\.(ReaperLangPack|txt|ReaperLangPack\.txt)$//r;
 	chomp(my @secNames = @{ &readFile($mapFilePath) });
 	print "\n";
 	my @lpText = ();
@@ -154,7 +155,7 @@ sub unify	# 個別ファイルのセクションを、単一の言語パック�
 	}
 	print "\n";
 	print "\n" if &mightMkdir($sectionDirName) == 1;
-	&writeFile($lpName.'.ReaperLangPack', join("\n", @lpText));	# 間に空行を1つ設ける
+	&writeFile($lpName . '.ReaperLangPack', join("\n", @lpText));	# 間に空行を1つ設ける
 }
 sub clone		# 言語パックを、各セクション名を名前に持つ個別のファイルに複製
 {
