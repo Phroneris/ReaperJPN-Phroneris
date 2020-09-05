@@ -55,12 +55,15 @@ sub abort
 sub mightMkdir	# フォルダが無ければ作成（1階層だけ対応）、あればそのまま
 {
 	my $dir = shift;
+	my $retVal = 0;
 	if (!-d $dir)
 	{
 		eval { mkdir ec($dir) };
 		&abort($@) if $@;
-		print '    Directory created: ', $dir, "\n\n";
+		print '    Directory created: ', $dir, "\n";
+		$retVal = 1;
 	}
+	return $retVal;
 }
 sub findExt		# ファイル名を受けて、実在する拡張子つきファイル名を返す（無ければそのまま返す）
 {
@@ -105,7 +108,13 @@ sub copyFile
 	&abort($@) if $@;
 	print '    File copied: ', $broName, "\n";
 }
-
+sub getSetSubDir	# オプションでディレクトリ作成を避ける
+{
+	my ($parent, $file, $dontMkdir) = @_;
+	my $child = uc substr($file, 0, 1);
+	&mightMkdir($parent . '/' . $child) if !$dontMkdir;
+	return $child . '/';
+}
 
 ##### メイン関数
 
@@ -120,25 +129,31 @@ sub divide		# 言語パック内のセクションを、個別のファイルに
 	&abort("This isn't langpack: ${lpName}", 1) if $sections[0] !~ /^#NAME:/;
 	print "\n";
 	my @secNames = map { /^\[([^\[\]]+)\]/ ? $1 : $zerothSectionName } @sections;
-	&mightMkdir($sectionDirName);
+	print "\n" if &mightMkdir($sectionDirName) == 1;
 	my $i = 0;
-	foreach my $sec (@sections)
+	foreach my $secN (@secNames)
 	{
-		&writeFile("${sectionDirName}/${secNames[$i++]}.txt", $sec =~ s/[\x0d\x0a]+$//r);	# 末尾の改行は全削除
+		my $secText = $sections[$i];
+		my $subDirName = $i == 0 ? '' : &getSetSubDir($sectionDirName, $secN);
+		&writeFile("${sectionDirName}/${subDirName}${secN}.txt", $secText =~ s/[\x0d\x0a]+$//r);	# 末尾の改行は全削除
+		$i++;
 	}
+	print "\n";
 	&writeFile($mapFilePath, [ map { $_."\n" } @secNames ]);
 }
 sub unify	# 個別ファイルのセクションを、単一の言語パックに統合
 {
 	my $lpName = shift;
 	chomp(my @secNames = @{ &readFile($mapFilePath) });
+	print "\n";
 	my @lpText = ();
-	foreach my $sec (@secNames)
+	foreach my $secN (@secNames)
 	{
-		push @lpText, &readFile("${sectionDirName}/${sec}.txt", 1) . "\n";	# 末尾に改行を追加
+		my $subDirName = $secN eq $secNames[0] ? '' : &getSetSubDir($sectionDirName, $secN, 1);
+		push @lpText, &readFile("${sectionDirName}/${subDirName}${secN}.txt", 1) . "\n";	# 末尾に改行を追加
 	}
 	print "\n";
-	&mightMkdir($sectionDirName);
+	print "\n" if &mightMkdir($sectionDirName) == 1;
 	&writeFile($lpName.'.ReaperLangPack', join("\n", @lpText));	# 間に空行を1つ設ける
 }
 sub clone		# 言語パックを、各セクション名を名前に持つ個別のファイルに複製
@@ -147,10 +162,11 @@ sub clone		# 言語パックを、各セクション名を名前に持つ個別�
 	my $lpText = &readFile($lpName, 1);
 	my @secNames = map { /^\[([^\[\]]+)\]/ ? $1 : $zerothSectionName } ( split /^(?=\[)/m, $lpText );
 	print "\n";
-	&mightMkdir($sectionDirName);
-	foreach my $sec (@secNames)
+	print "\n" if &mightMkdir($sectionDirName) == 1;
+	foreach my $secN (@secNames)
 	{
-		&copyFile($lpName, "${sectionDirName}/${sec}.txt");
+		my $subDirName = $secN eq $secNames[0] ? '' : &getSetSubDir($sectionDirName, $secN);
+		&copyFile($lpName, "${sectionDirName}/${subDirName}${secN}.txt");
 	}
 	print "\n";
 	&writeFile($mapFilePath, [ map { $_."\n" } @secNames ]);
@@ -207,27 +223,4 @@ exit 0;
 	# # &abort("Not found: $origName\n", 1) if !-f ec($origName);
 	# # &abort("Not found: $broName\n" , 1) if !-f ec($broName);
 	# print '    File copied: ', $broName, "\n";
-# }
-# sub Divide		# 仲間が多いものを更にフォルダ分けしようとしたがめんどいので保留
-# {
-	# my $lpName = shift;
-	# my @sections = split /^(?=\[)/m, &readFile($lpName, 1);
-	# print "\n";
-	# my @secNames = map { /^\[([^\[\]]+)\]/ ? $1 : $zerothSectionName } @sections;
-	# &mightMkdir($sectionDirName);
-	# print "\n";
-	# my $i = 0;
-	# foreach my $sec (@sections)
-	# {
-		# my $secName = $secNames[$i++];
-		# my $subDirName = '';
-		# if ($secName =~ /^(action|cd|csurf|dlg|env|explorer|item|jsfx|menu|midi_dlg|midi_menu|midi|prefs|render|video)/i)
-		# {
-			# $subDirName = lc $1;
-			# &mightMkdir($sectionDirName . '/' . $subDirName);
-			# $subDirName = $subDirName . '/';
-		# }
-		# &writeFile("${sectionDirName}/${subDirName}${secName}.txt", \$sec);
-	# }
-	# &writeFile($mapFilePath, [ map { $_."\n" } @secNames ]);
 # }
