@@ -1,4 +1,4 @@
-+description
+_description
 common
 DLG_102
 DLG_103

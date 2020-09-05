@@ -2,4 +2,4 @@
 
 [filter "ignore-debug-pl"]
 	smudge = cat
-	clean = perl -pe \"s/^(?=use (strict|warnings))/\\x23 /g\"
+	clean = perl -pe \"s/^\\s*use\\s+(?=strict|warnings)/\\x23 use /g\"
