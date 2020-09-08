@@ -1,6 +1,0 @@
-[DLG_155] ; IDD_WAVESINK_CFG
-35DF1AFCAFFB37CD=WAV bit 深度:
-31A3228789E94216=BWF ('bext') チャンクを書き込む
-8EDB2530266182F3=テンポを埋め込む
-CF2E6C07C4C12F21=サイズが大きい場合:
-;^46B10D8B633443CD=Include project filename in BWF data

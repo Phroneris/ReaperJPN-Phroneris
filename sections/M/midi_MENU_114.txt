@@ -1,6 +1,0 @@
-[midi_MENU_114] ; IDR_VIEWMODE_CTX
-;D18B18554512BA66=View mode context
-;44680FB6272BF814=View: project beats (default)
-;B9F2361ABD9B05A0=View: source beats
-;8AEBA47BC5261D5E=View: project time
-;2CB78A202470C1AF=View: project time (synced)

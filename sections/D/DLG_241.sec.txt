@@ -1,0 +1,14 @@
+[DLG_241] ; IDD_MIDILEARN
+9C329F9649D79AD0=MIDI/OSC ラーン
+0C19B96552E821B2=コマンド:
+DFD31304567AB676=CC モード:
+BECD011FF0FC55E8=選択パラメータのエンベロープを記録待機
+7FC0770162E37102=割り当てたい MIDI/OSC コントローラを動かしてください。
+BBA1029B1D147679=※ MIDI デバイスは [環境設定] > [音声] > [MIDI デバイス] でコントロールメッセージを有効にしたもの、OSC デバイスは [環境設定] > [コントロールサーフェス] で有効にしたものしか使えません。
+;^542A194EAA789AB0=Enable only when track or item is selected
+;^DDD50B6B9C96D4AA=Enable only when effect configuration is focused
+;^780AC67AB2044E79=Enable only when effect configuration is visible
+;^41BAD65DE621E179=Soft takeover (absolute mode only)
+;^D840E3186B2B9581=OK
+;^F09E4B5C35AA14B9=Cancel
+;^F812C7145E261C23=Remove

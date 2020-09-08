@@ -1,0 +1,13 @@
+[DLG_425] ; IDD_MIDIIN_CONFIG
+C0253B595D267AC2=MIDI 入力の詳細設定
+271F89F0F16A09EA=このデバイスからの入力を有効化(&E)
+;/097D2F9B6F6EBFEC=MIDI イベント・タイムスタンプの上級者向けオプション	;; letの訳に困ってる。Let REAPER～を選べということなのか、
+;/441316D58AD8BC8C=REAPER のタイムスタンプイベントに合わせる (デフォルト)
+;/925A502D9C92733D=高精度システムタイムスタンプ (QPC)
+;/F8A4D705CF6C9C1E=低精度システムタイムスタンプ (TGT)
+;/D0B425DFCB932550=タイムスタンプ精度はこの MIDI 入力デバイスのドライバと一致している必要があります。ドライバの精度が不明な場合、REAPER のタイムスタンプ MIDI イベントにIf the driver precision is unknown, let REAPER timestamp MIDI events.
+;^84225D657EA873E2=Device name:
+;^4F32BF040299F0AA=Enable input for control messages
+;^D840E3186B2B9581=OK
+;^F09E4B5C35AA14B9=Cancel
+;^ABEC79059CAD0B0E=Alias name:

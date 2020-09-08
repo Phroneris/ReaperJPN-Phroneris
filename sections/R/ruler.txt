@@ -1,6 +1,0 @@
-[ruler]
-;^EF9B6744B3A3252C=Show project markers
-;^8AECF7AB9A62250A=Show project regions
-;^C4C608138A054AEE=Show tempo/time signature markers
-;^C5B3CE5C6E29439A=Edit time signature marker...
-;^D65885774203EA34=Remove time signature marker

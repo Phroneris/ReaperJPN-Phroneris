@@ -1,0 +1,22 @@
+[undohist]	; 時刻は「実時間」からの変更
+CBCF7F7CDF60CF24=--- 初期ステータス ---
+186240F98D2C1724=--- セッション読み込み ---
+310B8AA25BD2479D=操作履歴のメモリ使用量: 
+0D7F13166E00574B=元に戻す: 
+39034C3D41E988FE=デバッグ情報
+B51AD66B3FC458F3=操作履歴をドッキング(&D)
+6B562789A5A9817F=ウィンドウを閉じる(&C)
+;7E1F5411EF26D208=Load this undo state
+;1DF6962F67C68175=Load this undo state with next alternate redo history
+;4236F16D2B61B116=Load this undo state with alternate redo history
+;F81179A820E1E6C9=Load this undo state with previous alternate redo history
+;C75973DC6D156F72=Undo state information
+;9090BDDE2D146577=Remove selected states from undo history (warning: cannot undo!)
+;DC7A8341A09929BC=Remove selected states alternate redo histories
+;^0C364228BCD76FE0=(Unknown action)
+;^F1645A05AF505BE7=Unknown
+;^1D883542B837B976=Multiple changes
+;^7DA8EA3426CA11D3=Description
+B98A031D9BEEF64E=時刻
+;^D9A8B3186C5CECF7=%c
+;^E5566C4604653F75=Undo History

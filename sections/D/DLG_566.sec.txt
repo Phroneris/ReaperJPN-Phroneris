@@ -1,0 +1,9 @@
+[DLG_566] ; IDD_RENDER_QDELAY
+281DFF7A832E4D0B=今すぐレンダリング(&R)
+6D1DB1A72C825D43=レンダリング開始まであと:
+A27E086F9E7EA396=進捗状況2
+022B2F9649E18FC7=追加(&A):
+;^EA970E9D488A99CB=Render Queue Delay
+;^F09E4B5C35AA14B9=Cancel
+;^1616D990C579771C=seconds
+;^9261BE522DCF754F=Some sampler plugins may require initialization time to ensure all samples are loaded before starting to render output.

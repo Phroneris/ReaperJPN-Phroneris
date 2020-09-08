@@ -1,7 +1,0 @@
-[csurf_DLG_267] ; IDD_SURFACEEDIT_HUI
-;07055D4A0E6802C0=Fader count:
-;CB0F305E6CBFC5F3=(usually 8, but can be more for multichannel HUI)
-;34E7711FDF0D7704=(0: first fader=master. 1: first fader=first track)
-;^28B58959477A4C84=MIDI input:
-;^8E37CA9F4D4DE00B=MIDI output:
-;^5800FB6F53EAD40E=Surface offset (tracks):

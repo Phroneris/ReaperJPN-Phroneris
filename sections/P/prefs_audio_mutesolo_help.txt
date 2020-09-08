@@ -1,8 +1,0 @@
-[prefs_audio_mutesolo_help]
-;EAD933B5C67C808F=Do not process tracks that are muted, allowing less CPU/disk usage for these tracks. Unmuting may not be instant with this checked.
-;4797CE7638526D69=Makes soloing a track also solo the routing of that track, Toggle which behavior is used by holding alt while clicking a solo button.
-;5E0E23A55E611073=The master track, or any track, can be automatically muted (like a circuit breaker) when the volume exceeds a certain level, to protect speakers and ears.
-;7E353D6CD354F8A2=Reset auto-muted tracks when starting playback
-;5D15FFF28571BE0B=If solo in front is enabled (via options menu or action), dim unsoloed tracks by this amount.
-;CC27879338523C6C=Apply a small fade to mutes to avoid clicks, this controls how long that fade is. Must be no more than 100ms.
-;CAA81ECAF25104C8=If a soloed-in-place track sends to a soloed track, this option makes the parent/hardware sends effectively unsoloed.

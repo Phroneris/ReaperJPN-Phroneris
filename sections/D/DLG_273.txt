@@ -1,4 +1,0 @@
-[DLG_273] ; IDD_OPENPROJECT
-EE0709F54123ED0E=新規プロジェクトタブで開く(&T)
-;0CECB84C67893C72=Run script with restricted permissions
-;^E705DACA1F54B88B=Open with FX offline (recovery mode)

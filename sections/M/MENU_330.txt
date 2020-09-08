@@ -1,5 +1,0 @@
-[MENU_330] ; IDR_CONTEXTS_30
-;9EC3AAA915D3F3AF=30TransportHomeCtx
-;^E4053920A9B5A25A=Go to start of project
-;^5F00BE84E91B6C9B=Go to previous marker
-;^94D3B132B355DDD4=Use transport home/end for markers

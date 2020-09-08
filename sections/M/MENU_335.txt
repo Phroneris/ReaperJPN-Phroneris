@@ -1,6 +1,0 @@
-[MENU_335] ; IDR_CONTEXTS_35
-;F2DA99EC7E8315CD=35_2tlMarkerCtx
-F3794F93A2DBC89C=拍子マーカーを編集(&E)...\ダブルクリック
-C6EA5D6FC216DE25=拍子マーカーを削除(&V)\tAlt+クリック
-;^C5B3CE5C6E29439A=Edit time signature marker...
-;^D65885774203EA34=Remove time signature marker

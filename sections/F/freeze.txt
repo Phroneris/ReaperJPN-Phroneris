@@ -1,4 +1,0 @@
-[freeze]
-;66F5EBD54D296600=Freeze %d contains:
-;B98116534002E359=Freeze contains:
-;^D0C04B9E79D271AE=Track

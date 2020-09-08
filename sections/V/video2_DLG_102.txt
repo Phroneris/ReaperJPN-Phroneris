@@ -1,2 +1,0 @@
-[video2_DLG_102] ; IDD_MAIN
-0BCDBB9F888031BA=動画ウィンドウ

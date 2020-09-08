@@ -1,9 +1,0 @@
-[DLG_471] ; IDD_GET_LICECAP
-4EB31544A2B544C9=LICEcap が見つかりません
-FCC133FA8BDC1797=ダウンロード(&D)...
-6BB02D3BA1E9ED3D=LICEcap は、Cockos 製の無料でシンプルな画面アニメーションキャプチャユーティリティです。
-38E70F8C19CADB20=LICEcap が既にインストールされているなら:
-23E9DE4E2A73B835=LICEcap をまだインストールしていないなら:
-;^F685FB3A91025549=Browse...
-;^F09E4B5C35AA14B9=Cancel
-5CA1E00000000000=1.1

@@ -1,0 +1,15 @@
+[prefs_auto_help]
+;540A61168A6B08AF=When the track automation mode is touch, latch, or write, moving any track control or FX knob will create an automation envelope for it.
+;24A7B4635A17AF3A=After recording an automation write pass, automation can automatically switch to a different mode (to avoid overwriting just-written automation).
+;6A4D25A321A15123=The time it takes for the envelope to return to its previous or default value after the end of recording an automation pass.
+;6776B9975D1EC19A=The transition time applied when writing envelope ranges via actions.
+;F53D738206169462=If a track fader is at -X dB, the track volume envelopes can be created at -X dB or +0 dB. In both cases the track output will be automatically adjusted.
+;441FBC5ED51CF71F=Automatically reduce (prune) redundant points when recording or drawing automation. To reduce points afterwards, use the envelope right-click menu.
+;7B05B46C0FCCED48=When recording automation while playback is stopped, choose whether to add points before/after edit position.
+;9C3914B6F3A67C90=Like media items, automation items can be looped or unlooped by default.
+;8A324097713011D9=By default, each instance of a pooled automation item has a separate baseline and amplitude setting.
+;DFC1BE2EA2856F00=By default, automation will be written into existing automation items if any, and the underlying envelope if not.
+;176CF83941C8803F=By default, copy/pasting automation items will not create pooled copies.
+;9A58C3477B714DE8=By default, duplicating tracks or media items will create pooled copies of automation items.
+;8F3B80CEA19A6F2D=Editing automation item position or edges to overlap existing automation items can either play both items together, or trim content from the existing items.
+;15A2EB32586AEA44=Automation items can transition at the start and end to avoid abrupt changes in envelope value.

@@ -1,5 +1,0 @@
-[MENU_331] ; IDR_CONTEXTS_31
-;556582869CFDFD1A=31TransportEndCtx
-;^5D5B152A913BF2D1=Go to end of project
-;^51B4B159DD69FD3B=Go to next marker
-;^94D3B132B355DDD4=Use transport home/end for markers

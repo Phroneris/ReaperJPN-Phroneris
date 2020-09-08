@@ -1,0 +1,3 @@
+[bigclock]
+;77887337E30EA143=Choose image
+;^38F9B35CED04D04D=Big Clock

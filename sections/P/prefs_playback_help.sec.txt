@@ -1,0 +1,23 @@
+[prefs_playback_help]
+3CCEB93DC24D10C2=プロジェクトの終わりで再生を停止、またはリピートします。
+76BA36072A8D76E8=ループが無効な場合、選択時間の終わりで再生を停止します。
+B154D26ACBF00387=ループの終わりにエフェクトバッファを消去します。この設定は VSTi にはおすすめしませんが、AutoTune などのプラグインでは速度がアップします。
+;97966985442D6841=When track playback offset is negative, a max play speed higher than 1 will ensure that all MIDI notes are played.
+;50184C276F7C5861=Select this option to make the view scroll to the edit cursor on stop.
+;CD5267F3C2429B0D=Allows you to preview sounds from your instrument plug-ins when stopped.
+;EF96DA6B35BD12C3=Clears the FX buffers when stopping playback, preventing reverb tails etc.
+;E5C1DA8A8404A955=If \"Run FX when stopped\" is unchecked, you can define the amount of time a FX will run after playback is stopped.
+;C6CEC38A2A4BE6CD=Either the master mix, or only the selected tracks, may be scrubbed/jogged.
+;88B1C77A43F5B114=When scrubbing, the playback rate can be limited to 1.0 or slower.
+;32DBFA42A94B74CE=When jogging, the playback rate can be limited to 1.0 or slower.
+;2DEF886977AFB2B4=Jog can respond more immediately to mouse/edit cursor moves.
+;EDE7F5117FE5F615=The jog rate can be limited to 1.0 or slower only when jogging near the playback cursor.
+;D6DD3DBDD1510B7D=Scrub/jog can be disabled while playing back, or enabled, in which case normal playback will stop when scrub/jog is engaged.
+;7205DD67A21ED82B=Set the bounds of the looped section, when scrubbing or jogging in looped-segment mode.
+;120BE0621EFD6E26=Adjust the sensitivity and responsiveness when scrubbing via a controller.
+;37B0268B9BEAD687=Moving the edit cursor via an action or when using a control surface can scrub audio, or simply move the cursor.
+;38F660F8084D144A=The settings on this page control how jog/scrub works. See Editing Behavior/Mouse Modifiers to control when jog/scrub happens.
+;43024C3CA6CCED10=Send note-offs to all track destinations when disabling record-arm (to prevent hanging notes).
+;75762F781D42A0EB=Reset MIDI CC/Pitch to neutral on playback start and/or stop.
+;3CAF75B331A4FB37=Reset MIDI CC/Pitch to neutral when looping playback.
+CB9610EB68F3035B=様々な CC のリセット値を上書きします。「cc7=127 cc39=127」といった構文で最大値を設定します。-1 とするとリセット対象外、cc0-120= とすると全 CC に影響するようになります。

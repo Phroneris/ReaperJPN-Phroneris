@@ -1,0 +1,5 @@
+[MENU_307] ; IDR_CONTEXTS_7
+;7D7546841B933986=7TransportRecMenu
+;^2A861A976C38C3D4=Record mode: normal
+;^71CB5040464F5BC3=Record mode: time selection auto punch
+;^CAC4592C4D4DD57A=Record mode: auto-punch selected items

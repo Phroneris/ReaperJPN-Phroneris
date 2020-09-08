@@ -1,0 +1,2 @@
+[midi_DLG_144] ; IDD_BANKPROGLOAD
+;5A83EDE6D072380A=Use as default bank/program file

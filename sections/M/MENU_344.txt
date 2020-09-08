@@ -1,5 +1,0 @@
-[MENU_344] ; IDR_CONTEXTS_44
-;A1ECEA29C444236B=44_FxAddVstFolderCtx
-88F334DEA91EE003=サブフォルダのプラグインも含む(&S)
-2CE99B208A9CC604=VST フォルダ表示に Cockos のプラグインも含む(&C)
-A77977CDCE6B436E=VST へのフルパスを表示(&F)

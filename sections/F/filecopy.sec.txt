@@ -1,0 +1,18 @@
+[filecopy]
+;4B452B2D15B5585A=Reversing file to new take...
+;F2B87F169A58A695=Rendering file...
+;AD4BE6D55F178607=Applying FX...
+;E965D262E7D4296E=MIDI event
+;29E9879A0FEEFCE4=Explode MIDI note rows
+;43ABD02FA6444E41=One item per pitch
+;A4FC598B314586F4=One item per channel
+;F7D8461DCF28DB58=single-pitch items
+;303CD8585B80219D=single-channel items
+;3532BA8754A2063C=meta-events
+;0C7DFAB3AD2B5B13=chan
+;0C198C594F14CE8A=Error creating new single-channel media items
+;5A07B7E6ABE54AFA=Multichannel explode
+;1ACD08E5EF42F8CA=Error exploding multichannel media item
+;^6A8323D4A2DF56E0=Explode multichannel media
+;^4789C5332441688D=Error finding an unused filename for output. Source file:\r\n\t
+;^A1BB777BE5203666=Open Copy Error

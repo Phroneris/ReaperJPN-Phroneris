@@ -1,8 +1,0 @@
-[prefs_mididev_help]
-;C8EC4F41AE4CE266=Enable the MIDI Input devices you wish to use by right-clicking on the Device name and selecting Enable Input.
-;6B8B2E2D5D43889C=Enable the MIDI Output devices you wish to use by right-clicking on the Device name and selecting Enable Output.
-;F18BBB94E07C7D77=This will send MIDI All-notes-off messages during stop/play.
-;8C3BC63E5CE56671=This will send MIDI Pitch and Sustain (CC#64) reset messages during stop/play.
-;744D44D8300A6F70=Enable this to drive all MIDI hardware from a single thread, which isn't ideal for performance but may be more compatible with some hardware.
-;F334C433C938F542=Closes and reopens all MIDI devices, and rescans for new devices if possible.
-;BD4F1A720BC228D9=Creates a new joystick-MIDI device.

@@ -1,2 +1,0 @@
-[save]
-;F684CC8DBBE0B1E6=Error coming up with a project filename, you must have a lot of projects!

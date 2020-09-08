@@ -1,8 +1,0 @@
-[silence]
-;11678656B010B057=Split and remove silent areas
-;1AFBF3EBEDB42C48=Split and keep silent areas
-;1046C24D832DEED1=Split only before non-silence
-;2DA3F8F9CD41728F=Split only before silence
-;68FEEE819AD9AD02=Processing...
-;06D029F197AA32E6=Processing.
-;3DEA0D84B63449D8=Processing..

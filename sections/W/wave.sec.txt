@@ -1,0 +1,50 @@
+[wave]
+;3CE9A734B44D17C3=Error parsing file
+;968EEBDF7F90BA4E=Error reading w64 chunk header
+;0E784C0861931BD1=Invalid w64 chunk length (<24)
+;E313EB7E56CBEDA4=Error reading w64 bext chunk
+;49A9A1EAF6EF78DF=Error reading w64 fact chunk
+;DC7E1107022BABD6=Error reading w64 fmt chunk
+;4989A180D554DF45=w64 ex-type is not supported
+;27BE0F0CDE20E169=w64 type is not supported
+;DA7E17CC51C0968F=w64 fmt nch is not >= 1 channels
+;26F6650B1C1E42F2=w64 fmt type is ulaw but not 8-bit
+;F1F1C27F2500E4BA=w64 fmt type is floating point PCM but not 32/64 bit
+;D2BFA342F28B7D30=w64 fmt type is PCM but not 8/16/20/24/32 bit
+;2987384AC4E8C881=w64 is MSADPCM, but invalid parameters
+;D94FDF29BF833CA0=w64 is IMA ADPCM, but invalid parameters
+;2CAEAE38E4D803B6=w64 is cADPCM, but invalid parameters
+;6225F7AC29A4B6CB=Error reading AIFF chunk header
+;0E509BB44A8A721E=Error reading 8SVX IFF VHDR chunk
+;BE582C8F291F51A2=8SVX IFF unsupported compression
+;E1713959A5C6C38C=Error reading AIFF COMM chunk
+;811CA9545833F0C2=AIFF is not 8/16/20/24/32/64 bit
+;BD808EC26C501FBF=AIFF is not >= 1ch
+;C006FF1E57D191A6=AIFC has invalid compressed data type
+;808043BC24769C06=Error reading AIFF SSND header
+;0378C899A572C859=Error reading WAV chunk header
+;D08255B00457859E=RF64 ds64 chunk is too small
+;94C2B7954A48AF43=Error reading RF64 ds64 chunk
+;DD8F88E9BF007BE3=RF64 requires ds64 chunk
+;1E99B24D91ACF613=Error reading WAV fmt chunk
+;FE66D00659FF01B6=WAV ex-type is not supported
+;4EEFBCFCDA3781C8=WAV type is not supported
+;08FF0718C8D2C849=WAV is not >= 1ch
+;D3AD3445C6462F21=WAV fmt type is ulaw but not 8-bit
+;8AD70C5E629183A8=WAV is floating point PCM, but not 32/64 bit
+;8D0E752EFAFD79FE=WAV is PCM, but not 8/16/20/24/32 bit
+;72D14F95752DDCF6=WAV is MSADPCM, but invalid parameters
+;2508C719EC2FE30F=WAV is IMA ADPCM, but invalid parameters
+;CD0B60BDF34C1E87=WAV is cADPCM, but invalid parameters
+;2616F823FDFFF608=Error reading WAV fact chunk
+;DDD5B1BBE71ADDA7=Error reading WAV acid chunk
+;B63351815735F84B=Error reading WAV bext chunk
+;B441FE3C7A724A5A=Error reading WAV iXML chunk
+;D31AE23EAA68C24C=Unknown file header
+;0D2EC08C6EDCDEBD=Couldn't find format chunk in file
+;72C8427D7190CFC6=Couldn't find data chunk in file
+;F3C9CEA6622D4D95=Invalid data in file
+E9B5EB7ED466A310=整数
+D8CEC2215E3FE160=WAV ファイル
+E2E2BED8A694857A=AIFF ファイル
+;^439CE51FC4707DDD=Length: 

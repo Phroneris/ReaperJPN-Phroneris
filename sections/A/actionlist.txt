@@ -1,3 +1,0 @@
-[actionlist]
-;^B762E77EB85D7B6C=off
-;^D8ADC6186B88361A=on

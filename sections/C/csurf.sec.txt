@@ -1,0 +1,11 @@
+[csurf]
+;19F3DA19EB7796C9=YAMAHA 01X (dev %d,%d)
+;E2D68C95698E9C75=Frontier AlphaTrack (dev %d,%d)
+;76A38BCB9CC73BB1=HUI(partial) (dev %d,%d)
+;83379772EF578BD8=BCF 2000 (dev %d,%d)
+;DA6DC7FC8493B59F=PreSonus FaderPort (dev %d,%d)
+;6E1410226ADE5B93=PreSonus FaderPort FP2 (dev %d,%d)
+;81E863DA635540B1=Mackie Control Extended (dev %d,%d)
+;D9276AAE1F2BAAFC=Mackie Control (dev %d,%d)
+;1C872E3891E474E8=Frontier TranzPort (dev %d,%d)
+;^3390D94D34F06461=None

@@ -1,4 +1,0 @@
-[DLG_437] ; IDD_APICONSOLE	; 閉じるはアクセスキー重複回避のため
-6C47A20E99E77954=ReaScript コンソール出力
-;^F10F4B1B4D6DC250=Clear
-BAC64C1B2E060EE5=閉じる(&X)

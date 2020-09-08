@@ -1,9 +1,0 @@
-[prefs_render_help]
-;91CB7FE93510C1F4=Sets the audio block size used when rendering. It is recommended that you leave this blank, which will automatically use the last audio blocksize used.
-;B8630E9E7BA232E0=When checked, configured multiprocessing settings will be used for rendering. If unchecked, rendering will be slower but can be more reliable with some plug-ins.
-;EB16C6EA76EEC12B=When checked, limit apply FX/render stems actions to realtime. This is good for certain plug-ins that fail when running faster than realtime.
-;3694C4CB232416C4=Rendering the project or stems, or freezing tracks, can run beyond the last media item in the project, to be sure to record any FX tails (like reverb).
-;ABF1A1194368E588=When rendering stems for the entire project, apply the tail length setting. This also affects the default tail settings in the render window.
-;5182449DA30570C3=When rendering stems for a time selection, apply the tail length setting. This also affects the default tail settings in the render window.
-;C3F651989CF94DE1=By default, only media items will be rendered when freezing. If there are FX on the track, the entire track can be rendered, which may be slower.
-;4880D33AC87DEEDF=When freezing an entire track, apply the tail length setting.

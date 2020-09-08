@@ -1,0 +1,4 @@
+[DLG_452] ; IDD_EMPTYITEMINFO
+263CA781AB655851=空のソース
+FCDCE094EAEECFA9=この空テイクは、恐らくはループをオフにしたメディアアイテムの末尾を分割したことにより生成されたものです。
+;^BAC64C1B2E060EE5=Close

@@ -1,0 +1,11 @@
+[prefs_reascript_help]
+;EEB15F6BCEE436B2=View ReaScript overview online, at http://www.reaper.fm/sdk/reascript/reascript.php.
+;54CB46A2699C9EA0=View ReaScript documentation, including a full function reference for the REAPER API.
+;DF5737A537307FE7=The ReaScript console can also be cleared with ClearConsole().
+;8B83BF71FF0FC189=Lua ReaScripts can be automatically halted if they run for too long, to avoid scripts crashing REAPER. (The timeout limit is not foolproof.)
+;ECB26420DBFE9E79=ReaScript for EEL and Lua will always work. Python must be enabled here.
+;0DFF4E313817B7E3=Python is available as a free download. Please see ReaScript documentation for more information.
+;35786BA800FBE7EC=After you install Python, REAPER should find the Python dynamic library automatically.
+;52118B0F364271BE=If REAPER finds a compatible version of Python on this machine, view the path to the Python dynamic library.
+;8D0DE2F7EBEE6514=If REAPER cannot find Python automatically, enter the path here. See the Python installer readme for more information.
+;AD1401A586D43E2D=If you have multiple versions of Python installed, you can force REAPER to use a specific dynamic library if needed.

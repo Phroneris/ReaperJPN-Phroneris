@@ -1,0 +1,15 @@
+[DLG_568] ; IDD_CHOOSE_PROJECT
+;73CA908C47AB99D9=empty project
+;4FA42CDCF616EFA1=%d project tabs:
+;981CC76E08DF7077=Project templates:
+;06A7B5E2F65877B4=[Default]
+;A10EAC62161414BC=Recent projects:
+;380E831B77481EA4=REAPER Choose Project
+;^BE72ADED52927C3E=Last active project
+;^E99EBA7FF6970DBB=...
+;^D990EA186C48B88B=, 
+;^0832A807B4EBA64D= 
+;^5E103081C90DF414=New project (ignore default template)
+;^F47146FFAED94D96=New project
+;^D840E3186B2B9581=OK
+;^E705DACA1F54B88B=Open with FX offline (recovery mode)

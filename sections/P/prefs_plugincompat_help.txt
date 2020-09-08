@@ -1,8 +1,0 @@
-[prefs_plugincompat_help]
-;811F90A56BF55F69=Test all plug-in input and output for denormalized sample values (meaninglessly small values that can cause very high CPU use).
-;749C7A00C3C0114E=Clear plug-in output buffers before passing them to the plug-in. Some plug-ins can output occasional uninitialized buffers, which makes bad loud noises.
-;054AFFC8FC04D334=Save the plug-in's entire internal state, not just the position of the knobs. Recommended because many plug-ins store additional settings.
-;81B55EB5CAA6E047=Plug-ins can be bridged/firewalled based on architecture or preference.
-;245A73602A17ABE3=Bridging support will not be available if bridging was deselected when installing REAPER.
-;91B420B42CE40B7E=If a buggy or malicious plugin corrupts memory, REAPER can quit immediately, or try to continue with a high risk of crashing or other errors later.
-;D05E96383C39FA84=Additional settings, such as buggy plugin compatibility mode and save/undo options, can be set by right-clicking the plug-in name in the FX browser.

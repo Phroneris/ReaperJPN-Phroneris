@@ -1,0 +1,12 @@
+[csurf_type]
+;D72D35942B75A505=YAMAHA 01X
+;10881BCDD88796D1=Frontier AlphaTrack
+;803BFEAF23F20DC3=HUI (partial)
+;E399564E58F138A9=Behringer BCF2000 (using preset 1)
+;DF249D69F709EDAF=PreSonus FaderPort
+;789C954A015F4BD9=PreSonus FaderPort v2 (2018)
+;570E4608A519946D=Mackie Control Universal
+;EAD02982B9759BDB=Mackie Control Extender
+;56DC84781C5106BF=OSC (Open Sound Control)
+;3B480EA7AA22E148=Frontier Tranzport
+;0A2E68C3B74ED940=Web browser interface

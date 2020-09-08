@@ -1,3 +1,0 @@
-[vkb]
-;^3D9702905AC5B44C=Virtual MIDI keyboard
-;^D3B242D430A5DB6C=Virtual MIDI Keyboard

@@ -1,0 +1,25 @@
+[fade]
+;B4226E825D236C50=Linear crossfade
+;ACC6B8E1A4A4E2BF=Linear fade in
+;6D7AE26AE0B87164=Linear fade out
+;A8715B313B045EB2=Inverted quadratic crossfade
+;00B771C6225D7651=Inverted quadratic fade in
+;5F4084AC45B831D2=Inverted quadratic fade out
+;0FEE34D609087DD5=Quadratic crossfade
+;FEF42B71F540173A=Quadratic fade in
+;AB5B04A3D7FA9253=Quadratic fade out
+;01CEFD5EED8B1527=Inverted quartic crossfade
+;CC3AD4278A74B72C=Inverted quartic fade in
+;4A56D730284680D9=Inverted quartic fade out
+;B22D048FBF6C9DA4=Quartic crossfade
+;F8613E3DF9E73323=Quartic fade in
+;E246C24F9955DE10=Quartic fade out
+;B16C882AA2CA5FB9=Cosine S-curve crossfade
+;279CF41FE65DDD2E=Cosine S-curve fade in
+;9EE1C83469EE31CF=Cosine S-curve fade out
+;4392FD667DC4B8B3=Quartic S-curve crossfade
+;3AEFC6D6F05C6A58=Quartic S-curve fade in
+;942B633A77B1CC9D=Quartic S-curve fade out
+;5D1E1171034195AE=Equal power crossfade
+;2C6599DDA8C0E69D=Equal power fade in
+;4047A0A5C7655306=Equal power fade out

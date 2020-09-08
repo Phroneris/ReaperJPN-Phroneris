@@ -1,5 +1,0 @@
-[cd]
-92898DA95631C3C6=CD 音声 - トラック #%d
-20CAA0535662188D=CD 音声トラック
-B613A8B6F6972A5C=音声 CD イメージ %dHz %dch
-FA1D8BAB473747AA=音声 CD イメージ (CUE/BIN フォーマット)

@@ -1,6 +1,0 @@
-[csurf_DLG_264] ; IDD_SURFACEEDIT_MCU
-;^28B58959477A4C84=MIDI input:
-;^8E37CA9F4D4DE00B=MIDI output:
-;^5800FB6F53EAD40E=Surface offset (tracks):
-;^18CD0ED91946CEB8=Size tweak:
-;^FE54809EE740B495=(leave at 9 unless you know what you're doing)

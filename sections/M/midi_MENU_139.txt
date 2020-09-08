@@ -1,5 +1,0 @@
-[midi_MENU_139] ; IDR_FILTER_CTX
-;1A838426FF4E6066=Filter settings
-E56A8E21CBAA0A4F=絞り込みを反転(&V)
-;^D21C990ADFD61587=Show only events that pass filter
-;^0420AF237D97ECB8=Solo

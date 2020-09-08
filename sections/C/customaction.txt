@@ -1,5 +1,0 @@
-[customaction]
-;BFC3306F54935DAB=Continue custom action 
-;60604BB42DF6B781=Action paused
-;86330CD225C99482=Loop custom action 
-;78759B7EBE0076EF= from step 

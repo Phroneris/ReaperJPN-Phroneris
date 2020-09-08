@@ -1,6 +1,0 @@
-[prefs_path_help]
-;213084A633ECA694=Set the default directory for rendered files. If blank, the current project directory will be used.
-;DC2462818769728A=Fallback recording path for all new files, if the project has not previously been saved, and no path is set in file/project settings.
-;96F6407D44067B64=Alternate path for REAPER peak cache files (.reapeaks). The alternate path may also be used even if not enabled here, see Preferences/Media.
-;02DF1D8AB8130F68=List of paths that will always have their peak cache files placed in the alternate path rather than with the media. Useful for sample libraries etc.
-;50A0CCCDC8CC3250=Set the default directory to browse when no project is loaded and you wish to load or save a project file.

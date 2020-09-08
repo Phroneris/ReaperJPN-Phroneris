@@ -1,5 +1,0 @@
-[DLG_118] ; IDD_PREFS_AUDIOCONFIG
-6B9D8509FA801E27=音声スレッド優先度:
-;^0314604C3913412E=Audio system:
-;^E9C70EA3B03F0A91=Allow projects to override device sample rate
-;^16464B290024A7A0=Audio device settings

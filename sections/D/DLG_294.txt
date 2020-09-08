@@ -1,3 +1,0 @@
-[DLG_294] ; IDD_RENDERFORMAT_CFG
-;FEFA254D85ED1D84=Same file type as primary, secondary output disabled
-;^8409957BC906D0F6=Format:

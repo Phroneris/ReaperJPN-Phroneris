@@ -1,0 +1,19 @@
+[DLG_223] ; IDD_REMOVE_SILENCE
+;BCDA20BCDBA4C4A4=Ignore silence shorter than:
+;3D21F2647611E0A0=Make non-silent clips no shorter than:
+;87490F3457C05E9B=Auto adjust snap offset to peak value in the first 
+;2C1F40776FBF7AF5=Preserve timing of non-silent areas
+0703625BF4AB8440=選択されたアイテムの切れ目でグループのアイテムを分割
+;03775A71153EBEF0=Run signal through track FX for detection
+;8E4975199235ECB5=ms (0 to disable)
+;^05F21CB15F5F944B=Auto trim/split items
+;^927D36CE7B695660=Threshold:
+;^D8D27C186BA6D499=dB
+;^D92F489AE81E13F2=Hysteresis:
+;^D8B3B3186B8C817F=ms
+;^C44624AFE5B908A4=Fade pad
+;^0629736B3FAE9E4C=Process
+;^F09E4B5C35AA14B9=Cancel
+;^0D2DD411CE90EA28=Leading pad:
+;^1E386FB5FE43C9CC=Trailing pad:
+;^46F1486DB9B6A7A6=Mode:

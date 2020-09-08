@@ -1,0 +1,8 @@
+[prefs_record_loop_help]
+;EA84923E715129D3=Incomplete takes can be automatically discarded, as long as at least one complete pass through the loop selection was recorded.
+;EBB29F1E5EC1F1A6=Threshold of length that a take has to exceed to be considered complete. The default is 90%, but 50% or 100% are also sensible values.
+;F8F41216D26DE4BD=By default, MIDI recording that starts within a time selection will create a media item that starts when MIDI input begins.
+;B2AA56B82FB82DE0=Loop recording can create one or more audio files, which can be added to the project after each loop, or only when recording stops.
+;33AC466648B3C9CA=Add recorded media to project after each loop, which can be used to build up layered recordings.
+;D2E172FC0C79F1D4=Add recorded media to project only when recording stops (default).
+;4570CCEE54B6D772=Create a separate file on disk for each loop (default is to record to a single, continuous file).

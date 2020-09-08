@@ -1,6 +1,0 @@
-[DLG_243] ; IDD_SCREENSETS
-;F62DF20B45D1562B=Auto-save when switching screensets
-;B7C8364C77417E76=Edit fields...
-;^865773BF0F30AC16=Screensets/Layouts
-;^CA2A325DBD0A1A47=Custom1
-5CA1E00000000000=1 1.3

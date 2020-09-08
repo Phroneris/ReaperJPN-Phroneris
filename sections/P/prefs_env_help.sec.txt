@@ -1,0 +1,22 @@
+[prefs_env_help]
+;60E75E1C06143DD2=Display newly created automation envelopes in separate lanes, as opposed to drawing the envelope over the media lane.
+;8BE1457A66ECF551=Envelopes are not normally drawn overlaid over one another. When drawing envelopes over media, overlay them if they would otherwise be too small.
+;7EACC9195B6EAA97=When activating an envelope in the track envelopes dialog or via menu selection, select the envelope after activation.
+CD28D7EE423403C2=レーンのコントロールパネルメニュー (訳註: 画面左の TCP のエンベロープ用トラック部分を右クリック) からエンベロープを切り替える際、元を非表示にすることもメディアレーンへ移動させることもできます。
+;F8C8FB0CC40DE7CB=Decibel range of volume envelopes, from the bottom to the top of the envelope.
+;683A32281D7FDA63=The default display range of per-take pitch envelopes. A value of 3 means the envelope range is -3 to +3 semitones. This can be overridden per-project.
+;C981C912EB56CE08=Per-take pitch envelope points can be snapped to semitones, or fractional semitones.
+B3FAF44B3E38F204=時間選択やアイテムの移動などと共にレーンのスライダーを動かした際に、自動的に追加されるエンベロープポイントの遷移時間です。(訳註: エンベロープを時間選択して Ctrl+Shift+上下ドラッグ)
+;6115B93DB8CE3A5A=When mouse modifier preferences are set to insert an envelope point, clicking an inactive envelope can just select the envelope, or insert a point.
+;957EBDEA38928EDF=When clicking without modifiers on an envelope to select it, allow creation of new points on the same click.
+;FE8EE594477C7178=When editing a single envelope point with the mouse, the edit can be constrained to the the space between adjacent envelope points.
+;0F8D0ED7C3445C45=When moving media items across tracks, make sure all envelopes that are modified are made visible so that you are aware of the changes being made.
+;86A807A735044B6D=Envelope point selection can follow time selection for the currently active envelope.
+;CE6D0EE9AF534919=Moving or copying items can automatically create edge points for envelopes, preserving the existing envelope shape around the edits.
+;6110AA5E7762FC3E=Moving or copying multiple envelope points can automatically create edge points, to preserve the existing envelope shape around the edits.
+;2FEA27A4E351D863=Ripple editing or inserting time can automatically create edge points, to preserve the existing envelope shape.
+;7E33B589D921ECFB=The default display range for the tempo map envelope. This can be overridden per-project.
+;99590307CA2801DD=Relative mouse edits provide more Y-axis resolution at the expense of envelope points not following the mouse pointer.
+;58F5A7A879125045=When editing fader-scaled volume envelopes, one vertical pixel of mouse movement translates to 0.2dB of gain (or 1dB when below -60dB).
+;1CFA79E2A57A99DA=When editing envelopes that are not fader-scaled volume envelopes, one vertical pixel of mouse movement translates to 0.5% of value adjustment.
+;DD36120EC558DEC1=Automation items will be automatically assigned a user-editable label. The envelope name can be automatically appended to this label.

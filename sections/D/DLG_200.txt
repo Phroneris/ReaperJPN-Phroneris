@@ -1,7 +1,0 @@
-[DLG_200] ; IDD_PANLAWCTL
-25B661438F7A03AE=デフォルトのパンロウ設定を無視
-;^2B4E18A3D5201CFA=Pan Law
-;^4C66CC81D7E0E0C6=Linear scale above -3dB pan law
-;^57CA523AA910C686=Gain compensation (boost pans)
-;^D8D27C186BA6D499=dB
-;^A5AE0B33DF6191F1=Pan mode:

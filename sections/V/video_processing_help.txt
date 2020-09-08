@@ -1,2 +1,0 @@
-[video_processing_help]
-;0A0692473F08A26B=Video processor reference

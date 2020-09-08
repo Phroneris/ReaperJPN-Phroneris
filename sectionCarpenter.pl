@@ -66,28 +66,31 @@ sub mightMkdir	# フォルダが無ければ作成（1階層だけ対応）、�
 	}
 	return $retVal;
 }
-sub findExt		# ファイル名を受けて、実在する拡張子つきファイル名を返す（無ければそのまま返す）
+sub findExt		# ファイル名と拡張子名を受けて、実在する拡張子つきファイル名を返す（無ければそのまま返す）
 {
-	my $fileName = shift;
-	$fileName .= [ grep { -f ec($fileName.$_) } ('', '.ReaperLangPack', '.txt', '.ReaperLangPack.txt') ]->[0]
-		// &abort("Can't find a file '${fileName}' with prescribed extension.", 1);
-	return $fileName;
+	my ($file, $ext) = @_;
+	$ext = '.' . ($ext =~ s/^\.//r);
+	$file .= [ grep { -f ec($file.$_) } ('', $ext, $ext.'.txt', '.txt') ]->[0]
+		// &abort("Can't find a file '${file}' with expected extension.", 1);
+	return $file;
 }
 sub readFile	# オプションでファイルを丸呑みする（デフォルトでは行区切り）
 {
-	my ($fileName, $doSlurp, $dontPrint) = @_;
-	$fileName = &findExt($fileName);
+	my ($fileName, $optRef) = @_;
+	my ($ext, $doSlurp, $doPrint) = ($optRef->{ext} // '', $optRef->{slurp} // 0, $optRef->{print} // 1);
+	$fileName = &findExt($fileName, $ext);
 	my $file;
 	eval { open $file, '<', ec($fileName) };
 	&abort($@) if $@;
 	my $text = $doSlurp ? do { local $/; <$file> } : [<$file>];	# 全体の単一スカラー / 行配列のリファレンス
 	close $file;
-	print '    File read: ', $fileName, "\n" unless $dontPrint;
+	print '    File read: ', $fileName, "\n" if $doPrint;
 	return $text;
 }
 sub writeFile	# 書き込むテキストは配列なら要リファレンス
 {
-	my ($fileName, $text, $dontPrint) = @_;
+	my ($fileName, $text, $optRef) = @_;
+	my ($doPrint) = ($optRef->{print} // 1);
 	# if ($fileName =~ /^(.+)[\/\\]/)
 	# {
 		# &mightMkdir($1);	# ループで回す度にこれやるのはアホらしいので却下
@@ -99,78 +102,86 @@ sub writeFile	# 書き込むテキストは配列なら要リファレンス
 	$textRef = [( ${$textRef} )] if ref $textRef eq 'SCALAR';	# スカラーリファレンスなら配列リファレンス化
 	print $file @{$textRef};
 	close $file;
-	print '    File written: ', $fileName, "\n" unless $dontPrint;
+	print '    File written: ', $fileName, "\n" if $doPrint;
 }
 sub copyFile
 {
-	my ($origName, $broName) = @_;
-	$origName = &findExt($origName);
+	my ($origName, $broName, $optRef) = @_;
+	my ($extRead) = ($optRef->{extRead} // '');
+	$origName = &findExt($origName, $extRead);
 	eval { copy(ec($origName), ec($broName)) };
 	&abort($@) if $@;
-	print '    File copied: ', $broName, "\n";
+	print '    File copied: ', $origName, ' -> ', $broName, "\n";
 }
 sub getSetSubDir	# オプションでディレクトリ作成を避ける
 {
-	my ($parent, $file, $dontMkdir) = @_;
+	my ($parent, $file, $optRef) = @_;
+	my ($doMkdir) = ($optRef->{mkdir} // 1);
 	my $child = uc substr($file, 0, 1);
-	&mightMkdir($parent . '/' . $child) if !$dontMkdir;
+	&mightMkdir($parent . '/' . $child) if $doMkdir;
 	return $child . '/';
 }
 
 ##### メイン関数
 
-my $sectionDirName = 'sections';
-my $mapFilePath       = "${sectionDirName}/__section_map.txt";
-my $zerothSectionName = '_description';
+my $secDir = 'sections/';
+my $secExt = '.sec.txt';
+my $lpExt = '.ReaperLangPack';
+my $secMapPath = $secDir . '__section_map.txt';
+my $sec0Name = '_description';
 
 sub divide		# 言語パック内のセクションを、個別のファイルに分離
 {
 	my $lpName = shift;
-	my @sections = split /^(?=\[)/m, &readFile($lpName, 1);
-	&abort("This isn't langpack: ${lpName}", 1) if $sections[0] !~ /^#NAME:/;
+	my @sections = split /^(?=\[)/m, &readFile($lpName, {slurp=>1, ext=>$lpExt});
+	&abort('This isn\'t langpack: '.$lpName, 1) if $sections[0] !~ /^#NAME:/;
 	print "\n";
-	my @secNames = map { /^\[([^\[\]]+)\]/ ? $1 : $zerothSectionName } @sections;
-	print "\n" if &mightMkdir($sectionDirName) == 1;
+	my @secNames = map { /^\[([^\[\]]+)\]/ ? $1 : $sec0Name } @sections;
+	print "\n" if &mightMkdir($secDir) == 1;
 	my $i = 0;
 	foreach my $secN (@secNames)
 	{
-		my $secText = $sections[$i];
-		my $subDirName = $i == 0 ? '' : &getSetSubDir($sectionDirName, $secN);
-		&writeFile("${sectionDirName}/${subDirName}${secN}.txt", $secText =~ s/[\x0d\x0a]+$//r);	# 末尾の改行は全削除
+		my $subDir = $i == 0 ? '' : &getSetSubDir($secDir, $secN);
+		my $secFilePath = join('', $secDir, $subDir, $secN, $secExt);
+		my $secText = $sections[$i] =~ s/[\x0d\x0a]+$//r . "\n";	# 末尾の改行は1個だけ
+		&writeFile($secFilePath, $secText);
 		$i++;
 	}
 	print "\n";
-	&writeFile($mapFilePath, [ map { $_."\n" } @secNames ]);
+	&writeFile($secMapPath, [ map { $_."\n" } @secNames ]);
 }
 sub unify	# 個別ファイルのセクションを、単一の言語パックに統合
 {
 	my $lpName = shift =~ s/\.(ReaperLangPack|txt|ReaperLangPack\.txt)$//r;
-	chomp(my @secNames = @{ &readFile($mapFilePath) });
+	chomp(my @secNames = @{ &readFile($secMapPath) });
 	print "\n";
 	my @lpText = ();
 	foreach my $secN (@secNames)
 	{
-		my $subDirName = $secN eq $secNames[0] ? '' : &getSetSubDir($sectionDirName, $secN, 1);
-		push @lpText, &readFile("${sectionDirName}/${subDirName}${secN}.txt", 1) . "\n";	# 末尾に改行を追加
+		my $subDir = $secN eq $secNames[0] ? '' : &getSetSubDir($secDir, $secN, {mkdir=>0});
+		my $secFilePath = join('', $secDir, $subDir, $secN);
+		my $secText = &readFile($secFilePath, {slurp=>1, ext=>$secExt});
+		push @lpText, $secText =~ s/[\x0d\x0a]+$//r . "\n";	# 末尾の改行は1個だけ
 	}
 	print "\n";
-	print "\n" if &mightMkdir($sectionDirName) == 1;
-	&writeFile($lpName . '.ReaperLangPack', join("\n", @lpText));	# 間に空行を1つ設ける
+	print "\n" if &mightMkdir($secDir) == 1;
+	&writeFile($lpName.$lpExt, join("\n", @lpText));	# 間に空行を1つ設ける
 }
 sub clone		# 言語パックを、各セクション名を名前に持つ個別のファイルに複製
 {
 	my $lpName = shift;
-	my $lpText = &readFile($lpName, 1);
-	my @secNames = map { /^\[([^\[\]]+)\]/ ? $1 : $zerothSectionName } ( split /^(?=\[)/m, $lpText );
+	my $lpText = &readFile($lpName, {slurp=>1, ext=>$lpExt});
+	my @secNames = map { /^\[([^\[\]]+)\]/ ? $1 : $sec0Name } ( split /^(?=\[)/m, $lpText );
 	print "\n";
-	print "\n" if &mightMkdir($sectionDirName) == 1;
+	print "\n" if &mightMkdir($secDir) == 1;
 	foreach my $secN (@secNames)
 	{
-		my $subDirName = $secN eq $secNames[0] ? '' : &getSetSubDir($sectionDirName, $secN);
-		&copyFile($lpName, "${sectionDirName}/${subDirName}${secN}.txt");
+		my $subDir = $secN eq $secNames[0] ? '' : &getSetSubDir($secDir, $secN);
+		my $secFilePath = join('', $secDir, $subDir, $secN, $secExt);
+		&copyFile($lpName, $secFilePath, {extRead=>$lpExt});
 	}
 	print "\n";
-	&writeFile($mapFilePath, [ map { $_."\n" } @secNames ]);
+	&writeFile($secMapPath, [ map { $_."\n" } @secNames ]);
 }
 
 

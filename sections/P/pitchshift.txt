@@ -1,7 +1,0 @@
-[pitchshift]	; メディアアイテムプロパティ→ピッチ操作モード
-2C9FDF4101D8E2FF=単純な窓関数 (高速)
-09D126B8FC03970F=%dms 窓関数, %dms フェード
-63360D1F1C91E9E6=%dms 窓関数
-11A3228492FDF5A2=%d%% フェード
-958A4BB76D4E7937=Dirac LE (低速)
-;^AB2A3D4EF1C9D1A8=Default

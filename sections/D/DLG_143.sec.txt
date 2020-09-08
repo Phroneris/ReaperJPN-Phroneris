@@ -1,0 +1,20 @@
+[DLG_143] ; IDD_JUMPTOTIME	; 再生コントローラの秒数表示部をダブルクリック
+D8609045F0F81B85=時間/マーカー/リージョンに飛ぶ:
+31DE10C994E4CA7E=飛び先:
+F907EC1A20A88F39=mm:ss.xxx
+7A26DFEB5082FE7A=mm分・ss.xxx秒の位置に飛びます。
+88448235CF82911B=mm.bb.xxx
+738FA0D37631AB2E=mm小節目・bb.xxx拍目の位置に飛びます。
+C99030F0D7E060A3=h:m:s:f
+07394CFC25D69C65=h時間・m分・s秒・fフレームの位置に飛びます。
+A7FAEE5ED618F06B=+ または - で始めると、相対的な位置に飛びます。
+72B96D7CD27D1D80=i で始めると、選択アイテム内の位置に飛びます。
+C3FC713CD6D2B7B2=tXiY のように始めると、トラック X のアイテム Y 内の位置に飛びます。
+1782C60C4C2DA348=mN or m'name
+65785842EFBF4FB4=マーカーを番号か名前で指定して飛びます。
+5C94CB01E66CE920=rN or r'name
+BB3DCA4DCF83FFC2=リージョンを番号か名前で指定して飛びます。
+;E88E3942C922993A=k'name
+;A380354012A2D803=jump to take marker by name
+;^D840E3186B2B9581=OK
+;^F09E4B5C35AA14B9=Cancel

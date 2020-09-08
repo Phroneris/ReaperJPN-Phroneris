@@ -1,3 +1,0 @@
-[midi_devices]
-;509D7063E147EB4F=Device ID %d is already used by '%s' -- swap %d with %d?
-;7B13302099AF5647=MIDI device ID change

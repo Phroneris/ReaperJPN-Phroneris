@@ -1,0 +1,5 @@
+[envdlg_heading]
+DFCA919D6A234509=レシーブエンベロープ
+;^E9991E9C69A2E870=Envelopes
+;^4E5F93B30C786CEB=Track Envelopes
+;^65971737BB8DFA2C=Send Envelopes

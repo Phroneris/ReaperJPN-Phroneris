@@ -1,7 +1,0 @@
-[prefs_dx_help]
-;D305F8049C9BA679=Show any already-opened ReWire-aware applications/devices as available FX in the add-FX window.
-;EE70845A964B23C2=When adding ReWired applications/devices, automatically open the device control panel.
-;1A45569F48452198=Process all track FX even when playback is stopped, when any ReWire device is active.
-;C9AC0DB2F5B34401=If an application/device is already open that can act as ReWire master, automatically place Reaper in ReWire client mode.
-;8346581680C08CF4=When running in ReWire client mode, use a separate preferences configuration file so separate preferences and settings can be preserved for this mode only.
-;71F60207B82360FC=Change ReWire client settings for the current project. To save this project's settings as default, go to File/Project Settings.

@@ -1,0 +1,18 @@
+[trackmgr_help]
+ADF3B620E4CA9EA9=アレンジビューでコントロールパネルを表示
+9DFD3535AFC65881=ミキサーでコントロールパネルを表示
+4A03CF60C1779F06=エフェクトチェーンウィンドウを開く
+906E1530FCCF88B4=録音入力エフェクトチェーンウィンドウを開く
+19E913527C9D9685=プラグインレイテンシ補償 (エフェクトをバイパス)
+;324B3D90F9B36709=Track playback offset delay
+6202B8584C4B8F0A=コントロールをロック
+03741039AD7FE0D3=高さ固定
+78A82E382FD65D70=MIDI エディタで開く
+115054AE51369A75=アイテム自在配置モードを設定
+592671F4352CDA57=メディアやエフェクトをフリーズ
+;^8BEB3C381FB2F1CE=Color
+;^978AC938BDD65877=Track number
+;^DD0CE22D75D36ED1=Track name
+;^61EB857EEC517894=Record arm
+;^61946358B1034B76=Mute
+;^0420AF237D97ECB8=Solo

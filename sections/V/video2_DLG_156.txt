@@ -1,8 +1,0 @@
-[video2_DLG_156] ; IDD_GIF_SINK_CFG
-D2204C20B4E2FC1C=透明度を保つ (普通の動画には向きませんが、必要な場合もあります)
-C134703B1C276C93=下位ビットの色情報変化を無視 (0 ～ 7、0 で最高品質):
-;^464C095FE2D88604=Size:
-;^08325007B4EB10C5=x
-;^445049385C5D024A=Max framerate:
-;^035A657EE2D43886=fps
-;^E8979E97B904E3D2=Preserve aspect ratio (black bars if necessary)

@@ -1,0 +1,17 @@
+[DLG_515] ; IDD_PREFS_PLUGINS_REASCRIPT	;; ステータスは多分アクセシビリティ。View2件とdll pathとForceはかぶってる…？
+F20359390E0CC35E=ReaScript では、周期的・繰り返し的タスクを実行する簡単なマクロを作ったり、複雑な REAPER 拡張機能を作ったりすることができます。
+;/E6D764D466D14077=View online ReaScript overview 
+;/C5BD660AE06DB168=View local ReaScript documentation
+3F944C5A8A234435=ReaScript コンソールを ShowConsoleMsg(\"\") でクリア
+0A982E468D5F454F=あらゆる ReaScript の実行前に ReaScript コンソールをクリア
+2613C40B070714CE=Lua ReaScript のタイムアウト制限時間:
+BFF5EC3F089E6751=ReaScript 用に Python を有効化
+29F2655C1595AEC9=Python:
+1B226BA06F503D1D=Python ステータス
+;/7C9DF7E52346FDB4=dll path
+D5FC3581D08FD781=Python dll ディレクトリのカスタムパス:
+;/6E0781DE4B3837B3=Force ReaScript to use specific Python dll:
+;^2C626DCBF2E2019A=ReaScript
+;^1616D990C579771C=seconds
+;^DF2472EC2AB0BAFB=Download Python
+;^F685FB3A91025549=Browse...

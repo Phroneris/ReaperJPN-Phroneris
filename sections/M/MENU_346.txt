@@ -1,4 +1,0 @@
-[MENU_346] ; IDR_CONTEXTS_46
-;AAEE4EDFF8BD6BEA=46_ReplaceModeCtx
-;^3E1E032211F699E5=Auto-crossfade media items when editing
-;^3A2761697FE8C69E=Trim content behind media items when editing

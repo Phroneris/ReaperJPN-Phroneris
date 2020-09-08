@@ -1,5 +1,0 @@
-[DLG_580] ; IDD_LYRICEXPORT
-;265F8C42D8F617CB=Lyrics will be exported to a text file, one measure per line, separated by spaces or tabs.
-;8D7322DC72C4E917=Lyrics will be exported from MIDI lyric events on the last touched track.
-;B28A52B58A4A4E89=Divide lyrics with tabs every
-;^268986373F235EF0=beats

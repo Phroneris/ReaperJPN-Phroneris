@@ -1,0 +1,76 @@
+[video]
+194E5068694CECF5=Quicktime デコーダ (bridged) を使用
+94F74EC0A5D5F4B7=DirectShow デコーダを使用
+CC832E7DAD6F870D=========== ffmpeg/libav ==========
+7F682DCB619B14E3=ffmpeg/libav が見つかりません\r\n
+0C18C48D200EE48C=ffmpeg/libav DLL デコーダ v%d.%d.%d を使用
+9949B7F19029C538=読込: %s
+DCD62C87319DB37F=ffmpeg/libav 設定:
+;376F7107B8688798=converted from pixfmt %d
+;CF8223208FA8C4F2=converted from full-range YV12
+;344BD64B913E2F1F=Invalid format specified
+;CF3682A3976F7E6B=Error loading ffmpeg/libav
+;760DF5DE59495466=Error creating format container
+;668C5A4A5CB0CA19=Error finding video encoder
+;95C04EA5CE409D44=Error creating new stream
+;6CA91BEB1223D17F=Error initializing video encoder, check parameters
+;953774A2816F6AF4=Error finding audio encoder
+;6E41AB6692BECF14=Error creating audio stream
+;3AC3F4277606702E=Error initializing audio encoder
+2D3F16FE9E406AF0=ffmpeg/libav DLL デコーダ v%d.%d.%d
+;7A0FC040EB2027C1=Error writing .gif file
+1D00880522771C85=GIF %dx%d
+438001B73C39CB47=動画 (GIF)
+E533517E40A9E24F=GIF
+B9FE927E28381B28=LCF
+D125388D0EE850C4=画像
+;4CBBD26011BA9F3C=Error writing .LCF file
+C5E89D555E6388C2=LCF %dx%d %.2f fps
+9E59637CB9818F62=動画 (LCF)
+DFA7D7C102936D13=%s - 動画プロセッサ
+E272BC36856482E4=不正なファイル
+A54690FDE9328A08=動画:
+FBE6CA251A12814C=%dx%d@%.2ffps, アスペクト比=%.02f, デコード形式=%s
+6072C327FB3BE9E0=音声: %dHz %dch %dbps
+52C5300CA8459D60=上下反転
+C40AE4B976A6517E=左右反転
+239485152B66F91F=180°回転
+24E14F5971F937C9=時計回りに 90°回転
+A3E8A2FCAA56CDF6=反時計回りに 90°回転
+EB4077E33690D24D=.gif の透明度を保つ(&G)
+;A44BDD7A5EEA710E=Change all audio settings for all video sources
+;30F02939FBCECDBA=View EEL2 language documentation (HTML)
+10C37E06D4D247A3=AVI 動画ファイル
+A7F12DBA570C593B=MPG 動画ファイル
+CF5D1BBBDD67FBBB=WMV/WMA 動画ファイル
+7D434F7214C06E67=MKV 動画ファイル
+4A85585A82C0D55E=LCF Capture 動画ファイル
+1DEB42FBE8D82BE4=Quicktime ファイル
+D0216D32830E37E6=WebM/OGG 動画ファイル
+5AD73751F4EFDFD8=GIF ファイル
+867C82C516B75EF0=現在の動画フレーム: %dx%d '%s' #%.0f
+B6F0D68A03C22497=出力を使用: %s\r\n
+140954BEB703134E=利用可能なデコーダ情報:
+A2A7AB384D9887E5=========== AVFoundation ==========
+2203316171ED7CA1=AVFoundation デコーダ/エンコーダ 利用可能
+F19BF99C7542291A=AVFoundation デコーダ/エンコーダ 利用不能 (要 MacOS 10.7+)
+6237387F75967F9F=========== DirectShow ==========
+F2E491E4103AA80C=DirectShow 利用可能
+F26768BE33C92A74=エンコーダなし
+A611431BEF0D5E67=動画 (ffmpeg/libav エンコーダ)
+DD865616E4990B09=AVFoundation API 利用不能 (要 MacOS 10.7+)
+;96BD360086879B0A=FFMPEG: Can't find FFMPEG libraries
+;2FD4372E9330F928=FFMPEG: Format not specified
+E104AD220F1408C9=MPEG-4/MOV (MacOS 10.7+ AVFoundation)
+833F75A6D34BB398=========== VLC ==========
+;D7EDBF968B8C0D20=VLC install path not found, install VLC 2.0.x-2.2.x
+;3BE9C981DAD15796=VLC install path not found, install VLC 2.1.x-3.0.x
+FC561581D49BDB6C=検索パス:\r\n
+;^0C24CB76A6860C27=Error creating output file
+;^0121AF72166A79F7=kbps
+;^4D0B7C1B0447364A=Video processor
+;^309B13D6E0AC1A0F=Length:
+;^879D887E0C22ABF6=RGB
+;^12D4B3F4318065D2=YUY2
+;^B568BA4FF2C021AD=I420/YV12
+;^63ACD193C4316F68=Normal

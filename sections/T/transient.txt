@@ -1,3 +1,0 @@
-[transient]
-;9B511A5968C6FD3D=Calculating transient guides
-;D5410F7694BE5A88=Calculating item %d/%d: %s

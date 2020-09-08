@@ -1,0 +1,6 @@
+[MENU_355] ; IDR_CONTEXTS_55
+;B337DFB5190F3DA3=ripctx
+6CC47CED6D4E106B=[全トラックでリップル編集] をテンポマップにも反映(&T)
+;^416573F8395B660E=Ripple edit per-track
+;^581D6158029C2ADC=Ripple edit all tracks
+;^561C816EA4AE16DF=Add edge points when ripple editing or inserting time
