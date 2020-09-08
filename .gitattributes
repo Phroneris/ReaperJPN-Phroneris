@@ -1,1 +1,2 @@
 *.pl filter=ignore-debug-pl
+*.sec.txt linguist-language=INI
