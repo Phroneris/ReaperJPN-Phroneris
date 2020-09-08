@@ -136,7 +136,7 @@ sub divide		# 言語パック内のセクションを、個別のファイルに
 	{
 		my $secText = $sections[$i];
 		my $subDir = $i == 0 ? '' : &getSetSubDir($secDir, $secN);
-		&writeFile("${secDir}/${subDir}${secN}.txt", $secText =~ s/[\x0d\x0a]+$//r);	# 末尾の改行は全削除
+		&writeFile("${secDir}/${subDir}${secN}.txt", $secText =~ s/[\x0d\x0a]+$//r . "\n");	# 末尾の改行は1個だけ
 		$i++;
 	}
 	print "\n";
@@ -151,7 +151,7 @@ sub unify	# 個別ファイルのセクションを、単一の言語パック�
 	foreach my $secN (@secNames)
 	{
 		my $subDir = $secN eq $secNames[0] ? '' : &getSetSubDir($secDir, $secN, 1);
-		push @lpText, &readFile("${secDir}/${subDir}${secN}.txt", 1) . "\n";	# 末尾に改行を追加
+		push @lpText, &readFile("${secDir}/${subDir}${secN}.txt", 1) =~ s/[\x0d\x0a]+$//r . "\n";	# 末尾の改行は1個だけ
 	}
 	print "\n";
 	print "\n" if &mightMkdir($secDir) == 1;
