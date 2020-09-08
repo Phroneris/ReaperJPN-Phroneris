@@ -119,9 +119,9 @@ sub getSetSubDir	# オプションでディレクトリ作成を避ける
 
 ##### メイン関数
 
-my $sectionDirName = 'sections';
-my $mapFilePath       = "${sectionDirName}/__section_map.txt";
-my $zerothSectionName = '_description';
+my $secDir = 'sections';
+my $secMapPath = "${secDir}/__section_map.txt";
+my $sec0Name = '_description';
 
 sub divide		# 言語パック内のセクションを、個別のファイルに分離
 {
@@ -129,48 +129,48 @@ sub divide		# 言語パック内のセクションを、個別のファイルに
 	my @sections = split /^(?=\[)/m, &readFile($lpName, 1);
 	&abort("This isn't langpack: ${lpName}", 1) if $sections[0] !~ /^#NAME:/;
 	print "\n";
-	my @secNames = map { /^\[([^\[\]]+)\]/ ? $1 : $zerothSectionName } @sections;
-	print "\n" if &mightMkdir($sectionDirName) == 1;
+	my @secNames = map { /^\[([^\[\]]+)\]/ ? $1 : $sec0Name } @sections;
+	print "\n" if &mightMkdir($secDir) == 1;
 	my $i = 0;
 	foreach my $secN (@secNames)
 	{
 		my $secText = $sections[$i];
-		my $subDirName = $i == 0 ? '' : &getSetSubDir($sectionDirName, $secN);
-		&writeFile("${sectionDirName}/${subDirName}${secN}.txt", $secText =~ s/[\x0d\x0a]+$//r);	# 末尾の改行は全削除
+		my $subDir = $i == 0 ? '' : &getSetSubDir($secDir, $secN);
+		&writeFile("${secDir}/${subDir}${secN}.txt", $secText =~ s/[\x0d\x0a]+$//r);	# 末尾の改行は全削除
 		$i++;
 	}
 	print "\n";
-	&writeFile($mapFilePath, [ map { $_."\n" } @secNames ]);
+	&writeFile($secMapPath, [ map { $_."\n" } @secNames ]);
 }
 sub unify	# 個別ファイルのセクションを、単一の言語パックに統合
 {
 	my $lpName = shift =~ s/\.(ReaperLangPack|txt|ReaperLangPack\.txt)$//r;
-	chomp(my @secNames = @{ &readFile($mapFilePath) });
+	chomp(my @secNames = @{ &readFile($secMapPath) });
 	print "\n";
 	my @lpText = ();
 	foreach my $secN (@secNames)
 	{
-		my $subDirName = $secN eq $secNames[0] ? '' : &getSetSubDir($sectionDirName, $secN, 1);
-		push @lpText, &readFile("${sectionDirName}/${subDirName}${secN}.txt", 1) . "\n";	# 末尾に改行を追加
+		my $subDir = $secN eq $secNames[0] ? '' : &getSetSubDir($secDir, $secN, 1);
+		push @lpText, &readFile("${secDir}/${subDir}${secN}.txt", 1) . "\n";	# 末尾に改行を追加
 	}
 	print "\n";
-	print "\n" if &mightMkdir($sectionDirName) == 1;
+	print "\n" if &mightMkdir($secDir) == 1;
 	&writeFile($lpName . '.ReaperLangPack', join("\n", @lpText));	# 間に空行を1つ設ける
 }
 sub clone		# 言語パックを、各セクション名を名前に持つ個別のファイルに複製
 {
 	my $lpName = shift;
 	my $lpText = &readFile($lpName, 1);
-	my @secNames = map { /^\[([^\[\]]+)\]/ ? $1 : $zerothSectionName } ( split /^(?=\[)/m, $lpText );
+	my @secNames = map { /^\[([^\[\]]+)\]/ ? $1 : $sec0Name } ( split /^(?=\[)/m, $lpText );
 	print "\n";
-	print "\n" if &mightMkdir($sectionDirName) == 1;
+	print "\n" if &mightMkdir($secDir) == 1;
 	foreach my $secN (@secNames)
 	{
-		my $subDirName = $secN eq $secNames[0] ? '' : &getSetSubDir($sectionDirName, $secN);
-		&copyFile($lpName, "${sectionDirName}/${subDirName}${secN}.txt");
+		my $subDir = $secN eq $secNames[0] ? '' : &getSetSubDir($secDir, $secN);
+		&copyFile($lpName, "${secDir}/${subDir}${secN}.txt");
 	}
 	print "\n";
-	&writeFile($mapFilePath, [ map { $_."\n" } @secNames ]);
+	&writeFile($secMapPath, [ map { $_."\n" } @secNames ]);
 }
 
 
