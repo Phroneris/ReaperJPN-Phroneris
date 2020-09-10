@@ -23,6 +23,12 @@ sub ed($) { ec(du(shift)) };	# デバッグ時にpで文字列が化けたら"ec
 # sub isN($) { Encode::is_utf8(shift) ? 'naibu' : 'hadaka kamo...'; }
 
 
+##### その他モジュール
+
+use FindBin;	# スクリプト自身のパスを得る
+
+
+
 ##### 関数
 
 sub abort
@@ -34,6 +40,9 @@ sub abort
 
 
 ##### メイン処理
+
+chdir $FindBin::Bin;	# 必ず日本語化プロジェクトのルートディレクトリに移動して作業
+chdir '..';				# （なお、呼び出し元のコマンドプロンプトの作業ディレクトリは変わらない）
 
 my $winLangPack = 'JPN_Phroneris.ReaperLangPack';
 my $nonWinLangPack = $ARGV[0] // 'JPN_Phroneris-Mac_Linux.ReaperLangPack';
