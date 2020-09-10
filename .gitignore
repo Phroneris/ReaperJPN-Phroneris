@@ -3,8 +3,7 @@
 reaper*ReaperLangPack.txt
 
 # パッチ本体を無視
-JPN_Phroneris.ReaperLangPack
-JPN_Phroneris-Mac_Linux.ReaperLangPack
+*.ReaperLangPack
 
 # Notepad++ セッションファイルを無視
 *.npps

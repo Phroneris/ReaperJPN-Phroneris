@@ -2,7 +2,7 @@
 
 # use strict  ;	# デバッグ用
 # use warnings;	# デバッグ用
-use autodie ;	# エラー時に$@を得るため
+use autodie ;	# エラー時に$@を得る
 
 
 ##### 文字エンコーディング関連
@@ -23,9 +23,15 @@ sub ed($) { ec(du(shift)) };	# デバッグ時にpで文字列が化けたら"ec
 # sub isN($) { Encode::is_utf8(shift) ? 'naibu' : 'hadaka kamo...'; }
 
 
-##### 関数
+##### その他モジュール
 
-sub abort
+use FindBin;	# スクリプト自身のパスを得る
+
+
+
+##### 汎用関数
+
+sub abort	# eval直後の「&abort($@) if $@;」で、エラーがあれば捕捉、無ければスルー
 {
 	print '*ERROR*: ', dc(shift), "\n", 'Press enter to abort.';
 	<STDIN>;
@@ -35,14 +41,17 @@ sub abort
 
 ##### メイン処理
 
+chdir $FindBin::Bin;	# 必ず日本語化プロジェクトのルートディレクトリに移動して作業
+chdir '..';				# （なお、呼び出し元のコマンドプロンプトの作業ディレクトリは変わらない）
+
 my $winLangPack = 'JPN_Phroneris.ReaperLangPack';
 my $nonWinLangPack = $ARGV[0] // 'JPN_Phroneris-Mac_Linux.ReaperLangPack';
 my $file;
 
 print '* Reading "', $winLangPack, '" ...', "\n";
 eval { open $file, '<:encoding(UTF-8)', ec($winLangPack) };
-&abort($@) if $@;	# エラー時
-my @txt = <$file>;	# 非エラー時
+&abort($@) if $@;
+my @txt = <$file>;
 close $file;
 
 print '* Processing...', "\n";

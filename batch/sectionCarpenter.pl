@@ -19,9 +19,7 @@
 
 # use strict  ;	# デバッグ用
 # use warnings;	# デバッグ用
-use autodie ;	# エラー時に$@を得るため
-use File::Copy 'copy';
-use autodie    'copy';	# 大事
+use autodie ;	# エラー時に$@を得る
 
 
 ##### 文字エンコーディング関連
@@ -43,9 +41,17 @@ sub ed($) { ec(du(shift)) };	# デバッグ時にpで文字列が化けたら"ec
 # sub isN($) { Encode::is_utf8(shift) ? 'naibu' : 'hadaka kamo...'; }
 
 
+##### その他モジュール
+
+use File::Copy 'copy';
+use autodie    'copy';	# 大事
+use FindBin;			# スクリプト自身のパスを得る
+
+
+
 ##### 汎用関数
 
-sub abort
+sub abort	# eval直後の「&abort($@) if $@;」で、エラーがあれば捕捉、無ければスルー
 {
 	my ($err, $dontDecode) = @_;
 	$err = dc($err) unless $dontDecode;	# エラー文を自前で直接指定する場合、第2引数をtrueにしてデコードを避ける
@@ -122,6 +128,7 @@ sub getSetSubDir	# オプションでディレクトリ作成を避ける
 	return $child . '/';
 }
 
+
 ##### メイン関数
 
 my $secDir = 'sections/';
@@ -186,6 +193,9 @@ sub clone		# 言語パックを、各セクション名を名前に持つ個別�
 
 
 ##### メイン処理
+
+chdir $FindBin::Bin;	# 必ず日本語化プロジェクトのルートディレクトリに移動して作業
+chdir '..';
 
 my $isInteractive = $#ARGV < 0;	# このファイルを引数無しで直接実行した時
 my $processMode  = $ARGV[0];

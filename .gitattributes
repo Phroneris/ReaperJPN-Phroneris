@@ -1,2 +1,3 @@
 *.pl filter=ignore-debug-pl
+*.bat filter=sjis
 *.sec.txt linguist-language=INI
