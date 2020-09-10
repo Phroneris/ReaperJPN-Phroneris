@@ -2,7 +2,7 @@
 
 # use strict  ;	# デバッグ用
 # use warnings;	# デバッグ用
-use autodie ;	# エラー時に$@を得るため
+use autodie ;	# エラー時に$@を得る
 
 
 ##### 文字エンコーディング関連
@@ -29,9 +29,9 @@ use FindBin;	# スクリプト自身のパスを得る
 
 
 
-##### 関数
+##### 汎用関数
 
-sub abort
+sub abort	# eval直後の「&abort($@) if $@;」で、エラーがあれば捕捉、無ければスルー
 {
 	print '*ERROR*: ', dc(shift), "\n", 'Press enter to abort.';
 	<STDIN>;
@@ -50,8 +50,8 @@ my $file;
 
 print '* Reading "', $winLangPack, '" ...', "\n";
 eval { open $file, '<:encoding(UTF-8)', ec($winLangPack) };
-&abort($@) if $@;	# エラー時
-my @txt = <$file>;	# 非エラー時
+&abort($@) if $@;
+my @txt = <$file>;
 close $file;
 
 print '* Processing...', "\n";
