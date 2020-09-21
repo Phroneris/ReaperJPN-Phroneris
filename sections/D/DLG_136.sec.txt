@@ -2,8 +2,8 @@
 7FF1AA9FBDB6B5BB=再生設定
 0616B7FE6E108EE0=プロジェクトの終わりで再生を停止またはリピート
 55272D5AF8EE3E11=停止時に編集カーソルまでスクロール
-;BC980ED7878C2FD0=Max MIDI playback speed when applying negative track playback offset:
-;1339F0A0D94DB142=(0=immediate)
+BC980ED7878C2FD0=トラックの再生位置補正を負の値にした場合の最大 MIDI 再生速度:
+1339F0A0D94DB142=(0=即時)
 7C0BC5B15B033895=ループごとにエフェクトをリセット (autotune 向き、インストゥルメントには不向き、等々要注意)
 1149F742BD0E8658=停止時にもエフェクトを停止しない (特定の VSTi に有効)
 926B9B67161D84D0=再生停止時にエフェクトも停止
