@@ -1,6 +1,6 @@
-[filter "ignore-debug-pl"]
+[filter "pl"]
 	smudge = cat
-	clean = perl -pe \"s/^\\s*use\\s+(?=strict|warnings)/\\x23 use /g\"
+	clean = perl -ne \"print s/^\\s*use\\s+(?=strict|warnings)/\\x23 use /rg =~ s/^[\\t ]+(?=[\\x0d\\x0a])//r\"
 [filter "sjis"]
 	smudge = nkf -sxu
 	clean = nkf -w80xu

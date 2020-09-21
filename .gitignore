@@ -8,6 +8,12 @@ reaper*ReaperLangPack.txt
 # Notepad++ セッションファイルを無視
 *.npps
 
+# Excel ブックファイルを無視
+*.xls
+*.xlsx
+*.xlsm
+*.xlsb
+
 # あらゆる _ignore フォルダを無視
 _ignore/
 
