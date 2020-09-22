@@ -66,8 +66,7 @@ sub mightMkdir	# フォルダが無ければ作成（1階層だけ対応）、�
 	my $retVal = 0;
 	if (!-d $dir)
 	{
-		eval { mkdir ec($dir) };
-		&abort($@) if $@;
+		mkdir ec($dir);
 		print '    Directory created: ', $dir, "\n";
 		$retVal = 1;
 	}
@@ -87,8 +86,7 @@ sub readFile	# オプションでファイルを丸呑みする（デフォル�
 	my ($ext, $doSlurp, $doPrint) = ($optRef->{ext} // '', $optRef->{slurp} // 0, $optRef->{print} // 1);
 	$fileName = &findExt($fileName, $ext);
 	my $file;
-	eval { open $file, '<', ec($fileName) };
-	&abort($@) if $@;
+	open $file, '<', ec($fileName);
 	my $text = $doSlurp ? do { local $/; <$file> } : [<$file>];	# 全体の単一スカラー / 行配列のリファレンス
 	close $file;
 	print '    File read: ', $fileName, "\n" if $doPrint;
@@ -103,8 +101,7 @@ sub writeFile	# 書き込むテキストは配列なら要リファレンス
 		# &mightMkdir($1);	# ループで回す度にこれやるのはアホらしいので却下
 	# }
 	my $file;
-	eval { open $file, '>', ec($fileName) };
-	&abort($@) if $@;
+	open $file, '>', ec($fileName);
 	my $textRef = ref \$text eq 'SCALAR' ? \$text : $text;	# スカラーそのものならリファレンス化
 	$textRef = [( ${$textRef} )] if ref $textRef eq 'SCALAR';	# スカラーリファレンスなら配列リファレンス化
 	print $file @{$textRef};
@@ -116,8 +113,7 @@ sub copyFile
 	my ($origName, $broName, $optRef) = @_;
 	my ($extRead) = ($optRef->{extRead} // '');
 	$origName = &findExt($origName, $extRead);
-	eval { copy(ec($origName), ec($broName)) };
-	&abort($@) if $@;
+	copy(ec($origName), ec($broName));
 	print '    File copied: ', $origName, ' -> ', $broName, "\n";
 }
 sub getSetSubDir	# オプションでディレクトリ作成を避ける
@@ -195,36 +191,43 @@ sub clone		# 言語パックを、各セクション名を名前に持つ個別�
 
 ##### メイン処理
 
-chdir $FindBin::Bin;	# 必ず日本語化プロジェクトのルートディレクトリに移動して作業
-chdir '..';
-
 my $isInteractive = $#ARGV < 0;	# このファイルを引数無しで直接実行した時
-my $processMode  = $ARGV[0];
-my $langPackName = $ARGV[1];
-if ($isInteractive) {
-	print 'Process Mode? [0=divide, 1=unify, 2=clone] > ';
-	chomp($processMode = <STDIN>);
-	print 'LangPack Name? > ';
-	chomp($langPackName = <STDIN>);
-	print "\n";
-}
-$processMode  = $processMode  || 0;		# 値が偽（0や空文字列など）の時のデフォルト
-$langPackName = $langPackName || 'JPN_Phroneris';
 
-if ($processMode eq 0) {	# 英字などの入力のためにeq
-	print '* Dividing...', "\n\n";
-	&divide($langPackName);
-}
-elsif ($processMode eq 1) {
-	print '* Unifying...', "\n\n";
-	&unify($langPackName);
-}
-elsif ($processMode eq 2) {
-	print '* Cloning...', "\n\n";
-	&clone($langPackName);
-} else {
-	&abort("Invalid process mode.");
-}
+eval {
+
+	chdir $FindBin::Bin;	# 必ず日本語化プロジェクトのルートディレクトリに移動して作業
+	chdir '..';
+
+	my $processMode  = $ARGV[0];
+	my $langPackName = $ARGV[1];
+	if ($isInteractive) {
+		print 'Process Mode? [0=divide, 1=unify, 2=clone] > ';
+		chomp($processMode = <STDIN>);
+		print 'LangPack Name? > ';
+		chomp($langPackName = <STDIN>);
+		print "\n";
+	}
+	$processMode  = $processMode  || 0;		# 値が偽（0や空文字列など）の時のデフォルト
+	$langPackName = $langPackName || 'JPN_Phroneris';
+
+	if ($processMode eq 0) {	# 英字などの入力のためにeq
+		print '* Dividing...', "\n\n";
+		&divide($langPackName);
+	}
+	elsif ($processMode eq 1) {
+		print '* Unifying...', "\n\n";
+		&unify($langPackName);
+	}
+	elsif ($processMode eq 2) {
+		print '* Cloning...', "\n\n";
+		&clone($langPackName);
+	} else {
+		&abort("Invalid process mode.");
+	}
+
+};
+
+&abort($@) if $@;	# エラー時に割り込んで即中断
 
 print "\n", 'Done.', "\n";
 if ($isInteractive) {

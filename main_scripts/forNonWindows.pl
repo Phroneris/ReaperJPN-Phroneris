@@ -32,7 +32,7 @@ use FindBin;	# スクリプト自身のパスを得る
 
 ##### 汎用関数
 
-sub abort	# eval直後の「&abort($@) if $@;」で、エラーがあれば捕捉、無ければスルー
+sub abort
 {
 	my ($err) = @_;
 	$err = dc($err) if !Encode::is_utf8($err);	# 自前エラー文はUTF-8内部文字列、外からのはcp932バイト文字列
@@ -44,30 +44,34 @@ sub abort	# eval直後の「&abort($@) if $@;」で、エラーがあれば捕�
 
 ##### メイン処理
 
-chdir $FindBin::Bin;	# 必ず日本語化プロジェクトのルートディレクトリに移動して作業
-chdir '..';				# （なお、呼び出し元のコマンドプロンプトの作業ディレクトリは変わらない）
+eval {
 
-my $winLangPack = 'JPN_Phroneris.ReaperLangPack';
-my $nonWinLangPack = $ARGV[0] // 'JPN_Phroneris-Mac_Linux.ReaperLangPack';
-my $file;
+	chdir $FindBin::Bin;	# 必ず日本語化プロジェクトのルートディレクトリに移動して作業
+	chdir '..';				# （なお、呼び出し元のコマンドプロンプトの作業ディレクトリは変わらない）
 
-print '* Reading "', $winLangPack, '" ...', "\n";
-eval { open $file, '<:encoding(UTF-8)', ec($winLangPack) };
-&abort($@) if $@;
-my @txt = <$file>;
-close $file;
+	my $winLangPack = 'JPN_Phroneris.ReaperLangPack';
+	my $nonWinLangPack = $ARGV[0] // 'JPN_Phroneris-Mac_Linux.ReaperLangPack';
+	my $file;
 
-print '* Processing...', "\n";
-map { s/ ?\(&.\)|[\x0d\x0a]//g } @txt;	# アクセスキー、CR、LFを削除
-$txt[0] = $txt[0].'…Mac/Linux';		# パッチ名を変更
-map { $_=$_."\x0a" } @txt;				# LFで改行
+	print '* Reading "', $winLangPack, '" ...', "\n";
+	open $file, '<:encoding(UTF-8)', ec($winLangPack);
+	my @txt = <$file>;
+	close $file;
 
-print '* Writing "', $nonWinLangPack, '" ...', "\n";
-# ↓rawはLF化に必須。encodingと逆順だとWide character警告祭。無指定だとWindowsでは勝手にCRLF化される（$/や$\も無力）。
-eval { open $file, '>:raw:encoding(UTF-8)', ec($nonWinLangPack) };
-&abort($@) if $@;
-print $file @txt;
-close $file;
+	print '* Processing...', "\n";
+	map { s/ ?\(&.\)|[\x0d\x0a]//g } @txt;	# アクセスキー、CR、LFを削除
+	$txt[0] = $txt[0].'…Mac/Linux';		# パッチ名を変更
+	map { $_=$_."\x0a" } @txt;				# LFで改行
+
+	print '* Writing "', $nonWinLangPack, '" ...', "\n";
+	# ↓rawはLF化に必須。encodingと逆順だとWide character警告祭。無指定だとWindowsでは勝手にCRLF化される（$/や$\も無力）。
+	open $file, '>:raw:encoding(UTF-8)', ec($nonWinLangPack);
+	print $file @txt;
+	close $file;
+
+};
+
+&abort($@) if $@;	# エラー時に割り込んで即中断
 
 print "\n", 'Done.', "\n";
 if ($#ARGV < 0) {	# このファイルを引数無しで直接実行した時
