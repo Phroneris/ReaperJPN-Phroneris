@@ -64,7 +64,7 @@ sub mightMkdir	# フォルダが無ければ作成（1階層だけ対応）、�
 {
 	my $dir = shift;
 	my $retVal = 0;
-	if (!-d $dir)
+	if (!-d ec($dir))
 	{
 		mkdir ec($dir);
 		print '    Directory created: ', $dir, "\n";
@@ -76,7 +76,7 @@ sub findExt		# ファイル名と拡張子名を受けて、実在する拡張�
 {
 	my ($file, $ext) = @_;
 	$ext = '.' . ($ext =~ s/^\.//r);
-	$file .= [ grep { -f ec($file.$_) } ('', $ext, $ext.'.txt', '.txt') ]->[0]
+	$file .= ( grep { -f ec($file.$_) } ('', $ext, $ext.'.txt', '.txt') )[0]
 		// &abort("Can't find a file '${file}' with expected extension.");
 	return $file;
 }
@@ -96,10 +96,6 @@ sub writeFile	# 書き込むテキストは配列なら要リファレンス
 {
 	my ($fileName, $text, $optRef) = @_;
 	my ($doPrint) = ($optRef->{print} // 1);
-	# if ($fileName =~ /^(.+)[\/\\]/)
-	# {
-		# &mightMkdir($1);	# ループで回す度にこれやるのはアホらしいので却下
-	# }
 	my $file;
 	open $file, '>', ec($fileName);
 	my $textRef = ref \$text eq 'SCALAR' ? \$text : $text;	# スカラーそのものならリファレンス化
@@ -156,7 +152,7 @@ sub divide		# 言語パック内のセクションを、個別のファイルに
 }
 sub unify	# 個別ファイルのセクションを、単一の言語パックに統合
 {
-	my $lpName = shift =~ s/\.(ReaperLangPack|txt|ReaperLangPack\.txt)$//r;
+	my $lpName = shift =~ s/(?:\Q${lpExt}\E|\.txt|\Q${lpExt}\E\.txt)$//r;
 	chomp(my @secNames = @{ &readFile($secMapPath) });
 	print "\n";
 	my @lpText = ();
@@ -200,15 +196,20 @@ eval {
 
 	my $processMode  = $ARGV[0];
 	my $langPackName = $ARGV[1];
+
 	if ($isInteractive) {
 		print 'Process Mode? [0=divide, 1=unify, 2=clone] > ';
 		chomp($processMode = <STDIN>);
+	}
+	$processMode ||= 0;
+	&abort("Invalid process mode.") if $processMode !~ /^[012]$/;
+
+	if ($isInteractive) {
 		print 'LangPack Name? > ';
 		chomp($langPackName = <STDIN>);
 		print "\n";
 	}
-	$processMode  = $processMode  || 0;		# 値が偽（0や空文字列など）の時のデフォルト
-	$langPackName = $langPackName || 'JPN_Phroneris';
+	$langPackName = $langPackName eq '' ? 'JPN_Phroneris' : $langPackName;
 
 	if ($processMode eq 0) {	# 英字などの入力のためにeq
 		print '* Dividing...', "\n\n";
@@ -221,8 +222,6 @@ eval {
 	elsif ($processMode eq 2) {
 		print '* Cloning...', "\n\n";
 		&clone($langPackName);
-	} else {
-		&abort("Invalid process mode.");
 	}
 
 };
