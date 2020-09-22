@@ -24,19 +24,20 @@ use autodie ;	# エラー時に$@を得る
 
 ##### 文字エンコーディング関連
 
-use utf8;								# このファイル内に直接書いたUTF-8文字列を全て内部文字列にする
-use open IO => ':utf8';					# ファイル入出力を全て ':encoding(UTF-8)' で行う
-use Encode qw/encode decode/;
+use utf8;					# このファイル内に直接書いたUTF-8文字列を全て内部文字列にする
+use open IO => ':utf8';		# ファイル入出力を全て ':encoding(UTF-8)' で行う
 
-my $enc_os = 'cp932';	# Windows JP
-binmode STDIN,  ":encoding(${enc_os})";	# 標準入出力で cp932(見た目)⇔UTF-8(内部) と変換する
-binmode STDOUT, ":encoding(${enc_os})";
-binmode STDERR, ":encoding(${enc_os})";
+my $codeOS = 'cp932';		# Windows JP
+my $codeOSEnc = ":encoding(${codeOS})";
+binmode STDIN,  $codeOSEnc;	# 標準入出力で cp932(見た目)⇔UTF-8(内部) と変換する
+binmode STDOUT, $codeOSEnc;
+binmode STDERR, $codeOSEnc;
 
-sub du($) { decode('UTF-8', shift) };	# 内部文字列にする（文字コードを取り除く）
-sub eu($) { encode('UTF-8', shift) };	# UTF-8にする
-sub dc($) { decode($enc_os, shift) };
-sub ec($) { encode($enc_os, shift) };
+use Encode ();
+sub du($) { Encode::decode('UTF-8', shift) };	# 内部文字列にする（文字コードを取り除く）
+sub eu($) { Encode::encode('UTF-8', shift) };	# バイト文字列にする（UTF-8）
+sub dc($) { Encode::decode($codeOS, shift) };
+sub ec($) { Encode::encode($codeOS, shift) };
 sub ed($) { ec(du(shift)) };	# デバッグ時にpで文字列が化けたら"ec $var"または"ed $var"で戻せることが多い
 # sub isN($) { Encode::is_utf8(shift) ? 'naibu' : 'hadaka kamo...'; }
 
@@ -53,8 +54,8 @@ use FindBin;			# スクリプト自身のパスを得る
 
 sub abort	# eval直後の「&abort($@) if $@;」で、エラーがあれば捕捉、無ければスルー
 {
-	my ($err, $dontDecode) = @_;
-	$err = dc($err) unless $dontDecode;	# エラー文を自前で直接指定する場合、第2引数をtrueにしてデコードを避ける
+	my ($err) = @_;
+	$err = dc($err) if !Encode::is_utf8($err);	# 自前エラー文はUTF-8内部文字列、外からのはcp932バイト文字列
 	print '*ERROR*: ', $err, "\n", 'Press enter to abort.';
 	<STDIN>;
 	exit 1;
@@ -77,7 +78,7 @@ sub findExt		# ファイル名と拡張子名を受けて、実在する拡張�
 	my ($file, $ext) = @_;
 	$ext = '.' . ($ext =~ s/^\.//r);
 	$file .= [ grep { -f ec($file.$_) } ('', $ext, $ext.'.txt', '.txt') ]->[0]
-		// &abort("Can't find a file '${file}' with expected extension.", 1);
+		// &abort("Can't find a file '${file}' with expected extension.");
 	return $file;
 }
 sub readFile	# オプションでファイルを丸呑みする（デフォルトでは行区切り）
@@ -141,7 +142,7 @@ sub divide		# 言語パック内のセクションを、個別のファイルに
 {
 	my $lpName = shift;
 	my @sections = split /^(?=\[)/m, &readFile($lpName, {slurp=>1, ext=>$lpExt});
-	&abort('This isn\'t langpack: '.$lpName, 1) if $sections[0] !~ /^#NAME:/;
+	&abort('This isn\'t langpack: '.$lpName) if $sections[0] !~ /^#NAME:/;
 	print "\n";
 	my @secNames = map { /^\[([^\[\]]+)\]/ ? $1 : $sec0Name } @sections;
 	print "\n" if &mightMkdir($secDir) == 1;
@@ -222,7 +223,7 @@ elsif ($processMode eq 2) {
 	print '* Cloning...', "\n\n";
 	&clone($langPackName);
 } else {
-	&abort("Invalid process mode.", 1);
+	&abort("Invalid process mode.");
 }
 
 print "\n", 'Done.', "\n";
