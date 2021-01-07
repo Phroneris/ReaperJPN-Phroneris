@@ -80,17 +80,17 @@ sub findExt		# ファイル名と拡張子名を受けて、実在する拡張�
 		// &abort("Can't find a file '${file}' with expected extension.");
 	return $file;
 }
-sub readFile	# オプションでファイルを丸呑みする（デフォルトでは行区切り）
+sub readFile	# リストコンテキストなら行区切りの配列を、スカラーコンテキストなら丸呑みのスカラーを返す
 {
 	my ($fileName, $optRef) = @_;
-	my ($ext, $doSlurp, $doPrint) = ($optRef->{ext} // '', $optRef->{slurp} // 0, $optRef->{print} // 1);
+	my ($ext, $doPrint, $wa) = ($optRef->{ext} // '', $optRef->{print} // 1, wantarray);
 	$fileName = &findExt($fileName, $ext);
 	my $file;
 	open $file, '<', ec($fileName);
-	my $text = $doSlurp ? do { local $/; <$file> } : [<$file>];	# 全体の単一スカラー / 行配列のリファレンス
+	my $text = $wa ? [<$file>] : do { local $/; <$file> };	# 行配列のリファレンス / 全体の単一スカラー
 	close $file;
 	print '    File read: ', $fileName, "\n" if $doPrint;
-	return $text;
+	return $wa ? @{$text} : $text;
 }
 sub writeFile	# 書き込むテキストは配列なら要リファレンス
 {
@@ -133,7 +133,7 @@ my $sec0Name = '_description';
 sub divide		# 言語パック内のセクションを、個別のファイルに分離
 {
 	my $lpName = shift;
-	my @sections = split /^(?=\[)/m, &readFile($lpName, {slurp=>1, ext=>$lpExt});
+	my @sections = split /^(?=\[)/m, &readFile($lpName, {ext=>$lpExt});
 	&abort('This isn\'t langpack: '.$lpName) if $sections[0] !~ /^#NAME:/;
 	print "\n";
 	my @secNames = map { /^\[([^\[\]]+)\]/ ? $1 : $sec0Name } @sections;
@@ -153,14 +153,14 @@ sub divide		# 言語パック内のセクションを、個別のファイルに
 sub unify	# 個別ファイルのセクションを、単一の言語パックに統合
 {
 	my $lpName = shift =~ s/(?:\Q${lpExt}\E|\.txt|\Q${lpExt}\E\.txt)$//r;
-	chomp(my @secNames = @{ &readFile($secMapPath) });
+	chomp(my @secNames = &readFile($secMapPath));
 	print "\n";
 	my @lpText = ();
 	foreach my $secN (@secNames)
 	{
 		my $subDir = $secN eq $secNames[0] ? '' : &getSetSubDir($secDir, $secN, {mkdir=>0});
 		my $secFilePath = join('', $secDir, $subDir, $secN);
-		my $secText = &readFile($secFilePath, {slurp=>1, ext=>$secExt});
+		my $secText = &readFile($secFilePath, {ext=>$secExt});
 		push @lpText, $secText =~ s/[\x0d\x0a]+$//r . "\n";	# 末尾の改行は1個だけ
 	}
 	print "\n";
@@ -170,7 +170,7 @@ sub unify	# 個別ファイルのセクションを、単一の言語パック�
 sub clone		# 言語パックを、各セクション名を名前に持つ個別のファイルに複製
 {
 	my $lpName = shift;
-	my $lpText = &readFile($lpName, {slurp=>1, ext=>$lpExt});
+	my $lpText = &readFile($lpName, {ext=>$lpExt});
 	my @secNames = map { /^\[([^\[\]]+)\]/ ? $1 : $sec0Name } ( split /^(?=\[)/m, $lpText );
 	print "\n";
 	print "\n" if &mightMkdir($secDir) == 1;
