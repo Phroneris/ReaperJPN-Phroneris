@@ -2,7 +2,6 @@
 ;3CE9A734B44D17C3=Error parsing file
 ;968EEBDF7F90BA4E=Error reading w64 chunk header
 ;0E784C0861931BD1=Invalid w64 chunk length (<24)
-;E313EB7E56CBEDA4=Error reading w64 bext chunk
 ;49A9A1EAF6EF78DF=Error reading w64 fact chunk
 ;DC7E1107022BABD6=Error reading w64 fmt chunk
 ;4989A180D554DF45=w64 ex-type is not supported
@@ -38,8 +37,6 @@
 ;CD0B60BDF34C1E87=WAV is cADPCM, but invalid parameters
 ;2616F823FDFFF608=Error reading WAV fact chunk
 ;DDD5B1BBE71ADDA7=Error reading WAV acid chunk
-;B63351815735F84B=Error reading WAV bext chunk
-;B441FE3C7A724A5A=Error reading WAV iXML chunk
 ;D31AE23EAA68C24C=Unknown file header
 ;0D2EC08C6EDCDEBD=Couldn't find format chunk in file
 ;72C8427D7190CFC6=Couldn't find data chunk in file

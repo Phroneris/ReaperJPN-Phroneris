@@ -1,5 +1,5 @@
 [import]
-32C1261A58C99884=メディアのファイル名から %g BPM が推測されました:
+;165F8BC068A39039=Media suggests %g bpm:
 ;75C55F7F18E25742=NINJAM Import Option
 ;9C0CBF91B3A756B8=Concatenate and make gapless media from %d interval files (highly recommended)
 F2DB7183BF18E607=%d 個の MIDI トラックを REAPER 内の新規トラックとして展開
@@ -14,9 +14,8 @@ EF71B5637AD40C78=毎回確認する ([環境設定] > [メディア] > [イン�
 52EF7F93351DF2F2=複数トラックに単一チャンネルアイテムとして挿入
 1652DD9E25786FDC=毎回確認する ([環境設定] > [メディア] > [MIDI] からも設定できます)
 F26A716BDE6F6E3D=メディアにテンポ情報が埋め込まれています:
-B741E7C71D2463B4=メディアのファイル名からテンポが推測されました:
+;E79737BE62385ECF=Media suggests tempo:
 510535767F09F57F=このテンポに基づいてメディアを補正
-987CF13DCDA29E3B=毎回確認する ([環境設定] > [メディア] > [その他] からも設定できます)
 12E33FA9E65BF2FA=既存のターゲットメディアを %d 個全てソースメディアで置換(&A)
 ;4B7568B10FF00A07=Processing NINJAM OGG files...
 ;D960639ECC3AA6CF=Error opening logfile
@@ -29,4 +28,4 @@ B741E7C71D2463B4=メディアのファイル名からテンポが推測されま
 ;^BD7850245F5A79EE=Import
 ;^5267FAD4364EECB7=Adjust media to project tempo
 ;^4C312A6BF9B1A258=Ignore embedded tempo information
-;^41C320D729252933=Ignore tempo suggested by filename
+;^1C2D4CFFB10D1CC6=Ignore tempo suggested by media

@@ -1,5 +1,5 @@
 [region]
-;0930453E30BF8D22=Error, region ID already in use, pick another
+;5CA39424CE17BEEC=Region ID is already in use, please choose another
 ;8856B8AFC9366673=Save changes before opening render dialog?
 ;3EAFE1BA2EBCF42C=Save changes before opening region render matrix?
 ;F90D0972A781FA95=Region Edit Confirm

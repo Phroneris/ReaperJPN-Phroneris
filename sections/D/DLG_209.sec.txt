@@ -1,4 +1,5 @@
 [DLG_209] ; IDD_PREFS_PLUGINS_DX
+;3843E8618CE5C964=ReWire settings
 99AA745451FB03DE=ReWire/Direct-X プラグイン設定
 3D0D0CE24C134644=ReWire ミキサーサポート (ReWire ミキサー化、ReWire デバイスをプラグインブラウザに表示)
 2F509ABA2BB63239=ReWire デバイスを開く時にパネルを自動で開く

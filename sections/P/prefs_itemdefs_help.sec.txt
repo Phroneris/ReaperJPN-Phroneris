@@ -1,5 +1,6 @@
 [prefs_itemdefs_help]
 ;201653C575C17CF5=Enable creating automatic fade-ins and fade-outs for new media items. Auto-crossfades are enabled with the toolbar button.
+;31B85622280E8F46=Do not set default fade-in/fade-outs for imported media items.
 ;55E3BC595167CB72=The default fade-in and fade-out length for new media items.
 ;3BE2D6877BD0EEE1=When splitting media items, automatically overlap and crossfade the items at the split point.
 ;13D639387FA97E62=The default overlap/crossfade length used when splitting media items.

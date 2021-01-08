@@ -1,5 +1,5 @@
 #NAME:日本語（森）
-; https://github.com/Phroneris/ReaperJPN-Phroneris/tree/master ver 6.13.001?
+; https://github.com/Phroneris/ReaperJPN-Phroneris/tree/master ver 6.19.001?
 ;
 ;【はじめに】
 ; ・OS標準のメモ帳ではなく、ある程度本格的なテキストエディタで編集することを強く推奨します。

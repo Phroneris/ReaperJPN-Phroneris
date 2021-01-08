@@ -152,6 +152,7 @@ DLG_435
 DLG_436
 DLG_437
 DLG_438
+DLG_439
 DLG_440
 DLG_441
 DLG_443
@@ -235,6 +236,7 @@ DLG_588
 DLG_589
 DLG_590
 DLG_591
+DLG_592
 MENU_102
 MENU_136
 MENU_144
@@ -295,7 +297,6 @@ MENU_356
 MENU_427
 MENU_428
 MENU_497
-aaccess
 about
 accel_sec
 access
@@ -346,14 +347,13 @@ envname
 epin
 explorer
 explorer_DLG_101
-explorer_DLG_102
-explorer_DLG_103
 explorer_DLG_134
+explorer_DLG_135
 explorer_MENU_103
 explorer_MENU_104
+explorer_MENU_105
 explorer_actions
 explorer_col
-explorer_mbox
 explorer_menu
 exttc
 fade
@@ -583,7 +583,6 @@ splash
 status
 subproject
 tag_genre
-tag_note
 theme
 themeblend
 title

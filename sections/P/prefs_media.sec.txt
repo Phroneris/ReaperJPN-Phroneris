@@ -1,7 +1,7 @@
 [prefs_media]
 8C4EA6CF43FCD2D1=ハンドル: アイテム上端が +0dB
 67D407FF8C89F00B=ハンドル: アイテム中央が +0dB
-716FCB65DC7CB09B=ノブ
+;0C44D6DC1D4A5982=No handle
 B8B0F97BDEB4F05B=同一トラックに挿入 (時間繰り上げ)
 F6FC6C3856D98FB5=複数トラックに挿入
 52ED394E44E8AE09=自動決定 (長さから判断します)
@@ -41,4 +41,4 @@ FC0E08250AD06B61=全ての余韻部を切除
 ;^FFFF2ED7AE6E59E1=Ignore slice and embedded tempo information
 ;^5267FAD4364EECB7=Adjust media to project tempo
 ;^4C312A6BF9B1A258=Ignore embedded tempo information
-;^41C320D729252933=Ignore tempo suggested by filename
+;^1C2D4CFFB10D1CC6=Ignore tempo suggested by media

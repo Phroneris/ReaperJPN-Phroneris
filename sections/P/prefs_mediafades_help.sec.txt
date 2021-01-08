@@ -5,3 +5,4 @@
 ;028F1F8A53001AC3=Allow the mouse to target the fade curve itself. The top edge of the fade start/end line (where the fade handle is drawn) can always be targeted.
 ;D15E84F1951DF3C9=Allow the mouse to target the fade start/end line. The top edge of the fade start/end line (where the fade handle is drawn) can always be targeted.
 ;49CE054364B5D458=Crossfades are drawn with custom theme colors when using the crossfade editor. These colors can be used when editing crossfades with the mouse.
+;6A2062C61051EF1F=Fade and crossfade type names are displayed in menus as accessible text rather than an image, fade type buttons are titled with names.

@@ -1,0 +1,9 @@
+[explorer_MENU_105] ; IDR_DEFTOOLBAR
+;2252731BF1303DD2=Insert at time selection
+;F382767822F19F86=Insert on new track
+;1A2842207CDCCC2E=New take
+;DEFCBB5BC565D39E=Replace source
+;B1B16ED3AFD92749=Replace source (stretch/loop)
+;^0F129C59135A1F8E=Main
+;^4324C9C893B102F6=Insert
+;^32D5011AD0BEED13=Insert into sample player

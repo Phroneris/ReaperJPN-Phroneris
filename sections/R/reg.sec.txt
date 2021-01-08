@@ -1,5 +1,6 @@
 [reg]
 ;A9904773BA5154A4=No key filename
 705550FFB5900D5F=ライセンスキーファイルオープンエラー
+;9675B1CFCB2F5A00=License key is no longer valid, please contact support
 0003BB2D5EF7F78C=無効なライセンスキーファイルです
 B8581C871BEB3EA6=旧版 REAPER のライセンスキーです -- 更新には www.reaper.fm へおいでください

@@ -1,9 +1,8 @@
 [fxmenu]	; 上4つと「エンベロープ: 」はTCP掲載パラメータの右クリ時に出るが、アクセスキーを書いても効かない
-3D781F4D51AC0219=リストから削除: 
-201E6F9517E04589=MIDI ラーン: 
-BDEEA53C88DD085E=モジュレーション: 
-C3FB94BE32BA2A3B=パラメータ名の変更: 
 BFB99C70CB51B59E=全てのパラメータ
+;007401DCC9943F6A=Modulate...
+;6BF9E8309486DBFD=Alias...
+;D503EE3C8F4724EB=Remove from list
 ;C66D8C4857F36AED=parm
 7E680E30DB01BDC0=最後に編集したパラメータはありません
 47E34E9BF22EC4A3=最後に編集: 
@@ -21,7 +20,8 @@ A43AAABF3635CD48=パラメータモジュレーション/MIDI リンク(&M)
 6B9F0525BEF49CB7=デフォルトのコントローラ割り当て(&C)
 FFF230108C9B32AF=デフォルト設定を使う(&D)
 3FCAEED5D3E37C0D=デフォルト設定をクリア(&C)
-;^915C69C77F31F221=Envelope: 
+;^3322AA333AEE590E=Show envelope
+;^210B1557F40D7B87=Learn...
 ;^EDD67828D248E210=Show in track controls
 ;^E763E06A994AAAFB=Learn
 ;^2FD8CEB7661F1822=Alias parameter

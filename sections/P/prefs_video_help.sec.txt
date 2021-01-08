@@ -9,6 +9,7 @@ A5FC1E33CB77C43B=動画アイテムの高解像度ピーク (拡大時の表示)
 ;7344EE7BCC876172=Delay video output during playback by a small (and possibly negative) amount to allow best possible sychronization.
 ;B8209A80E5196B5F=If you expect to continue to modify the project tempo, import as beat slices. If you want to immediately loop the file, import as a single item.
 ;D6B3258358646B98=Each slice may contain tail audio that can play underneath later slices. These tails can be played, or chopped off on import.
+;7ED160FF65BD9401=If the media filename or metadata suggests a tempo, that tempo can be used to automatically playrate-adjust the media when importing.
 F72F91B3C56C2B0E=埋め込みテンポ情報を持つメディアの再生速度を自動的に調整します。メディアエクスプローラからのインポート時は、そちらのテンポマッチ設定が優先されます。
 ;56646DDB3DDF88EA=Length of newly imported image files, in milliseconds. Negative values set length in frames.
 ;4D7028B4BE4E586B=Thumbnail display mode for image files imported as items.

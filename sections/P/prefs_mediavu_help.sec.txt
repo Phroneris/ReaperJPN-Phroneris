@@ -15,7 +15,7 @@
 ;4E4341B38668BFED=Display an unlit envelopes button when items have no active per-take automation envelopes.
 ;5A1CD57A70D9E572=Display a mute button when items are muted.
 ;6A1055D91ED35ECB=Display an unlit mute button when items are not muted.
-;1AEF4022C838CEF6=Media items can have a volume handle with with +0dB being the top or the center of the item, or a volume knob.
+;F486A9DA400E2436=Media items can have a volume handle with with +0dB being the top or the center of the item, or a volume knob, or both.
 ;27EA865A784AF76D=Display a notes button when an item has text or image notes attached.
 ;13FB275D06AE557A=Display an unlit notes button when an item has no text or image notes attached.
 ;B92E810D41B634FC=Display a properties button (which opens the Item Properties dialog) for all media items. The button will light if the item is resampled.

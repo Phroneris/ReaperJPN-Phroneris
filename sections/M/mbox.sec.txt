@@ -189,6 +189,7 @@ E705401744D93ED5=登録情報を初期化中...
 ;EF0A1B6EB936D5C4=Override existing notes for multiple selected items?
 ;900BF93042B06755=Item notes
 315BFEF486D49FEB=ファイルを移動する際にエラーが発生しました。
+;9E9CD33C3F6F73FD=Warning: an alternate peaks path is configured in preferences, but is not able to be created/written.\r\n\r\nThis misconfiguration may prevent peaks from generating properly.\r\n\r\nWould you like to open preferences to the peaks path configuration to resolve this issue?
 57490B7E317D9DB1=録音したファイルを開く際にエラーが発生しました。
 ;497A4EA833119E88=Error: one or more disk writes failed during project save! A disk could be failing, or have become disconnected.\r\n\r\nYou may wish to try saving to a different disk before diagnosing the error.
 ;279F54E830A559FB=Error: one or more disk writes failed! A disk could be failing, or have become disconnected. Data may have been lost.\r\n\r\nNote: additional warnings will be suppressed for 15 seconds.

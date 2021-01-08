@@ -5,4 +5,5 @@ EA33E60991BEED3E=開始時間
 9B2A58E6C26B25A5=終了時間
 446CC0E7471E1065=リージョンの長さ
 116867A68264AF76=このリージョンをレンダリング (リージョンレンダリングマトリックスを参照)
+;3ED1D8FF10CEA01C=Take marker information
 ;^8BEB3C381FB2F1CE=Color

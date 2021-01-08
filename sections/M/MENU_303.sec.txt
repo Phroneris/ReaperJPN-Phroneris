@@ -9,3 +9,5 @@ BB1E22C4CE52BD4B=マスタートラックを表示(&M)
 ;^D9CD3B25D255019B=Open template...
 ;^65CA689C377C5655=Offset template items by edit cursor
 ;^3A390528F4DCEC5D=(track template list)
+;^FE230E9BD53A358E=Show FX inserts in TCP (when size permits)
+;^630B8042ED7B6DF7=Show sends in TCP (when size permits)

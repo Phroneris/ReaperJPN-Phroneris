@@ -1,6 +1,7 @@
 [DLG_477] ; IDD_PREFS_DEFS_ITEM
 68E8DD45C8033662=メディアアイテムのデフォルト
 46824055403B991D=新規アイテムに次の長さのフェードイン/アウトを自動付加:
+;902E8C0354FF13F6=Do not set fade-in/fade-out for imported items
 A5A7A996DF2D17B7=アイテム分割時に次の長さで重ねてクロスフェード:
 E7DA02B3D72195E5=デフォルトのフェード形状 - 　　　フェードイン/アウト:
 0ECD19FA2DD06E9F=　　　　　　　　クロスフェード:
