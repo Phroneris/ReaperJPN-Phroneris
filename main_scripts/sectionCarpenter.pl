@@ -24,19 +24,20 @@ use autodie ;	# エラー時に$@を得る
 
 ##### 文字エンコーディング関連
 
-use utf8;								# このファイル内に直接書いたUTF-8文字列を全て内部文字列にする
-use open IO => ':utf8';					# ファイル入出力を全て ':encoding(UTF-8)' で行う
-use Encode qw/encode decode/;
+use utf8;					# このファイル内に直接書いたUTF-8文字列を全て内部文字列にする
+use open IO => ':utf8';		# ファイル入出力を全て ':encoding(UTF-8)' で行う
 
-my $enc_os = 'cp932';	# Windows JP
-binmode STDIN,  ":encoding(${enc_os})";	# 標準入出力で cp932(見た目)⇔UTF-8(内部) と変換する
-binmode STDOUT, ":encoding(${enc_os})";
-binmode STDERR, ":encoding(${enc_os})";
+my $codeOS = 'cp932';		# Windows JP
+my $codeOSEnc = ":encoding(${codeOS})";
+binmode STDIN,  $codeOSEnc;	# 標準入出力で cp932(見た目)⇔UTF-8(内部) と変換する
+binmode STDOUT, $codeOSEnc;
+binmode STDERR, $codeOSEnc;
 
-sub du($) { decode('UTF-8', shift) };	# 内部文字列にする（文字コードを取り除く）
-sub eu($) { encode('UTF-8', shift) };	# UTF-8にする
-sub dc($) { decode($enc_os, shift) };
-sub ec($) { encode($enc_os, shift) };
+use Encode ();
+sub du($) { Encode::decode('UTF-8', shift) };	# 内部文字列にする（文字コードを取り除く）
+sub eu($) { Encode::encode('UTF-8', shift) };	# バイト文字列にする（UTF-8）
+sub dc($) { Encode::decode($codeOS, shift) };
+sub ec($) { Encode::encode($codeOS, shift) };
 sub ed($) { ec(du(shift)) };	# デバッグ時にpで文字列が化けたら"ec $var"または"ed $var"で戻せることが多い
 # sub isN($) { Encode::is_utf8(shift) ? 'naibu' : 'hadaka kamo...'; }
 
@@ -53,8 +54,8 @@ use FindBin;			# スクリプト自身のパスを得る
 
 sub abort	# eval直後の「&abort($@) if $@;」で、エラーがあれば捕捉、無ければスルー
 {
-	my ($err, $dontDecode) = @_;
-	$err = dc($err) unless $dontDecode;	# エラー文を自前で直接指定する場合、第2引数をtrueにしてデコードを避ける
+	my ($err) = @_;
+	$err = dc($err) if !Encode::is_utf8($err);	# 自前エラー文はUTF-8内部文字列、外からのはcp932バイト文字列
 	print '*ERROR*: ', $err, "\n", 'Press enter to abort.';
 	<STDIN>;
 	exit 1;
@@ -63,10 +64,9 @@ sub mightMkdir	# フォルダが無ければ作成（1階層だけ対応）、�
 {
 	my $dir = shift;
 	my $retVal = 0;
-	if (!-d $dir)
+	if (!-d ec($dir))
 	{
-		eval { mkdir ec($dir) };
-		&abort($@) if $@;
+		mkdir ec($dir);
 		print '    Directory created: ', $dir, "\n";
 		$retVal = 1;
 	}
@@ -76,34 +76,28 @@ sub findExt		# ファイル名と拡張子名を受けて、実在する拡張�
 {
 	my ($file, $ext) = @_;
 	$ext = '.' . ($ext =~ s/^\.//r);
-	$file .= [ grep { -f ec($file.$_) } ('', $ext, $ext.'.txt', '.txt') ]->[0]
-		// &abort("Can't find a file '${file}' with expected extension.", 1);
+	$file .= ( grep { -f ec($file.$_) } ('', $ext, $ext.'.txt', '.txt') )[0]
+		// &abort("Can't find a file '${file}' with expected extension.");
 	return $file;
 }
-sub readFile	# オプションでファイルを丸呑みする（デフォルトでは行区切り）
+sub readFile	# リストコンテキストなら行区切りの配列を、スカラーコンテキストなら丸呑みのスカラーを返す
 {
 	my ($fileName, $optRef) = @_;
-	my ($ext, $doSlurp, $doPrint) = ($optRef->{ext} // '', $optRef->{slurp} // 0, $optRef->{print} // 1);
+	my ($ext, $doPrint, $wa) = ($optRef->{ext} // '', $optRef->{print} // 1, wantarray);
 	$fileName = &findExt($fileName, $ext);
 	my $file;
-	eval { open $file, '<', ec($fileName) };
-	&abort($@) if $@;
-	my $text = $doSlurp ? do { local $/; <$file> } : [<$file>];	# 全体の単一スカラー / 行配列のリファレンス
+	open $file, '<', ec($fileName);
+	my $text = $wa ? [<$file>] : do { local $/; <$file> };	# 行配列のリファレンス / 全体の単一スカラー
 	close $file;
 	print '    File read: ', $fileName, "\n" if $doPrint;
-	return $text;
+	return $wa ? @{$text} : $text;
 }
 sub writeFile	# 書き込むテキストは配列なら要リファレンス
 {
 	my ($fileName, $text, $optRef) = @_;
 	my ($doPrint) = ($optRef->{print} // 1);
-	# if ($fileName =~ /^(.+)[\/\\]/)
-	# {
-		# &mightMkdir($1);	# ループで回す度にこれやるのはアホらしいので却下
-	# }
 	my $file;
-	eval { open $file, '>', ec($fileName) };
-	&abort($@) if $@;
+	open $file, '>', ec($fileName);
 	my $textRef = ref \$text eq 'SCALAR' ? \$text : $text;	# スカラーそのものならリファレンス化
 	$textRef = [( ${$textRef} )] if ref $textRef eq 'SCALAR';	# スカラーリファレンスなら配列リファレンス化
 	print $file @{$textRef};
@@ -115,8 +109,7 @@ sub copyFile
 	my ($origName, $broName, $optRef) = @_;
 	my ($extRead) = ($optRef->{extRead} // '');
 	$origName = &findExt($origName, $extRead);
-	eval { copy(ec($origName), ec($broName)) };
-	&abort($@) if $@;
+	copy(ec($origName), ec($broName));
 	print '    File copied: ', $origName, ' -> ', $broName, "\n";
 }
 sub getSetSubDir	# オプションでディレクトリ作成を避ける
@@ -140,8 +133,8 @@ my $sec0Name = '_description';
 sub divide		# 言語パック内のセクションを、個別のファイルに分離
 {
 	my $lpName = shift;
-	my @sections = split /^(?=\[)/m, &readFile($lpName, {slurp=>1, ext=>$lpExt});
-	&abort('This isn\'t langpack: '.$lpName, 1) if $sections[0] !~ /^#NAME:/;
+	my @sections = split /^(?=\[)/m, &readFile($lpName, {ext=>$lpExt});
+	&abort('This isn\'t langpack: '.$lpName) if $sections[0] !~ /^#NAME:/;
 	print "\n";
 	my @secNames = map { /^\[([^\[\]]+)\]/ ? $1 : $sec0Name } @sections;
 	print "\n" if &mightMkdir($secDir) == 1;
@@ -159,15 +152,15 @@ sub divide		# 言語パック内のセクションを、個別のファイルに
 }
 sub unify	# 個別ファイルのセクションを、単一の言語パックに統合
 {
-	my $lpName = shift =~ s/\.(ReaperLangPack|txt|ReaperLangPack\.txt)$//r;
-	chomp(my @secNames = @{ &readFile($secMapPath) });
+	my $lpName = shift =~ s/(?:\Q${lpExt}\E|\.txt|\Q${lpExt}\E\.txt)$//r;
+	chomp(my @secNames = &readFile($secMapPath));
 	print "\n";
 	my @lpText = ();
 	foreach my $secN (@secNames)
 	{
 		my $subDir = $secN eq $secNames[0] ? '' : &getSetSubDir($secDir, $secN, {mkdir=>0});
 		my $secFilePath = join('', $secDir, $subDir, $secN);
-		my $secText = &readFile($secFilePath, {slurp=>1, ext=>$secExt});
+		my $secText = &readFile($secFilePath, {ext=>$secExt});
 		push @lpText, $secText =~ s/[\x0d\x0a]+$//r . "\n";	# 末尾の改行は1個だけ
 	}
 	print "\n";
@@ -177,7 +170,7 @@ sub unify	# 個別ファイルのセクションを、単一の言語パック�
 sub clone		# 言語パックを、各セクション名を名前に持つ個別のファイルに複製
 {
 	my $lpName = shift;
-	my $lpText = &readFile($lpName, {slurp=>1, ext=>$lpExt});
+	my $lpText = &readFile($lpName, {ext=>$lpExt});
 	my @secNames = map { /^\[([^\[\]]+)\]/ ? $1 : $sec0Name } ( split /^(?=\[)/m, $lpText );
 	print "\n";
 	print "\n" if &mightMkdir($secDir) == 1;
@@ -194,36 +187,46 @@ sub clone		# 言語パックを、各セクション名を名前に持つ個別�
 
 ##### メイン処理
 
-chdir $FindBin::Bin;	# 必ず日本語化プロジェクトのルートディレクトリに移動して作業
-chdir '..';
-
 my $isInteractive = $#ARGV < 0;	# このファイルを引数無しで直接実行した時
-my $processMode  = $ARGV[0];
-my $langPackName = $ARGV[1];
-if ($isInteractive) {
-	print 'Process Mode? [0=divide, 1=unify, 2=clone] > ';
-	chomp($processMode = <STDIN>);
-	print 'LangPack Name? > ';
-	chomp($langPackName = <STDIN>);
-	print "\n";
-}
-$processMode  = $processMode  || 0;		# 値が偽（0や空文字列など）の時のデフォルト
-$langPackName = $langPackName || 'JPN_Phroneris';
 
-if ($processMode eq 0) {	# 英字などの入力のためにeq
-	print '* Dividing...', "\n\n";
-	&divide($langPackName);
-}
-elsif ($processMode eq 1) {
-	print '* Unifying...', "\n\n";
-	&unify($langPackName);
-}
-elsif ($processMode eq 2) {
-	print '* Cloning...', "\n\n";
-	&clone($langPackName);
-} else {
-	&abort("Invalid process mode.", 1);
-}
+eval {
+
+	chdir $FindBin::Bin;	# 必ず日本語化プロジェクトのルートディレクトリに移動して作業
+	chdir '..';
+
+	my $processMode  = $ARGV[0];
+	my $langPackName = $ARGV[1];
+
+	if ($isInteractive) {
+		print 'Process Mode? [0=divide, 1=unify, 2=clone] > ';
+		chomp($processMode = <STDIN>);
+	}
+	$processMode ||= 0;
+	&abort("Invalid process mode.") if $processMode !~ /^[012]$/;
+
+	if ($isInteractive) {
+		print 'LangPack Name? > ';
+		chomp($langPackName = <STDIN>);
+		print "\n";
+	}
+	$langPackName = $langPackName eq '' ? 'JPN_Phroneris' : $langPackName;
+
+	if ($processMode eq 0) {	# 英字などの入力のためにeq
+		print '* Dividing...', "\n\n";
+		&divide($langPackName);
+	}
+	elsif ($processMode eq 1) {
+		print '* Unifying...', "\n\n";
+		&unify($langPackName);
+	}
+	elsif ($processMode eq 2) {
+		print '* Cloning...', "\n\n";
+		&clone($langPackName);
+	}
+
+};
+
+&abort($@) if $@;	# エラー時に割り込んで即中断
 
 print "\n", 'Done.', "\n";
 if ($isInteractive) {
