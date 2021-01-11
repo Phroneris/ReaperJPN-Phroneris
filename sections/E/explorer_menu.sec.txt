@@ -1,10 +1,10 @@
 [explorer_menu]
 C467388DF98DD7C1=ショートカットリストに追加(&A)
 16AA7C1BBAE0CC56=フォルダからデータベースを作成(&F)
-;3A6ABD8DE92738E6=Insert selected portion (loop enabled)
-;FF69514D6D18937D=Insert selected portion (loop disabled)
+3A6ABD8DE92738E6=選択部分を挿入 (ループ ON) (&E)
+FF69514D6D18937D=選択部分を挿入 (ループ OFF) (&B)
 7258A5870C2BAC8F=選択時間へ挿入 (伸縮/ループさせてフィット) (&L)
-;6D3372663E79E8C9=Insert on a new track
+6D3372663E79E8C9=新規トラックに挿入(&T)
 ;C99985196133B424=Insert sample player on a new track
 ;DCA51F1A8B8D042E=Reuse active sample player
 ;B451DF8149C10F1F=Insert as new take
@@ -20,7 +20,7 @@ C467388DF98DD7C1=ショートカットリストに追加(&A)
 5BDB2EE1CA1306A6=アイテムをデータベースから削除(&V)
 ;4035558C1265A861=Re-read metadata from media files
 ;464F234CA8987D9A=Write edited metadata to media files
-;09B7C21F4AFDCECC=Edit metadata tag
+09B7C21F4AFDCECC=メタデータのタグを編集(&E)
 3950F032E7716A66=選択トラックで再生(&T)
 ;1F4F55BEB39B6A1F=Zoom to selection
 ;^5AB858CFE049C43F=Media Explorer toolbar
