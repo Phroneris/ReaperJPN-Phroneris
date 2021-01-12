@@ -1,0 +1,12 @@
+[MENU_306] ; IDR_CONTEXTS_6
+;D01D0F925E9AC2F4=6Automationmodes
+5E293FAC1EC4D199=全トラックのオートメーションモードを一括で指定できます。
+D0FA771D463FBE0D=オートメーションモードをトラックごとに指定(&K)
+3A2E1BB307417335=全てのエンベロープをバイパス(&B)
+8532ABD7CF5DF918=Trim/Read (デフォルト、フェーダを記録しない) (&T)
+97C9225E101F0032=Latch Preview (一時的にエンベロープより優先するが記録はしない) (&C)
+;^DEF52717C4E7101F=Read (play faders with armed envelopes)
+;^E73F4D99E9F274CB=Touch (record fader movements to armed envelopes)
+;^7C92092A41B00EDC=Latch (record fader movements after first movement)
+;^A23B66B5439758A9=Write (record fader positions to armed envelopes)
+;^5A6DE0CA99B71E37=Show all active track envelopes

@@ -1,0 +1,6 @@
+[docker]
+D15BC93ABD1F68D8= (ドック)
+;0BFC771F1F9FBEDB=Attach Toolbar Docker to main window
+;^9A96C7D5CB612D76=Toolbar Docker
+;^D91FCBB42B5B9077=Docker
+;^A66F5FD1FF70F568=Attach Docker to main window

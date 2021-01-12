@@ -1,0 +1,22 @@
+[DLG_262] ; IDD_TCCONFIG
+;085F3DE8AB4DE5DB=Enable synchronization to timecode
+;7B212007C824F9D4=Use input:
+;763400CCB1720AD9=LTC framerate (leave blank to use project framerate config):
+;924B85587FB804D0=Start playback on valid timecode when stopped
+;568F5AEBDAE3AC60=Freewheel on missing time code for up to:
+;B84DF0FD53A73A72=ms (0=forever)
+;43091CDD5367E425=Synchronize by seeking ahead:
+;53CF5517B3119879=ms (1000=default)
+;4702C127062CF8F4=Re-synchronize if drift exceeds:
+;D8574533E947B5B9=ms (0=never)
+;DE6FD63BDC6D8703=Skip/drop frames if drift exceeds:
+;DD9ACCEE651DE43D=Offset incoming timecode by:
+;7F4501E72247AD5D=Display flashing notification window when waiting for sync for recording
+;9F34AEE6D88B62E6=on lack of time code after:
+;39E1E4EDCBF58CC8=if drift exceeds:
+;FB4299296319B6E5=You can quickly view this panel by right clicking the play button.
+;^3D05B40BFC6A1E40=External Timecode Synchronization
+;^2ACB121355B0007A=Playback
+;^D3E64988F293BA3A=Recording
+;^D8B3B3186B8C817F=ms
+;^BAC64C1B2E060EE5=Close

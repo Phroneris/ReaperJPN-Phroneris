@@ -1,0 +1,4 @@
+[pooledenv]
+D4A529A0DD35A4AD=オートメーションアイテムを読み込む
+096516B609B04A04=オートメーションアイテムを保存
+;^B41F2FB851FBE597=Rename Automation Item

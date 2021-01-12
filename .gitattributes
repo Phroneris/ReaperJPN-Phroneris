@@ -1,0 +1,5 @@
+*.pl filter=pl
+*.bat filter=sjis
+*.csv filter=sjis
+
+*.sec.txt linguist-language=INI

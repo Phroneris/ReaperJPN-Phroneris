@@ -1,19 +1,21 @@
 # テンプレートファイルを無視
 *template*ReaperLangPack.txt
+reaper*ReaperLangPack.txt
 
-# 非Windows向けパッチを無視（差分に意味が無いので）
-JPN_Phroneris-Mac_Linux.ReaperLangPack
+# パッチ本体を無視
+/*.ReaperLangPack
 
 # Notepad++ セッションファイルを無視
 *.npps
 
+# Excel ブックファイルを無視
+*.xls
+*.xlsx
+*.xlsm
+*.xlsb
+
 # あらゆる _ignore フォルダを無視
 _ignore/
-
-# img フォルダで画像ファイル以外を無視
-/img/*.*
-!/img/*.png
-!/img/*.jpg
 
 # ReaPerLang のフォルダを無視（一応）
 # /tool/

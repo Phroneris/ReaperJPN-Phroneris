@@ -1,0 +1,135 @@
+[Default_6.0_Theme_Adjuster]
+;; Page titles are images and cannot be translated, sorry.
+;; # creates a line break
+;0E5E4CAB1675646E=TRACK
+;C17B7F91FBF82A04=MIXER
+;B4D693936DE67B03=ENVELOPE
+;D9317FF51328636C=TRANSPORT
+
+: --GLOBAL SETTINGS PAGE--
+;A34A32FFD8BF8FD8=Custom color track names
+;644F81A1FD15D874=COLOR CONTROLS
+;A00AEC22DFB3C8E4=GAMMA
+;102FB384E80740EA=HIGHLIGHTS
+;724765EAA73C7C1C=MIDTONES
+;1627C388DBFE3A7C=SHADOWS
+;43867B3E392FF8EB=SATURATION
+;CC9CE21E372372F2=TINT
+;12DFEFE6BA272308=Reset all color controls
+
+: --TRACK CONTROL PANEL PAGE--
+;BE6F8ED01B940C9F=FOLDER INDENT
+;DDAE2CABE9445915=ALIGNED
+;3FD8FEE2EBFBF45E=EXTEND NAME
+;492D194DD24CD541=NONE
+;B323437E24D8C379=MIN
+;B308157E24C1AD97=MAX
+;3FD8FEE2EBFBF45E=EXTEND NAME
+;B6C7F1EEFEDC1106=ALIGN CONTROLS
+;6C53213D2121302D=NAME SIZE
+;E2886A438319742D=METER SIZE
+;8E50470F2BDCA40E=INPUT SIZE
+;BB51D9B9D09C6A4C=AUTO
+;847ECB6677AD7C7B=KNOB
+;3753846BFD3B943A=VOLUME SIZE
+;6A027CAF372A10CB=RIGHT
+;7182FB372CE98EA3=METER LOCATION
+;550E6E5E61315696=LEFT
+;E84A27AC75C036DE=LEFT IF ARMED
+;F357AED81F1CAD3C=IF MIXER#IS VISIBLE
+;6405C14909FBEEAA=IF TRACK#NOT SELECTED
+;C4CC07C35BEDFC6A=IF TRACK#NOT ARMED
+;94CF2D931B7F5687=ALWAYS#HIDE
+;4355C9B4AFCCC954=RECORD ARM
+;0D321E2C9EDC622F=MONITOR
+;DA35805B1B64BF51=TRACK NAME
+;395943B80E7D2099=VOLUME
+;06C79A689D3D4317=ROUTING
+;B6EC5FFDD1F97A7C=INSERT FX
+;B4D693936DE67B03=ENVELOPE
+;356E8733A8CD5F38=PAN & WIDTH
+;D118566AD20B2B49=RECORD MODE
+;DA451E1952337CCD=INPUT
+;354AD43369B4EF28=LABELS & VALUES
+;07C34E9034B41D5A=METER VALUES
+;95BF36B8F2BFCCA8=DEFAULT
+;AC8EC5C5A9E72A6E=SELECTED
+
+: --MIXER CONTROL PANEL PAGE--
+;DDAE2CABE9445915=ALIGNED
+;492D194DD24CD541=NONE
+;E5EF7DAAF1B2107C=ADD BORDER
+;019F453D78DFDE9B=LEFT EDGE
+;816B5767E02AA988=RIGHT EDGE
+;8F8AFD7A73C3307E=ROOT FOLDERS
+;A0AEA35FE4F23147=AROUND FOLDERS
+;F22EFB0077069283=+ 2 PIXELS
+;C0CEAC36FF7AD101=+ 4 PIXELS
+;A31F3791DA292DFD=+ 8 PIXELS
+;26870038E77EBA51=METER EXPANSION
+;607091BA3EE90EA1=IF TRACK#SELECTED
+;6405C14909FBEEAA=IF TRACK#NOT SELECTED
+;23AFB45CD682FDF3=IF TRACK#ARMED
+;C4CC07C35BEDFC6A=IF TRACK#NOT ARMED
+;9440E422A2DEC5ED=EXTEND WITH SIDEBAR
+;23A684C98AF1F12E=NARROW FORM
+;43B8A28646E5E5B2=DO METER EXPANSION
+;4DD39AD453B48458=ELEMENT LABELS
+;A960A418B8808309=EXTENDED MIXER CONTROLS#when size permits
+;48F6A0BEE7D606BA=Show FX Inserts
+;8B0F16B6D50FE04C=Show FX Parameters
+;70871BA834FB6F6D=Show Sends
+;AF8D828BB50A6BF8=Show Multiple-row Mixer#when size permits
+;2DA3CC558D9F9BFB=Scroll to selected track
+;F14A5B5776928E50=Show Icons
+;F9397EB2C1A5D5FD=Show play state
+
+: --CUSTOM COLORS PAGE--
+;E45430952DECB2B8=REAPER v6
+;BA3023051854D992=WARM
+;AD55470AC83ACF2E=VICE
+;A9A2AF2755813DB7=PRIDE
+;6E27D0ABF2511092=COOL
+;D5BEAD9B13472EF5=EEEK
+;F9FFE3254117F1E9=Dim all assigned custom colors
+;D6026D81AD96BFB8=Dim custom colors on selected tracks
+;B6E43128A42E664D=Also affect project custom colors
+;3A43660C1115891F=Recolor project using this palette
+;833583CC6DAC7198=Click a color to apply it to all selected tracks
+
+: --ENVELOPE & TRANSPORT PAGE--
+;DAF21557E3B30D0A=FADER SIZE
+;96CB1D614DED3475=Match track folder indent
+;CD5D60C5D271393E=PLAY RATE SIZE
+;9BE6926AA61D85F3=Center transport
+;C43B627BE69C081A=Show Play Rate
+;1A9DD357F2EA6255=Show Time Signature
+;A14D01844E3DA767=Use Home/End for Markers
+;A6D2738EF083EC6A=Show play state as text
+
+: --HELP PANELS--
+;728B611E8E08071D=These settings are automatically saved to your REAPER install, and will be used whenever you use this theme.
+;3D04A33E81CB0A8C=Adjust how REAPER draws the theme colors. Mousewheel for fine adjustment. Double click the fader to reset. Double click the value to enter a new value.
+;29A51966A9E129B6=Any assigned custom colors will be saved with your project, when it is saved.
+;93569D3CF2FB7FDA=This theme draws custom colors at full strength. Old projects may appear very bright, dim them here.
+;0DA32579B595DB6A=REAPER will remember whether you docked this script, and where.
+;6396A3D3D51275AC=Layout and scale assignments are part of your REAPER project, and will be saved when it is saved.
+;69939E0C77A3E27D=Turn off this help text.
+;37B83A544A975AA2=Dock this script in its condensed format.
+;84E85C1BF0F03394=If a track has a custom color, use that color on the track name.
+;A8012CBE14AF9ED8=Adjust how REAPER draws the theme colors. Mousewheel for fine adjustment. Double click the fader to reset. Double click the value to enter a new value.
+;E41F81C863AF269F=Reset all of these color controls to return the theme to its unaltered state.
+;4FFD29A2CA1BF392=Amount to indent a panel due to its depth within your project folder structure. Value chosen is used by all layouts.
+;2F9CB93DEEFB4598=Choose whether to indent the panel controls when folders indent, or to keep controls aligned. Value chosen is used by all layouts.
+;A0EEAE837723CEA5=Select which of the three layouts you wish to edit or apply.
+;555EB3D060033E49=Indicates whether this layout is the 'default' layout. To choose your default use the Options > Layouts menu or the Screensets/Layouts window.
+;0EF83D397A23A3F7=Indicates whether one or more of the selected tracks is using this layout.
+;F6CF95E4BC4D4A71=Applies this layout to any selected tracks, at this size. REAPER may already be using a non-100% size, depending on your HiDPI settings.
+;259091C6C3DA96BE=Size of the envelopes' name field. If set to AUTO then, while the script is running, it will adjust this to fit the longest envelope name currently in your project.
+;D33649DF5BD64558=Requires 'DO METER EXPANSION' to be ticked below, and the conditions you set to be met. Tracks with greater than 2 channels will then expand the width of their meters by the set amount of pixels (per channel), and enlarge the track width to fit
+;F3D8E85401E52A81=Adds visual separation to your mixer with borders. LEFT EDGE and/or RIGHT EDGE allow you to manually use layout assignments to add these as needed. ROOT FOLDERS draws a border on the left edge of root level folders, and on the right hand edge of the end of that folder if it is one level deep. AROUND FOLDERS draws borders at the start and end of every folder.
+;0608F78865205131=These buttons set REAPER preferences. Their settings are automatically saved to your REAPER install.
+;E61FC1343A1814BE=Assigns random colors from the palette. Tracks which share a color will be given the same new color.
+;54359DD1CA6EF3E8=Click to select a palette.
+;257035140E85E675=Indent with folders, matching the 'Folder Indent Width' setting on the Track Control Panel Page.
+;9F29D438F4B06825=If 'Show Play Rate' is on, sets the size of the play rate control. TIP : right-click the play rate control to adjust its range.

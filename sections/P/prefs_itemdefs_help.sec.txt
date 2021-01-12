@@ -1,0 +1,16 @@
+[prefs_itemdefs_help]
+;201653C575C17CF5=Enable creating automatic fade-ins and fade-outs for new media items. Auto-crossfades are enabled with the toolbar button.
+;31B85622280E8F46=Do not set default fade-in/fade-outs for imported media items.
+;55E3BC595167CB72=The default fade-in and fade-out length for new media items.
+;3BE2D6877BD0EEE1=When splitting media items, automatically overlap and crossfade the items at the split point.
+;13D639387FA97E62=The default overlap/crossfade length used when splitting media items.
+;AE3E452C1BDD0283=The default fade-in and fade-out shape for new media items.
+;DF1D42CA346FF5BC=The default shape used for new crossfades, used for both auto-crossfades and manually created crossfades.
+;9025AEE36EE9441B=Right-click a fade-in, fade-out, or crossfade to change the fade shape. For a crossfade, this can change the shape of both sides, or just one.
+;D8DADBDCF727EC0B=Apply the above fade-in and fade-out settings, and the project auto-crossfade setting, to note velocity in MIDI items.
+;93AA6182EC7E79F1=Enable the \"loop source\" attribute for imported media items. Dragging the right edge of the item will automatically loop the media.
+;59E8ABDFE0F36FAA=Enable the \"loop source\" attribute for new MIDI items. Dragging the right edge of the item will automatically loop the media.
+;8BC802EEEFEBEB1F=Enable the \"loop source\" attribute for recorded audio items. Dragging the right edge of the item will automatically loop the media.
+;2150029D694E5000=Enable the \"loop source\" attribute for glued items. Dragging the right edge of the item will automatically loop the media.
+;2DD1E32D6EFAB55E=When auto-punch recording into a time selection, loop the time selection's content when extending the edges of the resulting item.
+;CA312E99CAD52995=Editing media item position or edges to overlap existing media items can either play both items together, or trim content from the existing items.

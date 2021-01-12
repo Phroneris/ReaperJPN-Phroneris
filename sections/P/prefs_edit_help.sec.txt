@@ -1,0 +1,16 @@
+[prefs_edit_help]
+;77A15B21FD40224C=The edit cursor (where playback will begin) moves to the start of the time selection when you change the time selection.
+;5B198AA7AD34F2ED=The edit cursor (where playback will begin) moves to the mouse when pasting or inserting media items.
+;30EE84DA88B23845=The edit cursor (where playback will begin) moves to the end of newly recorded items when recording stops.
+;6E59EB77685A4FFE=Set the sensitivity of tab-to-transient and dynamic split. Lower sensitivity causes only the sharpest transients to be detected.
+;E5BCA3801A3DA8DD=Tab-to-transient can ignore MIDI items, or consider MIDI notes as transients.
+;93AB148AC6B4D9B1=Tab-to-transient can tab past media item edges, or consider media item edges as transients.
+;6CB151FAA58C5678=Where to center when zooming vertically.
+;1A6CDD77351C8E84=Where to center when zooming horizontally
+;4EBA36F5A4F9E89C=How locked items behave in \"ripple edit all tracks\" and \"ripple edit per-track\" modes.
+;9C5B31435FB60A12=Media item edges between adjacent items can trim both items at once. This behavior can be restricted so both items are edited only if both are selected.
+;C8F1EB5EE3ECC3FE=When using ripple editing, moving items left will attach to earlier items during the edit, if this option is set.
+;8F9F748B3E3AFB8D=When auto-crossfades (toolbar button) are disabled, normally editing a crossfade will cause the fade-in and fade-out to separate.
+;A517977E3C29D1AD=Time selection and loop points can be linked, or unlinked so that they can be set or cleared independently.
+;0742C3EFC8EC2536=Loop points are cleared using the escape key, or optionally by single-clicking in the ruler/timeline area.
+;6D66B24C4A76886C=The time selection is cleared using the escape key, or optionally whenever a mouse click in the arrange view moves the edit cursor.

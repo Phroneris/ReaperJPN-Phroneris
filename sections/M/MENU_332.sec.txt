@@ -1,0 +1,22 @@
+[MENU_332] ; IDR_CONTEXTS_32
+;B2834EEA2AA93E9E=32MultiProjOpts
+80E1706B6AD3A6D6=プロジェクトタブを常に表示(&Y)
+A41C7E22C204C9CD=プロジェクトタブを左端に表示(&L)
+DE78E244B23E9BF7=非アクティブなプロジェクトのエフェクト/MIDI ウィンドウを非表示(&H)
+13C9E795A3129541=全ての親プロジェクトと再生を同期(&P)
+6A701714DA8FFBDE=バックグラウンドのプロジェクトを動作させる(&B)
+47CF086A1167A6AF=停止中のバックグラウンドのプロジェクトを動作させる(&G)
+430E13289C8F797D=アクティブなプロジェクトと一緒にバックグラウンドのプロジェクトも再生(&A)
+19913BC408CBC6BF=バックグラウンドのプロジェクトと再生開始時間を同期(&T)
+9AE6E5D07F26251B=バックグラウンドのプロジェクトのメディアをオフライン化する(&O)
+401ED0502DA30BA8=サブプロジェクトのレンダリング(&S)
+23DF5E06DE62E9E2=自動で行わない (手動レンダリング必須) (&D)
+58B042C2931D8E7F=バックグランドで自動で行う際に確認する(&B)
+D06DCA77EC46B99D=後回しにする (保存時でなく、保存後のタブ切り替え時) (&R)
+C82CC5ADCA93D3A7=自動展開・レンダリング後にそのままタブに残す(&V)
+;/DE82404B7BA815CF=Force project tabs visible when monitoring FX in use(&F)	;; わかんね
+;^385A68019D9A9A61=New project tab
+;^A092E5D2A26EFA9C=Close project
+;^3460E53D021E70FE=Close all projects but current
+;^196CA70C1D9D93A4=Close all projects
+;^213CDB1B65EA8A91=Monitoring FX...

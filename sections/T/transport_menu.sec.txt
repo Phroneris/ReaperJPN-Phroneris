@@ -1,0 +1,4 @@
+[transport_menu]
+950EA9FE58E06D07=リージョン %d: %s [%s - %s]
+697B0EBA4AE65778=マーカー %d: %s [%s]
+B40F55457E9A2E23=テイクマーカー%s%s:%s%s [%s + %s]

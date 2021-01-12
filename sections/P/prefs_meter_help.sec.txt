@@ -1,0 +1,24 @@
+[prefs_meter_help]
+;C13265BE35DAEB85=If a track has a custom color set, set the background color of the track label field to be the track color. Color theme may override this preference.
+;18081BA4EB998B85=If a track has a custom color set, tint the track's panel backgrounds to the custom color. Color theme may override this preference.
+;01483F33727534CB=When using track icons, vertically align track controls on all tracks, which uses extra space but provides a cleaner appearance and easier VU reading.
+;31B75936A0903B71=When track controls are grouped (View -> Track Grouping Matrix), draw a matching colored ribbon across the corner of all grouped controls.
+;F41112A329719F94=When track controls are grouped (View -> Track Grouping Matrix), draw a matching colored line at the bottom edge of all grouped controls.
+;451D8AF86150F67E=When track controls are grouped (View -> Track Grouping Matrix), don't draw any indication of which controls are grouped.
+;C497A4E2AD4CC7CA=The refresh rate of the meters. The higher the rate, the faster the meters will redraw.
+;80F496666F2204B3=The decay rate of the meters. The higher the value, the faster the meters will decay and fall back to -inf.
+;8D213B5D950CD2E2=The minimum value of the meters in dB.
+;436A47D2045D4D74=The maximum value of the meters in dB.
+;46A7CAB2C3A9A6BE=Make the clip indicator stay on when clipping occurs (enabled by default). Click the red clipping indicator to clear it.
+;3BDEC61BE55E575C=Automatically clear the VU meter peak indicators each time the transport is put into play, or playback is seeked to a new location.
+E124DEFBFE6BE9CB=トラックが録音待機の時、トラックの VU メーターにアクティブな録音ソース名を表示します。(訳註: テーマ側が対応している場合のみ。Classic_1.x 等)
+6D5D3EB7EE5D52D5=録音ソース名を VU メーターに表示している場合、そこが変更可能なことをドロップダウン表示で明示します。(訳註: テーマ側が対応している場合のみ。Classic_1.x 等)
+;E9F5F64ABF018659=Draw dB scale numbers on VU meters for all tracks.
+;5A28549A35AF5819=Draw dB scale numbers on VU meters for record-armed tracks.
+;79CC0AB1ACB6C98D=Display pre-fader levels on track VU meters (normally post-fader levels are displayed on track meters)
+;D28BB6C1222998B7=When a track has MIDI input, show the MIDI note velocity as a thin line at the bottom of the track VU meters.
+;3953D4D2C3B786F0=When a track has MIDI output, show the activity on the track VU meters, as a thin line for note velocity and a small square for other activity.
+;65A1B85237A2606E=Decibels of attenuation applied when the volume fader is at the left/bottom.
+;E739160C3E3C37E3=Decibels of gain (attenuation if negative) applied when the volume fader is at the right/top.
+;38EE60F635F42949=Sensitivity of volume faders at the bottom and top. 1 is linear, lower gives more sensitivity at the bottom, higher gives more sensitivity at the top.
+;75C52AD4CFC58227=Display pan values in percentage or decibels.

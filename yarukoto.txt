@@ -7,7 +7,7 @@
 - コミットメッセージを「ver X.XX.XXX」として全てコミットする。
 - masterをチェックアウトし、developをマージする。masterで「vX.XX.XXX」のタグも付ける。
 - masterとdevelopの両方をプッシュする。
-- GitHubのWikiの表記バージョンを上げる。
+- GitHubのWikiの表記バージョンを上げる（3箇所）。
 
 + GitHub Wiki: https://github.com/Phroneris/ReaperJPN-Phroneris/wiki
 
@@ -26,7 +26,7 @@ DL用ファイルを各所に上げる流れ
 + OneDrive（_old）: https://1drv.ms/f/s!AhtRdcWiGWJDiWjQMxU5tVyBTN5V
 + GitHub releases: https://github.com/Phroneris/ReaperJPN-Phroneris/releases
 + REAPER Stash: http://stash.reaper.fm/v/27131/JPN_Phroneris.zip
-+ OneDrive（配布）: https://1drv.ms/f/s!AhtRdcWiGWJDiVMCWRcv3Ac1rVcF
++ OneDrive（配布）: https://1drv.ms/f/s!AhtRdcWiGWJDiVPQMxU5tVyBTN5V
 
 
 

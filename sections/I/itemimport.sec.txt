@@ -1,0 +1,6 @@
+[itemimport]
+2A4E859EDE54DBFC=%d チャンネルの MIDI のインポート方法:
+3423153C6B5BCC44=%d チャンネルの MIDI とメタイベントのインポート方法:
+;8760B8EAFB5FC6F6=%s import: %s
+;CBE458B8A675A6A8=Import %d-channel %s as %d mono tracks?
+;^629548803B048F00= - 

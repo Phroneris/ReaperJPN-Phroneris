@@ -1,0 +1,12 @@
+[DLG_473] ; IDD_PREFS_AUDIOCONFIG_MAC
+;0AE9C7C56AF2D331=Audio MIDI Setup...
+;CB5CD17AF6D1158C=Ignore running change notifications (may be required for some devices)
+;5BE762CA30ABAF67=If you need to use multiple devices, open Audio MIDI Setup and create an aggregate device.
+;E9564FD174148DB7=Allow use of different input and output devices (legacy option, not recommended)
+A7BA0064C3A88716=出力デバイス:
+;21A1FC512D832DC6=Please use Audio MIDI setup to create an aggregate device instead!
+;^16464B290024A7A0=Audio device settings
+;^7A1E9510735905CF=Audio Device:
+;^0FF98CDC4588805A=Request sample rate:
+;^3E83534995169108=Request block size:
+;^E9C70EA3B03F0A91=Allow projects to override device sample rate

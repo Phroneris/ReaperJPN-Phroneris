@@ -1,0 +1,18 @@
+[prefs_project_help]
+;0A5F0E84A3869846=Using this feature you can create new projects that are automatically setup with your choice of basic tracks and project settings (bit depth, sample rate, etc).
+;CD8E703057AE56BF=Makes REAPER open the save project window each time you create a new project, getting you to save before you start recording.
+;E95AA15A86B228FF=Select this option to make REAPER open the project settings window each time a new project is created.
+;45C61D88D5DA8765=Makes REAPER look for project media items in the project media path(s) before checking fully qualified paths.
+;B3DC8B336571C072=This option, selected by default, makes REAPER prompt you for the location of missing files when a Project is opened.
+;4E9136C238B4B562=Displays the splash screen with a status indicator when projects are loading.
+;C979FAB9308F4B25=Saves the pathname of files in projects as relative. Files that are in a different drive or higher directories are saved with the full pathnames.
+;8CBEB4B02703F2B9=This option, selected by default, saves a backup of your old Project file with the extension \".rpp-bak\" each time a save is performed.
+;FEC0C9F073CBB790=If saving .rpp-bak backup, append to this file (keeping all past saved versions in .rpp-bak file). NOTE: .rpp-bak files could get very large!
+;E90411CB1C9A1D74=When saving, this option saves backup copies with timestamped names (letting you keep a history of saved projects, one per file)
+;1B397C3CBAB440E3=If undo state saving is enabled, keep backup copies of the undo state file as well (can use lots of disk space).
+;EE0626B6E20CF3AE=Enter the interval in minutes for the automatic saves.
+;DD6EAB00451E5360=This option enables automatic saving of your project to the main project file.
+3D597C7EFBD36441=プロジェクトと同じフォルダに、更新時刻付きのファイル名でプロジェクトのバックアップを保存します。
+3C3F2F410674AB6C=指定されたフォルダに、更新時刻付きのファイル名でプロジェクトのバックアップを保存します。
+06CFE9F535CF1461=プロジェクトの操作履歴ファイルを自動で保存します。若干ファイル保存に時間がかかるようになります。
+58EE0FB007A1AE0E=このフォルダの中に、更新時刻付きのファイル名で自動的にプロジェクトのバックアップを保存します。

@@ -1,0 +1,13 @@
+[MENU_303] ; IDR_CONTEXTS_3
+;A3FA5A822CC7D898=3TrackEmpty
+B0A42D963CEF845C=複数トラックを挿入(&U)...
+BB1E22C4CE52BD4B=マスタートラックを表示(&M)
+B9D58A6FF2858C18=トラックコントロールパネルをアレンジビューの右側に表示(&R)
+;^6E9C1F47AE0AB01B=Insert new track
+;^A6F3EA432AA410A4=Insert virtual instrument on new track...
+;^14AB75DE2C24FEF3=Insert track from template
+;^D9CD3B25D255019B=Open template...
+;^65CA689C377C5655=Offset template items by edit cursor
+;^3A390528F4DCEC5D=(track template list)
+;^FE230E9BD53A358E=Show FX inserts in TCP (when size permits)
+;^630B8042ED7B6DF7=Show sends in TCP (when size permits)

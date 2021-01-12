@@ -1,0 +1,6 @@
+[MENU_317] ; IDR_CONTEXTS_17
+;D518DD15730D0992=17FxFloatCtx
+;68FF5FCC175E2929=Un-float window
+;^27621D9AD3D28A8A=Show embedded UI in TCP
+;^D7B29E9AA6329895=Show embedded UI in MCP
+;^10AA715E679A1188=Send all keyboard input to plug-in

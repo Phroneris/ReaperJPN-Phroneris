@@ -1,0 +1,19 @@
+[prefs_midiedit_help]
+;B903973979C81B00=Show a brief color flash on the MIDI editor keyboard when the track receives MIDI note-on input.
+;C0B9362E91BD0449=Show horizontal grid lines in CC lanes in the MIDI editor, height permitting.
+;A14BF0025A865D5D=Set the MIDI event density when drawing in CC lanes with the mouse.
+;1A7A22B9337D0931=CC event drawing density will be greater when the view is zoomed in, and lower when zoomed out.
+;31F3B127D48B0A67=When adding a new segment to a CC lane, use this segment shape.
+;D4F1B563F45942D0=Automatically reduce events when drawing, if the segment shape is square or linear.
+;B1658FB398E5FA9C=When editing a single CC event with the mouse, the edit can be constrained to the the space between adjacent CC events.
+;762391302F04E128=Set the default behavior when double-clicking a MIDI media item.
+;BE45AA5CE407ABC8=The MIDI item active in the MIDI editor can follow the media item selection in the arrange view.
+;8A0CCA6F04960F40=Media item selection in the arrange view can determine whether a MIDI item is visible in the MIDI editor.
+;BD77360516B83B36=Media item selection in the arrange view can determine whether a MIDI item is editable in the MIDI editor.
+;38748BD61880FF8A=By default all displayed MIDI items can be editable, or only those on the same track.
+;0BC0E872C17D4C55=When displaying multiple MIDI media items in a single editor, the editor can be set to remain open if the active media item is deleted.
+8BC16DD5EBF937E4=単一 MIDI エディタにおける複数の MIDI アイテムの表示について、詳しい情報を掲載しています。
+;DE1875B6CABFB266=When displaying multiple MIDI media items at once, choose how to switch the active media item within the MIDI editor.
+;9B2ACE664429DF8D=MIDI notes/CC in inactive media items can be drawn more or less faintly.
+;C486CCEB98553CDB=Colormap image to use for drawing notes in the MIDI editor. If no colormap is specified here, the colormap in the current color theme will be used.
+;644B168704079A8D=Browse for a colormap image to use as the default for drawing notes in the MIDI editor.

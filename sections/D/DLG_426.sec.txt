@@ -1,0 +1,4 @@
+[DLG_426] ; IDD_WAITFORDEVICE
+;1A03C3B8816A8581=Waiting for device to settle
+;D85BA7186B41F745=Go
+;59D9265C4022D527=Some devices may need a few seconds to switch samplerates. This box will automatically close.

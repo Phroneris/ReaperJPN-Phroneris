@@ -1,0 +1,8 @@
+[prefs_mediafades_help]
+;80EBC8369EB04EC0=Edit the media item fade-in/out by grabbing a triangle in the corner of the media item.
+;7248C9668CE010CF=Edit overlapping media item fades (crossfades) by grabbing a diamond at the intersection of the fade curves.
+;7499317A45AD899D=Prevent accidentally editing media item fade-in/out when the media item is small.
+;028F1F8A53001AC3=Allow the mouse to target the fade curve itself. The top edge of the fade start/end line (where the fade handle is drawn) can always be targeted.
+;D15E84F1951DF3C9=Allow the mouse to target the fade start/end line. The top edge of the fade start/end line (where the fade handle is drawn) can always be targeted.
+;49CE054364B5D458=Crossfades are drawn with custom theme colors when using the crossfade editor. These colors can be used when editing crossfades with the mouse.
+;6A2062C61051EF1F=Fade and crossfade type names are displayed in menus as accessible text rather than an image, fade type buttons are titled with names.

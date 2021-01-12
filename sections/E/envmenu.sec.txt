@@ -1,0 +1,21 @@
+[envmenu]
+4F0FF8C68174EB99=トラックオートメーションエンベロープを可視化
+38EB36F18A7A3BB5=マスターオートメーションエンベロープ
+0DE47D3FF7101E90=トラックオートメーションエンベロープ
+969E4985EEB5BF6E=: 有効かつ不可視
+965043EEE03A7C8E=全てのトラックエンベロープを不可視化(&H)
+7986CE4511509744=全ての可視トラックエンベロープを記録待機(&B)
+07C600992DB11454=全てのトラックエンベロープの記録待機を解除(&K)
+B863D5552AF8F04B=全ての可視トラックエンベロープをエンベロープレーンに表示(&E)
+9ECE9A18328F556A=全ての可視トラックエンベロープをメディアレーンに表示(&O)
+567F0D273842FAC4=一括指定オートメーションモード:
+4036F87897378B46=トラック別指定オートメーションモード:
+E81A578EDE83B19C=Trim/Read (デフォルト、フェーダを記録しない) (&T)
+;^65971737BB8DFA2C=Send Envelopes
+;^94FDEB80682CF963=FX Parameters
+;^5A6DE0CA99B71E37=Show all active track envelopes
+;^DEF52717C4E7101F=Read (play faders with armed envelopes)
+;^E73F4D99E9F274CB=Touch (record fader movements to armed envelopes)
+;^A23B66B5439758A9=Write (record fader positions to armed envelopes)
+;^7C92092A41B00EDC=Latch (record fader movements after first movement)
+;^EC02F0F810FC7CDF=Latch Preview (allow adjusting parameters but do not apply to envelopes)

@@ -1,0 +1,25 @@
+[prefs_appear_help]
+;D8B66E2BE463D32E=Show horizontal grid lines in automation lanes.
+;D42E66A319AC11AE=The length of the mouse hover delay before tooltips appear.
+;44E0D11CF67D6F39=Enable tooltips on the UI elements.
+;A774979370C2945A=Enable tooltips when editing items or envelopes.
+;FC697457A24188CD=If tooltips are enabled for envelopes, show the tooltip when hovering the mouse over an envelope.
+;47F0C552E663C86F=Show the last user action in REAPER's title bar.
+79DF6C21E88B8F28=最後に行ったアクションをメニューバーに表示します。アクションをクリックすると操作履歴が開きます。
+;45D3D936D90D0EAD=Allow Reaper to prerender text, for a slight performance improvement overall, but less smooth text at the smallest font sizes.
+;77B9B339AD44076D=Draw smooth item fadein/fadeout curves and automation envelopes. No meaningful performance penalty.
+;A7B566458D7B1070=Fill automation envelopes with color, for easier reading but a slight performance penalty. (Media item fade area curve fills use a theme setting.)
+;4633445F44D0C872=Fill automation envelopes with color when drawing envelopes over media, for easier reading but a slight performance penalty.
+;FEF64939D5DC280B=Show horizontal grid lines in envelope lanes, height permitting.
+;4C88837476F4697C=Width of play cursor in pixels.
+;E9CDE41FE0762A29=Draw solid lines at the edges of the time selection. In the theme, set the time selection fill mode alpha to zero for a minor performance improvement.
+;AF1AF4B7EC29EB88=Draw solid lines through the arrange view at the edges of the loop selection, for a slight performance penalty.
+;79E344CBB1C62E64=Draw guide lines at the edges of media items and envelope points while moving them. Partially-checked checkbox draws guides but no item move horizontal guides.
+;F02F80C9904C3AC3=When changing the size of the toolbar or floating toolbar, don't allow buttons to be drawn smaller than the size of their underlying theme images.
+;BFE2B737382EA986=When changing the size of the toolbar or floating toolbar, don't allow buttons to be drawn larger than the size of their underlying theme images.
+;DC0B1486D831FBC4=Floating toolbars, and the Toolbar Docker, can be displayed without a window frame, for a smaller appearance.
+;C509B1130581F3C4=Vertical pixel spacing between adjacent tracks.
+;E6F015EDC904D895=When \"Options/Show overlapping media items in lanes\" is enabled, the maximum number of lanes shown can be configured.
+;88BC85543BA04109=Project region edges and project markers appear as special gridlines in the arrange view by default.
+;5B08A81144D33F81=Time signature changes appear as special gridlines in the arrange view by default.
+;3B03225E1BAA52AC=Use color theme odd/even track colors to divide the arrange view vertically, by measures if the grid is set to beats, or by seconds if the grid is set to frames.

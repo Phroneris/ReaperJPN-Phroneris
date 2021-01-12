@@ -1,0 +1,4 @@
+[MENU_342] ; IDR_CONTEXTS_42	; ツールバーのグループ制御のやつを右クリ
+;D459051830243DFE=42_GroupCtx
+EB446AE89713DE5E=同グループの全アイテムを自動選択(&S)
+;^A354AA07A4DF9BBD=Enable grouping
