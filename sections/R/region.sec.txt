@@ -1,7 +1,7 @@
 [region]
-;5CA39424CE17BEEC=Region ID is already in use, please choose another
+5CA39424CE17BEEC=リージョン ID が既に使用されています。他の値を指定してください。
 ;8856B8AFC9366673=Save changes before opening render dialog?
 ;3EAFE1BA2EBCF42C=Save changes before opening region render matrix?
 ;F90D0972A781FA95=Region Edit Confirm
-;D69A3191067760AF=Region ID %d is already in use, please choose another.
+D69A3191067760AF=リージョン ID %d は既に使用されています。他の値を指定してください。
 ;^9EC3E20500624AAF=Error

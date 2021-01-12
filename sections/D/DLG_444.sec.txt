@@ -1,7 +1,7 @@
 [DLG_444] ; IDD_CONVERTER	; ファイルや～はアクセスキー除去
 CF8CEC995AA54B2C=ソースファイルのディレクトリを利用
 E3A550B7DF8959EF=開く...
-;FA2FC8DBB6212E69=Preserve source start time
+FA2FC8DBB6212E69=ソース開始位置を維持
 6882EA606C9A4C9C=エフェクトを利用
 4694FB0DBF1BAE46=FX チェーン...
 98CF73222A01C13D=余韻 (ms):

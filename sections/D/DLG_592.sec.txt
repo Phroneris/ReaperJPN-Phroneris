@@ -1,4 +1,4 @@
 [DLG_592] ; IDD_REGKEY_WAIT
-;06D9E24DB46DF7D6=Import license key
-;BFDD19A0CFF8ABAA=Import license key from file...
+06D9E24DB46DF7D6=ライセンスキーのインポート(&K)
+BFDD19A0CFF8ABAA=ファイルからライセンスキーをインポート(&F)...
 ;^F09E4B5C35AA14B9=Cancel

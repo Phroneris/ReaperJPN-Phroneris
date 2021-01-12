@@ -2,7 +2,7 @@
 ;A3FA5A822CC7D898=3TrackEmpty
 B0A42D963CEF845C=複数トラックを挿入(&U)...
 BB1E22C4CE52BD4B=マスタートラックを表示(&M)
-;B9D58A6FF2858C18=Show TCP on right side of arrange
+B9D58A6FF2858C18=トラックコントロールパネルをアレンジビューの右側に表示(&R)
 ;^6E9C1F47AE0AB01B=Insert new track
 ;^A6F3EA432AA410A4=Insert virtual instrument on new track...
 ;^14AB75DE2C24FEF3=Insert track from template

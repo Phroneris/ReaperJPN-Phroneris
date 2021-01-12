@@ -1,6 +1,6 @@
 [MENU_315] ; IDR_CONTEXTS_15	; センド削除はアクセスキー付与
 ;4D20578AB111ACF0=15was2SendMixerCtx
-B75CC57A4B1F89C5=センドパラメータを表示(&S)\クリック
+B75CC57A4B1F89C5=センドパラメータを表示(&S)\tクリック
 AB3A6BCE325A5628=センドパラメータを表示(&S)
 A3128BC4BBE6C116=センドをミュート(&M)\tShift+クリック
 E42B7D098D9F7AD0=センドをミュート(&M)

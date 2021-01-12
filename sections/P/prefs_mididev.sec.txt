@@ -1,5 +1,5 @@
 [prefs_mididev]
-;26F1E24CFDE801AA=Force channel %d
+26F1E24CFDE801AA=Ch %d に強制
 6B1D65CC9AFF4105=<使用しない>
 ;788251BDE052B641=<not present>
 ;2582E469DA94B981=!!! N/A: Enabled
